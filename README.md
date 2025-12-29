@@ -1,1 +1,1 @@
-Rendu du site : https://eleprettre.forge.apps.education.fr/nsi-1ere 
+Rendu du site : https://eleprettre.forge.apps.education.fr/BTS-MECP-Physique-Chimie 
