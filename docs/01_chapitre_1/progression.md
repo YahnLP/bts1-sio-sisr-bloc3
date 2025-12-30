@@ -3,12 +3,7 @@ author: ELP
 title: Progression
 ---
 
-
-# BTS MECP – 1ʳᵉ ANNÉE
-
-## Physique-Chimie appliquée
-
-### **Progression**
+# Progression
 
 ### 🎯 Objectif
 
