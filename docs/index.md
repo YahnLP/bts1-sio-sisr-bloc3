@@ -1,6 +1,9 @@
 # Physique Chimie appliqué en BTS MECP au lycée Jean Cassaigne
 ---
 
+# en construction => revenez plus tard!!
+
+
 
 1. A la découverte de Python
 2. Les bases de Python
