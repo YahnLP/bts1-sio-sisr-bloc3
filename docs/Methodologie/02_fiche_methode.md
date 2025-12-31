@@ -15,8 +15,11 @@ En BTS MECP, **un calcul seul ne suffit jamais**, même s’il est juste.
 - le **résultat numérique**,
 
 mais surtout :
+
 - la **méthode de calcul**,
+
 - la **gestion des unités**,
+
 - la **capacité à interpréter le résultat** dans un contexte professionnel.
 
 ---
@@ -39,12 +42,17 @@ Un exercice de concentration doit répondre à **quatre questions essentielles**
 ### 🔹 Étape 1 – Identifier le système
 
 Déterminer :
+
 - le **soluté** (actif cosmétique),
+
 - le **solvant** (souvent l’eau),
+
 - la **solution** (produit cosmétique).
 
 📝 Exemples :
+
 - *Le soluté est l’acide hyaluronique.*
+
 - *La solution est un sérum cosmétique.*
 
 ---
@@ -52,11 +60,15 @@ Déterminer :
 ### 🔹 Étape 2 – Relever les données utiles
 
 Repérer dans l’énoncé :
+
 - la **masse** du soluté,
+
 - le **volume** de la solution.
 
 ⚠️ Attention :
+
 - ne pas confondre masse et volume,
+
 - ne pas inventer de données.
 
 ---
@@ -64,11 +76,15 @@ Repérer dans l’énoncé :
 ### 🔹 Étape 3 – Convertir les unités si nécessaire
 
 Avant tout calcul :
+
 - les masses doivent être en **grammes (g)**,
+
 - les volumes en **litres (L)**.
 
 📝 Exemples :
+
 - *250 mL = 0,250 L*
+
 - *1,5 L reste 1,5 L*
 
 👉 **Aucun calcul sans unités correctes.**
@@ -79,25 +95,28 @@ Avant tout calcul :
 
 Pour une **concentration massique** :
 
-\[
+$
 C_m = \frac{m}{V}
-\]
+$
 
 avec :
 
-- \( C_m \) en g·L⁻¹
+- $ C_m $ en g·L⁻¹
 
-- \( m \) en g
+- $ m $ en g
 
-- \( V \) en L
+- $ V $ en L
 
 ---
 
 ### 🔹 Étape 5 – Effectuer le calcul
 
 - écrire la relation,
+
 - remplacer par les valeurs numériques,
+
 - calculer,
+
 - écrire le **résultat avec son unité**.
 
 ⚠️ Une valeur sans unité n’a **aucun sens scientifique**.
@@ -111,6 +130,7 @@ Expliquer **ce que signifie** la valeur trouvée.
 📝 Exemples de phrases attendues :
 
 - *La concentration massique de l’actif est de … g·L⁻¹.*
+
 - *Cela signifie que chaque litre de solution contient … g d’actif.*
 
 👉 Cette phrase est **indispensable** à l’épreuve E2.
@@ -138,7 +158,9 @@ Expliquer **ce que signifie** la valeur trouvée.
 > *La concentration est 20.*
 
 ➡️ Réponse incomplète :  
+
 - pas d’unité  
+
 - pas d’interprétation  
 
 ---
@@ -157,19 +179,27 @@ Expliquer **ce que signifie** la valeur trouvée.
 ⚠️ À éviter absolument :
 
 * formule écrite sans explication
+
 * oubli des unités
+
 * résultat non interprété
+
 * réponse réduite à un nombre
+
 * calcul sans lien avec la situation professionnelle
 
 ---
 
 ## 6️⃣ Ce qui fait gagner des points
 
-✔ données clairement identifiées  
+✔ données clairement identifiées 
+
 ✔ unités correctes  
+
 ✔ calcul posé proprement  
+
 ✔ interprétation rédigée  
+
 ✔ vocabulaire scientifique précis  
 
 👉 Même avec une erreur de calcul, **une méthode cohérente peut rapporter des points**.
@@ -189,8 +219,11 @@ Si la réponse est **non**, la réponse est **incomplète**.
 ## 🎓 À retenir pour l’épreuve E2
 
 * Toujours **identifier le soluté et la solution**
+
 * Toujours **écrire les unités**
+
 * Toujours **interpréter le résultat**
+
 * Toujours **faire le lien avec le produit cosmétique**
 
 👉 **En E2, la méthode compte autant que le calcul.**
