@@ -20,28 +20,22 @@ Construire progressivement les **compétences scientifiques et techniques néces
 
 ---
 
-## 🔵 Etape 1 – Bases expérimentales et interprétation (Séances 1 à 8)
+## 🔵 Étape 1 – Bases expérimentales et interprétation (Séances 1 à 10)
 
-
-
-| Séance | Thème / situation professionnelle                   | Notions du référentiel couvertes                | Compétences travaillées                    |
-| ------ | --------------------------------------------------- | ----------------------------------------------- | ------------------------------------------ |
-| 1      | Diagnostic – Analyse d’un produit cosmétique simple | Corps pur, mélange homogène / hétérogène        | Lire une situation, identifier les données |
-| 2      | Solutions cosmétiques                               | Solutions, dissolution, solubilité, miscibilité | Décrire un système                         |
-| 3      | Concentration d’un actif                            | Concentration massique, quantité de matière     | Calculer et interpréter                    |
-
-🧪 TP 1 → Dissolution – Dilution – Échelle de teinte
-
-
-
-| Séance | Thème / situation professionnelle                                  | Notions couvertes                                | Compétences                  |
-| ------ | ------------------------------------------------------------------ | ------------------------------------------------ | ---------------------------- |
-| 4      | Dilution en formulation : choix et justification d’une méthode | Dilution, conservation de la masse               | Choisir et justifier         |
-| 5      | Masse volumique, texture et perception                             | Masse volumique, densité                         | Relier valeur ↔ propriété    |
-| 6      | Cohérence des résultats expérimentaux                        | Unités, ordres de grandeur, incertitudes simples | Vérifier, critiquer          |
-| 7      | pH des produits cosmétiques et efficacité cutanée             | pH, H₃O⁺/HO⁻, acidité/basicité                   | Lire et interpréter          |
-| 8      | Évaluation n°1                                                     | Séances 1 à 7                                    | Calculer, expliquer, rédiger |
-
+| Séance | Thème / situation professionnelle                                               | Notions du référentiel couvertes                          | Compétences travaillées                    |
+|--------|----------------------------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------|
+| 1      | Diagnostic – Analyse d’un produit cosmétique simple                              | Corps pur, mélange homogène / hétérogène                   | Lire une situation, identifier les données |
+| 2      | Solutions cosmétiques                                                            | Solutions, dissolution, solubilité, miscibilité            | Décrire un système                         |
+| 3      | Concentration d’un actif                                                         | Concentration massique, quantité de matière                | Calculer et interpréter                    |
+| TP 1   | Dissolution – Dilution – Échelle de teinte                                       | Notions S2–S3                                              | Observer, exploiter                        |
+| 4      | Dilution en formulation : choix et justification d’une méthode                   | Dilution, conservation de la masse                         | Choisir et justifier                       |
+| 5      | Évaluation formative n°1                                                         | Séances 1 à 4                                              | Calculer, interpréter, justifier           |
+| 6      | Masse volumique, texture et perception                                           | Masse volumique, densité                                   | Relier valeur ↔ propriété                  |
+| 7      | Cohérence des résultats expérimentaux                                            | Unités, ordres de grandeur                                 | Vérifier, critiquer                        |
+| 8      | pH des produits cosmétiques et efficacité cutanée                                | pH, H₃O⁺ / HO⁻, acidité / basicité                          | Lire et interpréter une mesure             |
+| 9      | Exploitation d’un ensemble de résultats expérimentaux en cosmétique              | Comparaison de résultats, cohérence, tendances              | Analyser, comparer, argumenter             |
+| TP 2   | TP pH-métrie requalifié : exploitation et interprétation de résultats fournis   | Acido-basicité, pH-métrie                                   | Exploiter, interpréter, conclure           |
+| 10     | Évaluation sommative type E2 – Expertise scientifique et technologique           | Mobilisation transversale des notions de l’étape            | Analyser, interpréter, argumenter          |
 
 
 ---
@@ -50,12 +44,12 @@ Construire progressivement les **compétences scientifiques et techniques néces
 
 | Séance | Thème                                                 | Notions                            | Compétences             |
 | ------ | ----------------------------------------------------- | ---------------------------------- | ----------------------- |
-| 9      | Composition microscopique et structure de l’atome | Atomes, ions, électrons de valence | Identifier              |
-| 10     | Stabilité chimique et représentations                 | Gaz nobles, Lewis                  | Comprendre              |
-| 11     | Interactions moléculaires                             | Polarité, liaisons H               | Interpréter             |
-| 12     | Réactivité et cosmétologie                            | Radicaux, liaisons fragiles        | Justifier               |
-| 13     | Représentations moléculaires                          | Formules, isomérie                 | Identifier              |
-| 14     | Molécules d’intérêt biologique                        | Fonctions chimiques                | Relier structure ↔ rôle |
+| 10      | Composition microscopique et structure de l’atome | Atomes, ions, électrons de valence | Identifier              |
+| 11     | Stabilité chimique et représentations                 | Gaz nobles, Lewis                  | Comprendre              |
+| 12     | Interactions moléculaires                             | Polarité, liaisons H               | Interpréter             |
+| 13     | Réactivité et cosmétologie                            | Radicaux, liaisons fragiles        | Justifier               |
+| 14     | Représentations moléculaires                          | Formules, isomérie                 | Identifier              |
+| 15     | Molécules d’intérêt biologique                        | Fonctions chimiques                | Relier structure ↔ rôle |
 | 15     | Évaluation n°2 – Analyse guidée                       | Séances 9 à 14                     | Argumenter              |
 | 16     | Consolidation raisonnement microscopique              | Réinvestissement                   | Structurer              |
 
