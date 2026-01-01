@@ -12,6 +12,7 @@ title: Fiche méthode 02 🧠
 En BTS MECP, **un calcul seul ne suffit jamais**, même s’il est juste.
 
 👉 Ce qui est évalué, ce n’est pas seulement :
+
 - le **résultat numérique**,
 
 mais surtout :
@@ -95,17 +96,15 @@ Avant tout calcul :
 
 Pour une **concentration massique** :
 
-$
-C_m = \frac{m}{V}
-$
+$C_m = \frac{m}{V}$
 
 avec :
 
-- $ C_m $ en g·L⁻¹
+- $C_m$ en g·L⁻¹
 
-- $ m $ en g
+- $m$ en g
 
-- $ V $ en L
+- $V$ en L
 
 ---
 
