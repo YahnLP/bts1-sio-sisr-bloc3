@@ -3,7 +3,7 @@ author: ELP
 title: 01 🖊️ Évaluation diagnostique
 ---
 
-# 01 Corps pur et mélange : 🖊️ Évaluation diagnostique 
+# 01 Corps pur et mélange : 🖊️ Évaluation formative
 
 **Analyse d’un produit cosmétique simple : corps pur et mélanges**
 
@@ -18,7 +18,7 @@ Elle a pour objectif d’identifier vos acquis et vos difficultés afin d’adap
 
 On vous présente un **gel nettoyant pour le visage**.
 
-![gel nettoyant visage](fr-fr-gel-nettoyant.png)
+![gel nettoyant visage](fr-fr-gel-nettoyant.png){ width=40%; : .center }
 
 1. À l’œil nu, peut-on distinguer plusieurs constituants ?  
    ☐ Oui  ☐ Non  

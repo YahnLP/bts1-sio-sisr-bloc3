@@ -1,4 +1,4 @@
-﻿---
+---
 author: ELP
 title: 01 📝 Fiche élève
 ---
@@ -24,8 +24,7 @@ title: 01 📝 Fiche élève
 Vous travaillez dans un laboratoire cosmétique.  
 On vous confie un **produit cosmétique simple** (lotion, eau micellaire, sérum…).
 
-Avant toute reformulation ou amélioration, il est nécessaire de **déterminer la nature
-du produit**.
+Avant toute reformulation ou amélioration, il est nécessaire de **déterminer la nature du produit**.
 
 ---
 
@@ -33,7 +32,7 @@ du produit**.
 
 Voici l’exemple du produit que nous analyserons :
 
-![Lotion micellaire cosmétique](Micellar-water-ultra-reactive-skin_400ml_01_La-Roche-Posay.jpg)
+![Lotion micellaire cosmétique](Micellar-water-ultra-reactive-skin_400ml_01_La-Roche-Posay.jpg){ width=60%; : .center }
 
 *Lotion micellaire cosmétique (produit transparent, homogène à l’œil nu).* 
 
@@ -41,9 +40,9 @@ Voici l’exemple du produit que nous analyserons :
 
 ## 🔍 Travail 1 – Observation du produit
 
-1. Nom du produit observé :  
-   ..............................................................................
-
+1\. Nom du produit observé :  
+   <br>
+   <br>
 2\. Aspect du produit (entourer ou compléter) : 
 
       - limpide / trouble  
@@ -63,10 +62,9 @@ Voici l’exemple du produit que nous analyserons :
 
 1. Relevez **au moins trois ingrédients** du produit :  
 
-      - ........................................................................  
-      - ........................................................................  
-      - ........................................................................  
-
+      - <br>  
+      - <br> 
+      - <br> 
 2\. Le produit est-il composé d’une seule substance ?  
 
    ☐ Oui  ☐ Non  
@@ -77,11 +75,12 @@ Voici l’exemple du produit que nous analyserons :
 
 Répondez en rédigeant **des phrases complètes**.
 
-1. Le produit étudié est-il un **corps pur** ?  
+1\. Le produit étudié est-il un **corps pur** ?  
    Justifiez votre réponse.  
 
-   ..............................................................................
-   ..............................................................................
+   <br>
+   <br>
+   <br>
 
 2\. Le produit est-il un **mélange** ?  
 
@@ -93,8 +92,9 @@ Répondez en rédigeant **des phrases complètes**.
 
 4\. Justifiez votre réponse à l’aide de l’observation et de la composition.  
 
-   ..............................................................................
-   ..............................................................................
+   <br>
+   <br>
+   <br>
 
 ---
 
@@ -103,7 +103,9 @@ Répondez en rédigeant **des phrases complètes**.
 Complétez les phrases suivantes :
 
 - Le produit cosmétique étudié est constitué de ........................................  
+
 - On observe que ........................................................................  
+
 - Cela signifie que le produit est ....................................................  
 
 ---
@@ -116,13 +118,18 @@ Pour vous, comment définiriez-vous :
 
 
 - **Corps pur** :  
-  ..............................................................................
+   <br>
+   <br>
+
 
 - **Mélange homogène** :  
-  ..............................................................................
+   <br>
+   <br>
+
 
 - **Mélange hétérogène** :  
-  ..............................................................................
+   <br>
+   <br>
 
 ---
 
