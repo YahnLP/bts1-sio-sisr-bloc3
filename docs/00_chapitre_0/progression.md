@@ -93,5 +93,3 @@ Chaque TP donne lieu à une **exploitation écrite structurée** (intro – rés
 > La progression tient compte du profil des étudiants et vise une montée progressive en autonomie et en raisonnement scientifique. »
 
 
----
-
