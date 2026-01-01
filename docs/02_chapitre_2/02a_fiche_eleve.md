@@ -55,7 +55,9 @@ Le produit étudié est le même que lors de la séance précédente :
 ## 🧠 Travail 2 – Introduction de la notion de solution
 
 On appelle **solution** un mélange homogène constitué :
+
 - d’un **solvant** (constituant majoritaire),
+
 - d’un ou plusieurs **solutés** (constituants minoritaires).
 
 1. Le produit étudié peut-il être considéré comme une **solution** ?  
