@@ -96,3 +96,4 @@ Les fiches TP sont conçues pour être :
 
 ➡️ [Télécharger le TP 2 : pH-métrie : exploitation et interprétation de résultats fournis (PDF)](02_TP.pdf)
 
+➡️ [Télécharger le TP 3 : Exploitation de représentations moléculaires en cosmétologie (PDF)](03_TP.pdf)
