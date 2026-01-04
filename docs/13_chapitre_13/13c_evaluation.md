@@ -52,11 +52,11 @@ Ils sont utilisés comme **référence de stabilité chimique**.
 
 
 <p align="center">
-  <img src="H2O-lewis.jpg" alt="eau" width="40%"><br>
+  <img src="../H2O-lewis.jpg" alt="eau" width="40%"><br>
   <em>eau H<sub>2</sub>O</em><br>
-  <img src="Co2.png" alt="dioxyde de carbone" width="60%"><br>
+  <img src="../Co2.png" alt="dioxyde de carbone" width="60%"><br>
   <em>dioxyde de carbone CO<sub>2</sub></em><br>
- <img src="NH3-lewis.jpg" alt="ammoniaque" width="70%"><br>
+ <img src="../NH3-lewis.jpg" alt="ammoniaque" width="70%"><br>
     <em>ammoniaque NH<sub>3</sub></em>
 </p>
 

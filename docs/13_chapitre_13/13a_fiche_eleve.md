@@ -77,7 +77,7 @@ Les **représentations de Lewis** permettent de visualiser :
 
 
 <p align="center">
-  <img src="../h2O.png" alt="eau" width="50%"><br>
+  <img src="../h2o.png" alt="eau" width="50%"><br>
   <em>eau H<sub>2</sub>O</em><br>
   <img src="../Co2.png" alt="dioxyde de carbone" width="60%"><br>
   <em>dioxyde de carbone CO<sub>2</sub></em><br>
