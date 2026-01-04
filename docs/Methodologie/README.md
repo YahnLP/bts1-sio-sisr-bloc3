@@ -79,3 +79,6 @@ même si le résultat final est partiellement incorrect.
 ➡️ [Télécharger la fiche *Exploiter un TP à l'écrit* (PDF)](03_fiche_methode.pdf)
 
 ➡️ [Télécharger la fiche *Interpréter une mesure physique en E2* (PDF)](04_fiche_methode.pdf)
+
+➡️ [Télécharger la fiche *Lire une représentation microscopique dans un dossier scientifique* (PDF)](05_fiche_methode.pdf)
+
