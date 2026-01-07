@@ -1,4 +1,4 @@
-# 7 – Masse volumique, texture et perception ⚖️
+# 07 – Objectifs et ressources
 
 Ce chapitre a pour objectif de faire évoluer les étudiants de la **lecture de valeurs expérimentales** vers leur **interprétation scientifique et professionnelle** en cosmétologie.
 

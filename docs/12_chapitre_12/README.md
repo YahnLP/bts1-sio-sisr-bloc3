@@ -3,7 +3,7 @@ author: ELP
 title: Séance 12 – Composition microscopique de la matière
 ---
 
-# Séance 12 – Composition microscopique de la matière en cosmétologie 🔬
+# 12 – Objectifs et ressources
 
 Ce chapitre a pour objectif de permettre aux étudiants de **comprendre la nature microscopique des espèces chimiques** présentes dans un produit cosmétique, afin de **préparer l’analyse scientifique** de dossiers complexes, telle qu’elle est attendue en **expertise scientifique et technologique**.
 

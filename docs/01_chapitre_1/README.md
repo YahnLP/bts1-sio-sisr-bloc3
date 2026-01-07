@@ -1,4 +1,4 @@
-# 1 – Corps pur et mélanges
+# 01 – Objectifs et ressources
 
 Cette séance introductive a pour objectif de diagnostiquer les acquis des étudiants et d’installer les bases du raisonnement scientifique attendu en BTS MECP.
 

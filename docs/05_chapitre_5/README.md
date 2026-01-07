@@ -1,4 +1,4 @@
-# 5 – Dilution en formulation cosmétique ⚓︎
+# 05 – Objectifs et ressources
 
 Ce chapitre a pour objectif de faire évoluer les étudiants d’une **approche descriptive des solutions** vers une **prise de décision scientifique et technique** en contexte professionnel.
 

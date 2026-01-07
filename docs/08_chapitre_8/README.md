@@ -1,4 +1,4 @@
-# Séance 08 – Cohérence des résultats expérimentaux 🔍
+# 08 – Objectifs et ressources
 
 Ce chapitre a pour objectif de faire évoluer les étudiants de la **lecture passive d’un résultat expérimental** vers une **posture critique et experte**, indispensable en laboratoire cosmétique et en contrôle qualité.
 

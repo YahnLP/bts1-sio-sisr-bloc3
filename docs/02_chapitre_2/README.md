@@ -1,4 +1,4 @@
-# 2 – Solutions : solvant et soluté
+# 02 – Objectifs et ressources
 
 Cette séance a pour objectif d’introduire la **notion de solution** à partir de l’étude
 d’un produit cosmétique homogène.

@@ -3,7 +3,7 @@ author: ELP
 title: Séance 14 – Interactions moléculaires
 ---
 
-# Séance 14 – Interactions moléculaires et propriétés des produits cosmétiques 💧
+# 14 – Objectifs et ressources
 
 Ce chapitre a pour objectif de permettre aux étudiants de **comprendre le rôle des interactions moléculaires** dans le comportement des produits cosmétiques, afin de **relier l’échelle microscopique aux propriétés observables** telles que la solubilité, la texture ou la stabilité physique.
 

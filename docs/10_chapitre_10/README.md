@@ -3,7 +3,7 @@ author: ELP
 title: Séance 10 – Exploitation d’un ensemble de résultats expérimentaux
 ---
 
-# Séance 10 – Exploitation d’un ensemble de résultats expérimentaux en cosmétique 📊
+# 10 – Objectifs et ressources
 
 Ce chapitre a pour objectif de faire évoluer les étudiants de la **lecture isolée de résultats expérimentaux** vers une **analyse globale, critique et argumentée**, telle qu’elle est attendue en **expertise scientifique et technologique**.
 

@@ -1,4 +1,4 @@
-# 4 – Quantité de matière et sens chimique de l’actif ⚗️
+# 04 – Objectifs et ressources
 
 Ce chapitre a pour objectif de donner du **sens à la notion de quantité de matière** en cosmétique, en dépassant une approche uniquement fondée sur la **masse** ou le **pourcentage affiché**.
 

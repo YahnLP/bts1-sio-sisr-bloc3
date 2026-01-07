@@ -1,4 +1,4 @@
-# 3 – Concentration d’un actif ⚓︎
+# 03 – Objectifs et ressources
 
 Ce chapitre a pour objectif d’introduire la **description quantitative des solutions cosmétiques** à travers la notion de **concentration massique**, en lien direct avec les pratiques de **formulation**, de **dilution** et de **contrôle qualité** en cosmétologie.
 

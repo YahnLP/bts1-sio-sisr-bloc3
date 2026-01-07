@@ -1,4 +1,4 @@
-# Séance 09 – pH des produits cosmétiques et efficacité cutanée 🧪
+# 09 – Objectifs et ressources
 
 Ce chapitre a pour objectif de faire évoluer les étudiants de la **lecture brute d’une valeur de pH** vers une **interprétation scientifique, professionnelle et argumentée**, indispensable en **formulation** et en **contrôle qualité cosmétique**.
 

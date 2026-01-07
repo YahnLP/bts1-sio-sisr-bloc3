@@ -3,7 +3,7 @@ author: ELP
 title: Séance 13 – Stabilité chimique et représentations de Lewis
 ---
 
-# Séance 13 – Stabilité chimique et représentations de Lewis en cosmétologie ⚖️
+# 13 – Objectifs et ressources
 
 Ce chapitre a pour objectif de permettre aux étudiants de **comprendre la notion de stabilité chimique** des espèces présentes dans un produit cosmétique, afin de **justifier des choix de formulation** et d’**argumenter scientifiquement**, comme attendu à l’épreuve **E2 – Expertise scientifique et technologique**.
 
