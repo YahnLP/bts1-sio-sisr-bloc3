@@ -31,7 +31,7 @@ et participe à la préparation méthodologique de l’épreuve E2.
 * Justifier une réponse simple
 
 
-### 📥 Ressource à télécharger
+## 📥 Ressource à télécharger
 
 📘 **Document élève**  
 

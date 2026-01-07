@@ -23,7 +23,7 @@ Les notions abordées (corps pur, mélange homogène, mélange hétérogène) se
 * Identifier la nature d’un système
 * Utiliser un vocabulaire scientifique simple et précis
 
-### 📥 Ressource à télécharger
+## 📥 Ressource à télécharger
 
 📘 **Document élève**  
 

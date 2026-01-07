@@ -3,7 +3,7 @@ author: ELP
 title: Progression
 ---
 
-# Progression
+# 🛣️ Progression
 
 ### 🎯 Objectif
 
