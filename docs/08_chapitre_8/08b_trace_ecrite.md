@@ -70,6 +70,17 @@ On compare la valeur mesurée à une **valeur de référence connue**.
 
 👉 Une valeur très éloignée de l’ordre de grandeur attendu doit être **questionnée**.
 
+### 🔹 Tendance vs valeur aberrante
+
+En E2, on ne conclut pas sur une seule valeur : on observe **l’ensemble des résultats**.
+
+✅ Une **tendance** correspond à une évolution globale (ex : “quand la concentration augmente, l’effet augmente”).
+
+👉 Si une valeur est **isolée** et ne suit pas la tendance, on parle de **valeur aberrante** :
+
+- elle doit être **questionnée**,
+- et souvent **vérifiée** (refaire mesure / contrôler protocole).
+
 ---
 
 ## 5️⃣ Cohérence interne d’un dossier scientifique (logique E2)
@@ -83,6 +94,16 @@ En E2, un résultat doit être cohérent :
 👉 Exemple (raisonnement attendu en E2) :  
 
 Si une étude montre une efficacité maximale à une concentration donnée, la position de l’ingrédient dans la liste INCI doit être cohérente avec cette efficacité.
+
+### Causes fréquentes d’incohérence (à connaître)
+
+Une incohérence peut venir de :
+
+- **mauvaise unité** (g·L⁻¹ / g·mL⁻¹, %, mg…),
+- **erreur de conversion** (mL ↔ L, mg ↔ g),
+- **erreur de virgule** (0,82 au lieu de 8,2),
+- **erreur de protocole** (pipetage, dilution, temps d’action),
+- **erreur de saisie** dans un tableau.
 
 ---
 
@@ -108,6 +129,14 @@ Face à un résultat fourni, l’étudiant doit être capable de :
 - Les unités et les ordres de grandeur sont essentiels
 - Un résultat doit être **cohérent avec l’ensemble du dossier**
 - L’argumentation scientifique est centrale
+
+---
+
+## 🔧 Outil méthodologique associé
+
+Pour t’aider à **lire une valeur**, **la comparer** et **rédiger une interprétation** (attendu E2) :
+
+➡️ [**Fiche méthode 06 – Interpréter une mesure physique**](https://bts-mecp-physique-chimie-688080.forge.apps.education.fr/Methodologie/06_fiche_methode/)
 
 ---
 

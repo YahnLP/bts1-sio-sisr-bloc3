@@ -3,32 +3,32 @@ author: ELP
 title: 08 📝 Fiche élève
 ---
 
-# 08 – Cohérence des résultats expérimentaux : 📝 Fiche élève
+# 08 – Cohérence des résultats expérimentaux en cosmétique 🧪  
+**Résultat isolé – Ensemble de résultats – Comparaison – Tendance – Argumentation**
 
-**Unités – Ordres de grandeur – Incertitudes simples – Vérifier et critiquer un résultat**
-
-> En BTS MECP, un résultat expérimental n’est jamais accepté tel quel :  
-> il doit être **vérifié**, **mis en cohérence avec le produit étudié** et **critiqué scientifiquement**, comme à l’épreuve **E2 – Expertise scientifique et technologique**.
+> En BTS MECP, un résultat expérimental n’est **jamais accepté tel quel**.  
+> Il doit être **vérifié**, **comparé**, **mis en cohérence avec le produit étudié** et **argumenté scientifiquement**, comme à l’épreuve  **E2 – Expertise scientifique et technologique**.
 
 ---
 
 ## 🎯 Objectifs de la séance
 
-À l’issue de cette séance, vous serez capables de :
+À l’issue de cette séance, vous devez être capables de :
 
-- **utiliser** correctement les **unités** et les **ordres de grandeur**,
-- identifier un **résultat cohérent** ou **aberrant**,
-- **exploiter** la notion d’**incertitude simple**,
-- adopter une **posture critique** face à un résultat expérimental fourni,
-- **argumenter** la validité (ou non) d’un résultat dans un contexte cosmétique.
+- vérifier la **cohérence d’un résultat expérimental isolé**,
+- utiliser les **unités** et les **ordres de grandeur** comme outils de contrôle,
+- identifier un **résultat aberrant**,
+- exploiter un **ensemble de résultats expérimentaux fournis**,
+- comparer plusieurs valeurs et dégager une **tendance expérimentale**,
+- formuler une **conclusion scientifique argumentée** dans un contexte cosmétique.
 
 ---
 
-## 🧴 Situation professionnelle
+## 🧴 Situation professionnelle (1) – Résultat isolé
 
 Vous travaillez dans un laboratoire de **contrôle qualité cosmétique**.
 
-Lors d’une série de mesures, un technicien obtient les valeurs suivantes pour la **masse volumique** d’une lotion aqueuse destinée à une application cutanée :
+Lors d’une série de mesures, un technicien obtient les valeurs suivantes pour la **masse volumique** d’une lotion aqueuse :
 
 - **Mesure 1** : 0,98 g·mL⁻¹  
 - **Mesure 2** : 980 g·L⁻¹  
@@ -36,24 +36,23 @@ Lors d’une série de mesures, un technicien obtient les valeurs suivantes pour
 
 Le responsable du laboratoire vous demande de **vérifier la cohérence de ces résultats** avant validation.
 
-⚠️ Les valeurs sont **fournies** : aucune manipulation n’est demandée.
 
 ---
 
-## 🧠 Travail 1 – Première analyse (réflexion qualitative)
+## 🧠 Travail 1 – Première analyse qualitative
 
 1\. Parmi les trois valeurs proposées, certaines vous semblent-elles **surprenantes** ?  
-Justifiez brièvement votre réponse.
+Justifiez brièvement.
 
-<br><br><br><br><br><br>
+<br><br><br>
 
-2\. Selon vous, peut-on accepter un résultat expérimental **sans le vérifier** ?  
+2\. Peut-on accepter un résultat expérimental **sans le vérifier** ?
 
-☐ oui  ☐ non  
+☐ Oui  ☐ Non  
 
 Expliquez votre choix.
 
-<br><br><br><br><br><br>
+<br><br><br>
 
 ---
 
@@ -61,33 +60,31 @@ Expliquez votre choix.
 
 On rappelle que la masse volumique de l’**eau** est voisine de **1,0 g·mL⁻¹**.
 
-1\. La valeur **980 g·L⁻¹** correspond-elle à une valeur proche de **0,98 g·mL⁻¹** ?  
+1\. La valeur **980 g·L⁻¹** est-elle cohérente avec **0,98 g·mL⁻¹** ?
 
-☐ oui  ☐ non  
+☐ Oui  ☐ Non  
 
 Justifiez votre réponse.
 
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 
 2\. Une masse volumique de **8,2 g·mL⁻¹** est-elle réaliste pour une lotion aqueuse ?
 
-☐ oui  ☐ non  
+☐ Oui  ☐ Non  
 
 Expliquez votre raisonnement à l’aide d’un **ordre de grandeur connu**.
 
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 
 ---
 
-## 🧪 Travail 3 – Résultat aberrant et hypothèses d’erreur
+## 🧪 Travail 3 – Résultat aberrant et causes possibles
 
-Un résultat expérimental peut être incohérent pour différentes raisons.
+1\. Citez **deux causes possibles** pouvant expliquer un résultat expérimental aberrant.
 
-1\. Citez **deux causes possibles** pouvant expliquer une valeur aberrante mesurée en laboratoire.
+<br><br><br>
 
-<br><br><br><br><br><br>
-
-2\. Associez chaque type d’erreur à un exemple possible :
+2\. Associez chaque type d’erreur à un exemple :
 
 - **Erreur d’unité** :  
 <br><br>
@@ -100,7 +97,7 @@ Un résultat expérimental peut être incohérent pour différentes raisons.
 
 ---
 
-## ⚖️ Travail 4 – Incertitude simple et acceptabilité d’un résultat
+## ⚖️ Travail 4 – Incertitude simple et acceptabilité
 
 Un technicien indique le résultat suivant :
 
@@ -113,46 +110,101 @@ Un technicien indique le résultat suivant :
 2\. Cette valeur est-elle **compatible** avec une lotion aqueuse ?  
 Justifiez votre réponse.
 
-<br><br><br><br><br><br><br>
+<br><br><br>
 
 ---
 
-## ✍️ Travail 5 – Vérifier et conclure (attendus BTS / E2)
+## 🧴 Situation professionnelle (2) – Ensemble de résultats
 
-Le laboratoire souhaite valider un résultat de masse volumique pour une lotion aqueuse.
+Un laboratoire de formulation cosmétique teste plusieurs formulations d’un soin visage contenant un **actif éclaircissant**.
 
-Rédigez une **conclusion argumentée** (4 à 5 lignes) permettant de dire si le résultat est **acceptable ou non**, en tenant compte :
+Les résultats sont fournis sous forme de **tableaux** et/ou de **graphique**.
 
-- de l’unité,
-- de l’ordre de grandeur,
-- du contexte cosmétique.
+### Document 1 – Tableau de résultats
+
+| Concentration de l’actif (%) | Effet fort (%) | Effet modéré (%) | Effet faible (%) |
+|------------------------------|----------------|------------------|------------------|
+| 10                           | 85             | 13               | 2                |
+| 7                            | 2              | 68               | 30               |
+| 5                            | 2              | 52               | 46               |
+| 3                            | 0              | 55               | 45               |
+| 2                            | 0              | 15               | 85               |
+
+---
+
+## 🔍 Travail 5 – Lecture et comparaison des résultats
+
+1\. Identifier les **deux paramètres étudiés** dans cette expérience.
+
+<br><br>
+
+2\. À quelle concentration l’**effet fort** est-il le plus important ?
+
+<br><br>
+
+3\. À quelle concentration l’**effet faible** devient-il majoritaire ?
+
+<br><br>
+
+---
+
+## 📈 Travail 6 – Analyse de l’évolution et tendance
+
+4\. Décrire l’évolution de l’**effet fort** lorsque la concentration diminue.
+
+<br><br>
+
+5\. Décrire l’évolution de l’**effet faible** lorsque la concentration diminue.
+
+<br><br>
+
+6\. Les résultats évoluent-ils de manière **progressive** ou **brutale** ? Justifiez.
+
+<br><br>
+
+7\. Peut-on identifier une **tendance expérimentale** reliant concentration et efficacité ?
+
+<br><br>
+
+---
+
+## ✍️ Travail 7 – Argumentation scientifique (attendus E2)
+
+Un technicien affirme :
+
+> *« La formulation à 10 % est la meilleure car elle donne le plus d’effet fort. »*
+
+8\. Cette affirmation est-elle **scientifiquement suffisante** pour conclure ?  
+Justifiez.
+
+<br><br><br><br>
+
+9\. Rédigez une **conclusion argumentée**, nuancée et professionnelle (4 à 5 lignes), en vous appuyant sur **l’ensemble des résultats fournis**.
 
 *Aide : commencez par*  
-**« Le résultat mesuré est cohérent / non cohérent car… »**
+**« L’analyse des résultats montre que… »**
 
-<br><br><br><br><br><br><br><br>
-
----
-
-## 🧾 Trace écrite – À compléter (logique E2)
-
-Pour vous, que signifie :
-
-- **Vérifier la cohérence d’un résultat expérimental** :  
-<br><br><br><br><br><br>
-
-- **Ordre de grandeur** :  
-<br><br><br><br><br><br>
-
-- **Pourquoi une incertitude est indispensable en laboratoire cosmétique** :  
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 
 ---
 
-## 🔗 Pour la suite…
+## 🧾 Trace écrite – À compléter
 
-La capacité à **vérifier, critiquer et argumenter** un résultat expérimental sera réutilisée lors des prochaines séances pour :
+- Vérifier la cohérence d’un résultat expérimental, c’est :  
+<br><br><br>
 
-- interpréter des mesures de **pH**, de **conductivité** ou de **stabilité**,
-- analyser des résultats expérimentaux plus complexes,
-- répondre aux attendus de l’épreuve **E2 – Expertise scientifique et technologique**.
+- Un **ordre de grandeur** permet de :  
+<br><br><br>
+
+- Pourquoi l’analyse d’un **ensemble de résultats** est indispensable en cosmétique :  
+<br><br><br>
+
+---
+
+## 🔗 Pour la suite de la progression
+
+Cette séance prépare directement à :
+
+- l’analyse de résultats de **pH**, de **conductivité** ou d’**absorbance**,
+- l’exploitation de **dossiers scientifiques complets**,
+- la rédaction de **réponses argumentées**, attendue à l’épreuve **E2 – Expertise scientifique et technologique**.

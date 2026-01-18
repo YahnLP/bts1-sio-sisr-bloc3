@@ -1,44 +1,88 @@
 # 08 – Objectifs et ressources
 
-Ce chapitre a pour objectif de faire évoluer les étudiants de la **lecture passive d’un résultat expérimental** vers une **posture critique et experte**, indispensable en laboratoire cosmétique et en contrôle qualité.
 
-Un résultat chiffré n’est jamais considéré comme automatiquement valide : il doit être **vérifié**, **questionné** et **mis en cohérence** avec :
+---
 
-- la nature du produit étudié,
-- l’ordre de grandeur attendu,
-- les unités utilisées,
-- les conditions expérimentales.
+## 🎯 Finalité de la séance
 
-Cette séance constitue une **étape déterminante** dans la préparation à l’épreuve  
-**E2 – Expertise scientifique et technologique**, où l’on attend des étudiants qu’ils sachent **critiquer un résultat**, détecter une incohérence et **argumenter scientifiquement** leurs conclusions à partir de résultats fournis.
+Cette séance a pour objectif de faire évoluer les étudiants de la **lecture passive ou isolée de résultats expérimentaux** vers une **posture critique, globale et experte**, indispensable en **laboratoire cosmétique**, en **contrôle qualité** et à l’épreuve **E2 – Expertise scientifique et technologique**.
+
+En cosmétique, un résultat chiffré :
+
+- n’est **jamais accepté tel quel**,
+- doit être **vérifié**, **comparé** et **mis en cohérence**,
+- prend sens uniquement lorsqu’il est **analysé dans un ensemble de données**.
+
+👉 L’expert ne se contente pas de lire une valeur : il **juge**, **interprète**, **argumente** et **justifie** une décision professionnelle.
+
+---
+
+## 🧭 Place de la séance dans la progression
+
+La séance 08 constitue une **étape charnière** dans la progression annuelle :
+
+- elle prolonge les séances sur les **mesures**, les **unités** et les **ordres de grandeur** ;
+- elle prépare directement à l’exploitation de **dossiers scientifiques complexes** ;
+- elle installe durablement la **logique E2** : **résultats fournis → analyse → interprétation → argumentation → décision**.
+
+Cette séance regroupe et remplace les anciennes séances :
+
+- *Cohérence des résultats expérimentaux*  
+- *Exploitation d’ensembles de résultats expérimentaux*
 
 ---
 
 ## 🎯 Objectifs de la séance
 
-### Objectifs scientifiques (orientés usage)
+### Objectifs scientifiques (orientés usage professionnel)
 
-- **Utiliser correctement** les **unités** lors de l’exploitation d’un résultat expérimental
-- **Identifier** des **ordres de grandeur réalistes** en cosmétologie
-- **Exploiter** la notion d’**incertitude simple** associée à une mesure
-- **Distinguer** un résultat **cohérent** d’un résultat **aberrant**
+- Vérifier la **cohérence** d’un résultat expérimental
+- Utiliser correctement les **unités**
+- Mobiliser des **ordres de grandeur réalistes** en cosmétologie
+- Identifier un **résultat aberrant**
+- Comprendre l’intérêt d’un **ensemble de résultats** pour juger un produit
+- Mettre en évidence une **tendance expérimentale**
 
-### Objectifs méthodologiques (E2)
+---
 
-- **Vérifier** la cohérence d’une valeur expérimentale fournie
+### Objectifs méthodologiques (attendus E2)
+
+- **Analyser** des résultats expérimentaux fournis
+- **Comparer** plusieurs valeurs ou séries de données
 - **Critiquer** un résultat scientifique
-- Justifier l’**acceptabilité ou non** d’un résultat
-- Argumenter à partir de **données scientifiques** et du **contexte produit**
+- Identifier des **sources possibles d’erreur**
+- **Argumenter scientifiquement** une conclusion dans un contexte cosmétique
+- Communiquer une analyse claire, structurée et justifiée
 
 ---
 
 ## 🧠 Compétences travaillées
 
-- Analyser des résultats expérimentaux fournis
-- Mobiliser des **connaissances scientifiques de référence**
+- Mobiliser des connaissances scientifiques de référence
 - Vérifier la cohérence d’une mesure (unités, ordre de grandeur)
-- Identifier des **sources possibles d’erreur expérimentale**
-- Argumenter et **communiquer une critique scientifique structurée**
+- Analyser un **ensemble de résultats expérimentaux**
+- Identifier une **tendance** ou une **zone de saturation**
+- Exercer un regard critique sur des données scientifiques
+- Construire une **argumentation scientifique structurée**
+- Communiquer une conclusion professionnelle
+
+---
+
+## 📄 Organisation pédagogique de la séance
+
+La séance est structurée autour de deux axes complémentaires :
+
+1\. **Analyse de résultats isolés**  
+   - unités  
+   - ordres de grandeur  
+   - cohérence avec la nature du produit  
+
+2\. **Exploitation d’ensembles de résultats**  
+   - comparaison de données  
+   - identification de tendances  
+   - raisonnement global  
+   - justification d’un choix de formulation  
+
 
 ---
 
@@ -54,12 +98,24 @@ Cette séance constitue une **étape déterminante** dans la préparation à l�
 
 ---
 
-> **Remarque pédagogique – Épreuve E2**  
->  
-> Cette séance prépare explicitement les étudiants aux attendus de l’épreuve **E2 – Expertise scientifique et technologique**, dans laquelle un résultat expérimental ne peut jamais être accepté sans justification.  
->  
-> L’étudiant doit être capable :
-> - d’en **vérifier la cohérence**,  
-> - d’en **critiquer la validité**,  
-> - et d’en **argumenter l’acceptabilité**,  
-> en mobilisant des **unités**, des **ordres de grandeur** et des **références scientifiques** pertinentes.
+## 🧠 Lien explicite avec l’épreuve E2
+
+> À l’épreuve **E2 – Expertise scientifique et technologique**, le candidat doit exploiter des **résultats expérimentaux fournis**, en juger la **cohérence**, identifier des **tendances**, et **argumenter scientifiquement** une conclusion dans un contexte professionnel.
+
+Cette séance prépare explicitement les étudiants à :
+
+- ne pas accepter un résultat sans justification,
+- raisonner à partir de **plusieurs données**,
+- adopter une **posture d’expert scientifique**, attendue à l’examen.
+
+---
+
+## 🔗 Transition vers la suite de la progression
+
+Les compétences développées dans cette séance seront réinvesties dans :
+
+- l’analyse de résultats de **pH**, de **conductivité** et d’**absorbance**,
+- l’exploitation de **dossiers scientifiques complets**,
+- les **évaluations type E2**, nécessitant une analyse globale et argumentée.
+
+---
