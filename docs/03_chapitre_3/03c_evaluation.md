@@ -4,60 +4,70 @@ title: 03 🖊️ Évaluation formative
 ---
 
 # 03 – Concentration d’un actif cosmétique 🖊️  
-**Concentration massique – Calcul et interprétation**
+**Calcul, interprétation et sens chimique – Attendus BTS MECP / E2**
 
 ⏱️ Durée : 30 minutes  
-🎯 Objectif : vérifier la capacité à **calculer** et **interpréter** une concentration massique  
-📌 Évaluation formative – Attendus BTS MECP / E2
+🎯 Objectif : vérifier la capacité à **calculer**, **interpréter** et **argumenter** autour de la concentration d’un actif cosmétique  
+📌 Évaluation formative – Préparation à l’épreuve **E2 – Expertise scientifique et technologique**
 
 ---
 
 ## 🧴 Situation professionnelle
 
-Un laboratoire cosmétique développe un **sérum hydratant** à base d’acide hyaluronique.
+Un laboratoire cosmétique développe une **crème hydratante** contenant un actif apaisant.
 
-Lors d’un **contrôle qualité**, on souhaite vérifier si la quantité d’actif présente dans la formulation est **conforme aux attentes**.
+L’étiquette du produit mentionne :
 
----
+> **« 0,3 % d’allantoïne »**
 
-## Exercice 1 – Compréhension de l’information commerciale (4 points)
+Lors des essais en laboratoire, deux formulations contenant cet actif donnent des résultats différents en termes d’efficacité.
 
-Le sérum affiche la mention suivante :
-
-> **« Sérum à 20 % d’acide hyaluronique »**
-
-1\. Cette information est-elle :  
-
-   ☐ qualitative  ☐ quantitative  
-
-
-2\. Cette indication permet-elle de connaître **précisément** la concentration massique de l’actif ?  
-
-   ☐ Oui  ☐ Non  
-
-
-
-3\. Quelles **grandeurs scientifiques** sont nécessaires pour déterminer une concentration massique ?  
-
-<br>
-<br>
-
-4\. Expliquer en **une phrase** pourquoi l’indication « 20 % » n’est pas suffisante
-d’un point de vue scientifique.
-
-<br>
-<br>
+Le laboratoire souhaite vérifier la **cohérence scientifique** de la formulation avant validation.
 
 ---
 
-## Exercice 2 – Calcul de la concentration massique (8 points)
+## Exercice 1 – Lecture critique d’une information commerciale (5 points)
 
-On prélève un échantillon du sérum.
+1\. L’indication « 0,3 % » est-elle une information :  
+
+☐ qualitative  ☐ quantitative  
+
+
+
+2\. Cette indication permet-elle de connaître directement la **concentration massique** de l’actif ?  
+
+☐ Oui  ☐ Non  
+
+
+
+3\. Pour pouvoir calculer une concentration massique, quelles sont les **deux informations mesurables** dont on a besoin ? 
+
+<br>
+<br>
+
+4\. Expliquer, en **une ou deux phrases**, pourquoi l’indication « 0,3 % » est insuffisante pour décrire scientifiquement un actif cosmétique.
+
+<br>
+<br>
+<br>
+
+---
+
+📌 **Changement de contexte (données de laboratoire)**  
+Dans la suite, on étudie une **autre formulation** (sérum à l’acide hyaluronique) pour s’entraîner au calcul et à l’interprétation d’une **concentration massique** à partir de données mesurées.
+
+---
+
+## Exercice 2 – Calcul de la concentration massique (9 points)
+
+
+On analyse une formulation de crème.
+
 
 ### Données :
 
-- Masse d’acide hyaluronique : **4,0 g**  
-- Volume total de solution : **200 mL**
+- Masse d’allantoïne : **4,0 g**  
+- Volume total de crème : **200 mL**
 
 ---
 
@@ -86,41 +96,14 @@ On prélève un échantillon du sérum.
 
 ---
 
-## Exercice 3 – Interprétation scientifique (4 points)
+## Exercice 3 – Interprétation scientifique (6 points)
 
-Rédiger une **phrase complète d’interprétation** du résultat obtenu à l’exercice 2, en lien avec le produit cosmétique.
+Rédiger une **phrase complète d’interprétation**, en lien avec la formulation cosmétique étudiée.
 
 *Aide : commencez par*  
-**« La concentration massique de l’actif est de… »**
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+**« La concentration massique de l’actif est de … »**
 
-
----
-
-## Exercice 4 – Posture BTS / E2 (4 points)
-
-Un étudiant donne la réponse suivante :
-
-> *« La concentration est 20. »*
-
-1\. Cette réponse est-elle suffisante pour un niveau BTS ?  
-   ☐ Oui  ☐ Non  
-
-
-
-2\. Citer **deux éléments manquants** dans cette réponse.  
-<br>
-<br>
-<br>
-<br>
-
-3\. Proposer une **réponse correcte et complète**, conforme aux attentes BTS.  
 <br>
 <br>
 <br>
@@ -129,25 +112,47 @@ Un étudiant donne la réponse suivante :
 
 ---
 
-## 🔎 Barème indicatif 
+## Exercice 4 – Raisonnement à l’échelle chimique (6 points)
 
-- Exercice 1 : 4 points  
-- Exercice 2 : 8 points  
-- Exercice 3 : 4 points  
-- Exercice 4 : 4 points  
+Deux formulations différentes contiennent chacune **0,30 g d’actif**, mais l’une est jugée plus efficace que l’autre.
 
-📌 La **rédaction**, les **unités** et l’**interprétation** sont systématiquement valorisées.
+1\. Les deux formulations contiennent-elles la même **masse d’actif** ?  
+
+☐ Oui  ☐ Non  
+
+<br>
+
+2\. Peut-on affirmer qu’elles contiennent le **même nombre de molécules** d’actif ?  
+
+☐ Oui  ☐ Non  
+
+<br>
+
+3\. Expliquer, **sans utiliser de formule**, pourquoi deux actifs de même masse peuvent ne pas contenir le même nombre de molécules.
+
+<br>
+<br>
+<br>
+<br>
 
 ---
 
-## ✅ Auto-évaluation 
+## 🔎 Barème indicatif
 
-Cochez ce qui vous semble juste :
+- Exercice 1 : 5 points  
+- Exercice 2 : 9 points  
+- Exercice 3 : 6 points  
+- Exercice 4 : 6 points  
 
-☐ Je sais identifier les données utiles  
+📌 La **rédaction**, les **unités**, la **cohérence du raisonnement** et le **lien avec le contexte cosmétique** sont systématiquement valorisés.
+
+---
+
+## ✅ Auto-évaluation
+
+☐ Je sais critiquer une information commerciale  
 ☐ Je sais calculer une concentration massique  
-☐ Je pense à indiquer les unités  
+☐ Je pense aux unités  
 ☐ Je sais interpréter un résultat par écrit  
-☐ J’ai encore des difficultés à expliquer mon raisonnement
-
----
+☐ Je comprends pourquoi la masse seule ne suffit pas  
+☐ J’ai encore des difficultés à raisonner à l’échelle chimique
