@@ -17,6 +17,8 @@ Lors de la séance précédente, nous avons montré que certains produits cosmé
 
 En physique-chimie, un mélange homogène liquide est appelé une **solution**.
 
+**Remarque** : dans ce cours, le terme solution sera surtout utilisé pour les mélanges homogènes liquides, car c’est le cas le plus fréquent en cosmétique.
+
 ---
 
 ## 2️⃣ Solution
