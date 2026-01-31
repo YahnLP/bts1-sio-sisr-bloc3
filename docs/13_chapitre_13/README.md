@@ -3,7 +3,7 @@ author: ELP
 title: Séance 13 – Stabilité chimique : lecture de Lewis
 ---
 
-# 13 – Objectifs et ressources
+# 13 – Objectifs et ressources 
 
 Cette séance a pour objectif d’outiller les étudiants pour **analyser la stabilité chimique** d’espèces présentes en cosmétique, à partir d’indices microscopiques simples : **gaz nobles**, **représentations de Lewis**, **octet**, **radicaux (ROS)** et **liaisons fragiles O–O / S–S**.
 
