@@ -1,6 +1,6 @@
 # 01 – Objectifs et ressources
 
-Cette séance introductive a pour objectif d'installer les bases du **diagnostic scientifique d'un produit cosmétique** et du vocabulaire associé.
+Cette séance introductive a pour objectif d'installer les bases du **diagnostic scientifique d'un produit cosmétique** et du vocabulaire associé. 
 
 Les notions abordées (corps pur, mélange homogène/hétérogène, lecture INCI) seront réinvesties tout au long de l'année dans des situations professionnelles liées à la cosmétologie et à l'épreuve E2.
 
