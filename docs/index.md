@@ -138,10 +138,10 @@ La progression complète avec les compétences E2 travaillées à chaque séance
 | Ressource | Lien |
 |-----------|------|
 | 🚀 **Commencer** | [Séance 01 – Diagnostic d'un produit cosmétique](./01_Diagnostic_produit/) |
-| 📅 **Progression** | [Voir toutes les séances](./Progression/) |
+| 📅 **Progression** | [Voir toutes les séances](./Progression/progression.md) |
 | 🧠 **Méthodologie** | [Fiches méthode E2](./Methodologie/) |
 | 🔬 **TP** | [Travaux pratiques](./TP/) |
-| 📺 **Vidéos** | [Réviser en vidéo](./videos_recommandees/) |
+| 📺 **Vidéos** | [Réviser en vidéo](./videos_recommandees/videos_recommandees.md) |
 
 ---
 
