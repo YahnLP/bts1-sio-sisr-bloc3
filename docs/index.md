@@ -77,7 +77,7 @@ Chaque séance comprend :
 
 Une sélection de vidéos courtes (2-6 min) pour réviser chaque notion à votre rythme.
 
-➡️ [Accéder aux vidéos recommandées](./videos_recommandees/videos_recommandees.md)
+➡️ [Accéder aux vidéos recommandées](./000_videos_recommandees/videos_recommandees.md)
 
 ---
 
@@ -85,7 +85,7 @@ Une sélection de vidéos courtes (2-6 min) pour réviser chaque notion à votre
 
 La progression complète avec les compétences E2 travaillées à chaque séance.
 
-➡️ [Voir la progression](./Progression/progression.md)
+➡️ [Voir la progression](./00_Progression/progression.md)
 
 ---
 
@@ -138,9 +138,9 @@ La progression complète avec les compétences E2 travaillées à chaque séance
 | Ressource | Lien |
 |-----------|------|
 | 🚀 **Commencer** | [Séance 01 – Diagnostic d'un produit cosmétique](./01_Diagnostic_produit/) |
-| 📅 **Progression** | [Voir toutes les séances](./Progression/progression.md) |
+| 📅 **Progression** | [Voir toutes les séances](./00_Progression/progression.md) |
 | 🧠 **Méthodologie** | [Fiches méthode E2](./Methodologie/) |
-| 📺 **Vidéos** | [Réviser en vidéo](./videos_recommandees/videos_recommandees.md) |
+| 📺 **Vidéos** | [Réviser en vidéo](./000_videos_recommandees/videos_recommandees.md) |
 
 ---
 
