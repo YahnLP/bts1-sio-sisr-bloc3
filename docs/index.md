@@ -33,6 +33,7 @@ La physique-chimie n'est pas qu'une matière scolaire : c'est un **outil profess
 29 séances progressives, de la découverte des mélanges jusqu'à la préparation complète de l'épreuve E2.
 
 Chaque séance comprend :
+
 - Une **fiche élève** (activités guidées)
 - Une **trace écrite** (cours structuré)
 - Une **évaluation formative** (auto-évaluation)
