@@ -51,18 +51,21 @@ Les fiches ne remplacent pas le cours, elles servent de **repères méthodologiq
 
 | N° | Titre | Compétence E2 | Séances associées |
 |----|-------|---------------|-------------------|
-| 01 | Justifier une réponse scientifique | Argumenter, Communiquer | Toutes |
-| 02 | Calculer et interpréter une concentration | Mobiliser, Interpréter | S03, S04, S05 |
-| 03 | Exploiter un TP à l'écrit | Analyser, Communiquer | TP1, TP2, TP3, TP4 |
-| 04 | Choisir et justifier une dilution | Argumenter | S04, S05 |
-| 05 | Lire une représentation microscopique | Analyser, Mobiliser | S12, S13, S14, S17-S21 |
-| 06 | Interpréter une mesure physique | Interpréter | S07, S08, S16, S22-S25 |
+| 01 | Justifier (O.A.C.J.) | Argumenter, Communiquer | Toutes |
+| 02 | Calculer une concentration (D.U.C.I.) | Mobiliser, Interpréter | S03–S05 |
+| 03 | Exploiter un TP à l'écrit | Analyser, Interpréter, Communiquer | TP1–TP4 |
+| 04 | Choisir une dilution | Mobiliser, Argumenter | S04–S05 |
+| 05 | Lire une représentation microscopique | Analyser, Mobiliser | S12–S21 |
+| 06 | Lire une formule de Lewis | Mobiliser, Analyser | S12–S13 |
+| 07 | Exploiter un titrage | Mobiliser, Interpréter, Argumenter | S14–S15 |
+| 08 | Reconnaître les fonctions organiques | Mobiliser, Analyser | S19–S20 |
+| 09 | Lire un spectre | Analyser, Interpréter, Argumenter | S24 |
 
 ---
 
 ## 🧭 Conseils d'utilisation pour les étudiants
 
-1. **Lire** les fiches méthode **avant** chaque séance concernée
+1. **Lire** la fiche méthode **avant** la séance / le TP concerné
 2. **Garder** les fiches à portée de main pendant les évaluations
 3. **Utiliser** les structures de phrases proposées pour rédiger vos réponses
 4. **Vérifier** vos réponses avec les checklists fournies
@@ -82,17 +85,23 @@ Les fiches ne remplacent pas le cours, elles servent de **repères méthodologiq
 
 ### 📘 Fiches méthode
 
-➡️ [Fiche 01 – Justifier une réponse scientifique (PDF)](01_fiche_methode.pdf)
+➡️ [Fiche 01 – Justifier (O.A.C.J.) (PDF)](01_fiche_methode.pdf)
 
-➡️ [Fiche 02 – Calculer et interpréter une concentration (PDF)](02_fiche_methode.pdf)
+➡️ [Fiche 02 – Calculer une concentration (D.U.C.I.) (PDF)](02_fiche_methode.pdf)
 
 ➡️ [Fiche 03 – Exploiter un TP à l'écrit (PDF)](03_fiche_methode.pdf)
 
-➡️ [Fiche 04 – Choisir et justifier une dilution (PDF)](04_fiche_methode.pdf)
+➡️ [Fiche 04 – Choisir une dilution (PDF)](04_fiche_methode.pdf)
 
 ➡️ [Fiche 05 – Lire une représentation microscopique (PDF)](05_fiche_methode.pdf)
 
 ➡️ [Fiche 06 – Lire une formule de Lewis (PDF)](06_fiche_methode.pdf)
+
+➡️ [Fiche 07 – Exploiter un titrage (PDF)](07_fiche_methode.pdf)
+
+➡️ [Fiche 08 – Reconnaître les fonctions organiques (PDF)](08_fiche_methode.pdf)
+
+➡️ [Fiche 09 – Lire un spectre (PDF)](09_fiche_methode.pdf)
 
 ---
 
