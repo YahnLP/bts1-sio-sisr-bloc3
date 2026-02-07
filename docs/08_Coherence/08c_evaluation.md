@@ -18,7 +18,7 @@ Un élève a effectué les calculs suivants. Indiquez si chaque calcul est corre
 | 1 | ρ = m / V = 25 / 50 | 0,5 | g/mL | ☐ Oui ☐ Non |
 | 2 | m = ρ / V = 1,2 / 100 | 0,012 | g | ☐ Oui ☐ Non |
 | 3 | Cm = m / V = 2,5 / 0,05 | 50 | g/L | ☐ Oui ☐ Non |
-| 4 | F = Cf / Ci = 10 / 100 | 0,1 | — | ☐ Oui ☐ Non |
+| 4 | F = Cf / Cm = 10 / 100 | 0,1 | — | ☐ Oui ☐ Non |
 
 Pour les calculs incorrects, écrivez la bonne formule :
 
@@ -57,7 +57,7 @@ Un technicien mesure la densité d'un lait corporel à 5 reprises :
 
 <br><br>
 
-**3.2** Cette moyenne est-elle conforme au cahier des charges ? ( pt)
+**3.2** Cette moyenne est-elle conforme au cahier des charges ? (1 pt)
 
 ☐ Oui ☐ Non
 

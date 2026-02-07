@@ -13,7 +13,7 @@ Cette séance développe l'**esprit critique** face aux résultats expérimentau
 | **Analyse dimensionnelle** | Vérifier un calcul par ses unités |
 | **Ordre de grandeur** | Détecter une erreur grossière |
 | **Moyenne** | Calculer la valeur centrale d'une série |
-| **Écart-type** | Mesurer la dispersion des mesures |
+| **Dispersions simples** | Mesurer la dispersion des mesures |
 | **Valeur aberrante** | Identifier et traiter une mesure suspecte |
 
 ### Compétences E2 travaillées
