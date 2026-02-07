@@ -446,8 +446,9 @@ Avant de rendre votre travail, vérifiez :
 ## 🔗 Pour la suite de la progression
 
 Dans les **séances suivantes**, vous découvrirez :
-- **S10 (TP2)** : pH-métrie – Mesurer le pH et exploiter les résultats
-- **S11** : Évaluation n°2 (S01-S10)
+- **S10** : Évaluation type E2 (S01-S09)
+- **S14** : Acido-basicité appliquée à la cosmétique (couples, pKa, diagramme de prédominance)
+
 
 ---
 

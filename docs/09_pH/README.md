@@ -100,4 +100,5 @@ Cette séance introduit le **pH**, paramètre fondamental en cosmétique pour é
 
 ⬅️ Séance précédente : [S08 – Cohérence des résultats](../08_Coherence/)
 
-➡️ Séance suivante : [S10 (TP2) – pH-métrie](../10_TP2_pH/)
+➡️ Séance suivante : [S10 – Évaluation type E2](../10_Evaluation/)
+

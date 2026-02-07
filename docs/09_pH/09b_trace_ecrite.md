@@ -55,9 +55,9 @@ Le pH s'exprime par un **nombre sans unité**, généralement compris entre **0 
 │                                                             │
 │   📌 À RETENIR :                                           │
 │                                                             │
-│   • pH < 7  →  ACIDE                                       │
-│   • pH = 7  →  NEUTRE                                      │
-│   • pH > 7  →  BASIQUE                                     │
+│   • pH < 7  →  ACIDE                                        │
+│   • pH = 7  →  NEUTRE                                       │
+│   • pH > 7  →  BASIQUE                                      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -126,8 +126,8 @@ $$\boxed{pH_{peau} \approx 4,5 \text{ à } 5,5}$$
 │                                                             │
 │   📌 COMPATIBILITÉ CUTANÉE :                               │
 │                                                             │
-│   Un produit est bien toléré si son pH est proche          │
-│   du pH physiologique de la peau (4,5 à 5,5)               │
+│   Un produit est bien toléré si son pH est proche           │
+│   du pH physiologique de la peau (4,5 à 5,5)                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -242,10 +242,9 @@ Un **système tampon** stabilise le pH d'une formulation :
 
 | Séance | Réinvestissement |
 |--------|------------------|
-| **S10 (TP2)** | pH-métrie – Mesure pratique et exploitation |
-| **S11** | Évaluation n°2 (questions sur le pH) |
-| **S12** | Acides et bases (approfondissement théorique) |
-| **S13** | Réactions acido-basiques |
+| **S10** | Évaluation type E2 (exploitation de mesures, conformité) |
+| **S14** | Acido-basicité : couples acide-base, pKa, diagramme de prédominance |
+| **S15 (TP2)** | Titrage pH-métrique d'un acide cosmétique |
 
 ---
 
