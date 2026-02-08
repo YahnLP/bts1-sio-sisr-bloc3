@@ -132,7 +132,7 @@ La progression complète avec les compétences E2 travaillées à chaque séance
 
 
 
-## 🔄 Mises à jour
+### 🔄 Mises à jour
 
 
 En cas de problème d'accès ou de lien cassé, merci de le signaler en classe.
