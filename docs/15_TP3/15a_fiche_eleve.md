@@ -1,6 +1,6 @@
 ---
 author: ELP
-title: "15 📝 Fiche élève – Installation titrage et tampons"
+title: 15 📝 Fiche élève 
 ---
 
 # S15 – Titrage acido-basique et solutions tampons 📝

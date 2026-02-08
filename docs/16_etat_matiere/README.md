@@ -105,17 +105,7 @@ Cette séance introduit les **états de la matière**, le **diagramme d'état**,
 
 ---
 
-## ⚠️ Densité de S16
 
-> Cette séance couvre **4 thèmes** (états, diagramme, transferts, variabilité). La variabilité est un **approfondissement de S08** (où moyenne et étendue ont été vues), donc ce n'est pas from scratch. Les élèves ont déjà les bases statistiques : on ajoute σ et l'histogramme.
-
-### Ajustements possibles si le temps manque :
-
-- **Option A** (recommandée) : Faire le Travail 3 en **démonstration collective** (calcul de σ guidé au tableau, histogramme tracé ensemble)
-- **Option B** : Fournir σ pré-calculé dans le Travail 3, les élèves se concentrent sur l'interprétation
-- **Option C** : Reporter le Travail 3 (variabilité) en **début de S17** comme rappel (5 min)
-
----
 
 ## 📺 Pour réviser en vidéo
 
