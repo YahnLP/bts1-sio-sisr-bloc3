@@ -5,7 +5,7 @@ title: 16 – Objectifs et ressources
 
 # 16 – Objectifs et ressources
 
-Cette séance introduit les **états de la matière**, le **diagramme d'état**, les **transferts thermiques** et approfondit la **variabilité statistique** (écart-type, histogramme). Les élèves apprennent à relier température et pression aux conditions de procédé (fabrication, conservation) et à évaluer la fiabilité d'une série de mesures.
+Cette séance introduit les **états de la matière**, le **diagramme d'état**, les **transferts thermiques** et approfondit la **variabilité statistique** (écart-type, histogramme). 
 
 ---
 
@@ -139,11 +139,3 @@ Cette séance introduit les **états de la matière**, le **diagramme d'état**,
 | **S26** | Transformations chimiques → influence de T sur la cinétique |
 
 ---
-
-## 📋 Correspondance Référentiel
-
-| Thème du référentiel | Couverture dans S16 |
-|---------------------|---------------------|
-| Caractéristiques physico-chimiques : diagramme d'état | ✅ Lecture et interprétation |
-| Transferts d'énergie (thermique) | ✅ Conduction, convection, rayonnement |
-| Variabilité de la mesure | ✅ Approfondissement (σ, histogramme) |
