@@ -101,6 +101,8 @@ Cette deuxième évaluation porte sur l'ensemble des **bases expérimentales et 
 | pH neutre | **7** | Équilibre H⁺/OH⁻ |
 | ρ eau pure | **1,00 g/mL** | Référence pour comparaison |
 
+> Repère BTS : le pH est lié aux ions **H₃O⁺** et suit une échelle **logarithmique** (×10 ↔ ±1 unité).
+
 ---
 
 ## 💡 Conseils de révision

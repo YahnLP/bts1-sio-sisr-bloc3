@@ -165,6 +165,9 @@ title: 10 📋 Checklist E2 – Évaluation n°2
 | ☐ | Comparé au **pH physiologique de la peau** (4,5-5,5) |
 | ☐ | Conclu sur la **compatibilité cutanée** |
 | ☐ | Fait le lien avec le **film hydrolipidique** |
+| ☐ | Je sais que le pH est lié à la concentration en ions **H₃O⁺** (oxonium) |
+| ☐ | Je sais qu’une variation de **1 unité de pH** correspond à un facteur **10** sur **[H₃O⁺]** (échelle logarithmique) |
+
 
 ## 🆕 Interprétation de la masse volumique
 
