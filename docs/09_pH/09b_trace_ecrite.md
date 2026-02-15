@@ -36,17 +36,15 @@ $$\boxed{pH = -\log\left([H_3O^+]\right)}$$
 
 ## 2️⃣ L'échelle de pH
 
+
+
 ### Valeurs et domaines
 
 Le pH s'exprime par un **nombre sans unité**, généralement compris entre **0 et 14** (à 25°C).
 
-```
-      ACIDE                    NEUTRE                   BASIQUE
-        ◄─────────────────────────┼─────────────────────────►
-        
-   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
-   ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
-```
+<p align="center">
+  <img src="./images/ph_scale.png" alt="Échelle de pH" width="70%">
+</p>
 
 ### Classification
 
@@ -208,6 +206,11 @@ Pour vérifier si un produit est conforme :
 | Acide phosphorique | Hydroxyde de potassium (KOH) |
 
 ### Systèmes tampons
+
+<p align="center">
+  <img src="./images/predominance_schema.png" alt="Schéma de prédominance pH / pKa" width="70%">
+</p>
+
 
 Un **système tampon** stabilise le pH d'une formulation :
 
