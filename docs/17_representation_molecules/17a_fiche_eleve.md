@@ -453,6 +453,6 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique les trois modes de rep
 
 ## 🔗 Lien avec la suite
 
-⬅️ Séance précédente : [S16 – États de la matière, changements d'état et transferts thermiques](../16_etats_matiere/)
+⬅️ Séance précédente : [S16 – États de la matière, changements d'état et transferts thermiques](../16_etat_matiere/)
 
 ➡️ Séance suivante : [S18 – Isomérie de constitution](../18_isomerie/)

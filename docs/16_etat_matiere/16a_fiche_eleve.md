@@ -349,4 +349,4 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique comment les états de 
 
 ⬅️ Séance précédente : [S15 – TP2 : Titrage pH-métrique](../15_TP2/)
 
-➡️ Séance suivante : [S17 – Représentations des molécules organiques](../17_representations_organiques/)
+➡️ Séance suivante : [S17 – Représentations des molécules organiques](../17_representation_molecules/)
