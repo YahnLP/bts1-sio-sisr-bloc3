@@ -1,7 +1,3 @@
----
-author: ELP
-title: 23 🧭 README
----
 
 # 23 – Objectifs et ressources
 
