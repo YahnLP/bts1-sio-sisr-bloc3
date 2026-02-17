@@ -16,7 +16,7 @@ title: 24 📝 Fiche élève
 - **situer** les domaines UV et visible dans le spectre électromagnétique
 - **définir** l'absorbance A et la transmittance T
 - **énoncer** et **utiliser** la loi de Beer-Lambert : A = ε × l × C
-- **lire** un spectre d'absorption UV-visible (λ_max, allure)
+- **lire** un spectre d'absorption UV-visible ($λ_{max}$, allure)
 - **relier** absorbance et concentration pour un dosage spectrophotométrique
 - **interpréter** des résultats de mesure pour conclure sur la conformité
 
@@ -53,14 +53,12 @@ Les **ondes électromagnétiques** (EM) se propagent dans le vide à la vitesse 
 
 Elles sont classées par longueur d'onde λ (ou fréquence f) :
 
-```
-  Rayons γ   Rayons X     UV      VISIBLE      IR      Micro-ondes   Radio
-  ◄──────────────────────────────────────────────────────────────────────►
-  λ petit                                                      λ grand
-  E élevée                                                     E faible
-                         │         │           │
-                      10 nm    400 nm       800 nm
-```
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/onde_EM.png" alt="spectre électromagnétique" style="width:95%;">
+  <br>
+  <em>Spectre électromagnétique</em>
+</p>
+
 
 #### Les domaines UV et visible en détail
 
@@ -89,14 +87,12 @@ Elles sont classées par longueur d'onde λ (ou fréquence f) :
 
 Un spectrophotomètre mesure la quantité de lumière **absorbée** par un échantillon.
 
-```
-┌──────────┐   ┌───────────────┐   ┌──────────┐   ┌──────────────┐   ┌───────────┐
-│  LAMPE   │ → │ MONOCHROMATEUR │ → │   CUVE   │ → │  DÉTECTEUR   │ → │ AFFICHAGE │
-│ (UV/vis) │   │ (sélection λ) │   │ (l = 1cm)│   │ (mesure I)   │   │   A, T    │
-└──────────┘   └───────────────┘   └──────────┘   └──────────────┘   └───────────┘
-                                        │
-                              Échantillon en solution
-```
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/Spectrophotometer.png" alt="Spectrophotomètre" style="width:95%;">
+  <br>
+  <em>Principe d'un spectrophotomètre</em>
+</p>
+
 
 1. La **lampe** émet un faisceau de lumière (UV ou visible)
 2. Le **monochromateur** sélectionne une seule longueur d'onde λ
@@ -109,10 +105,11 @@ Un spectrophotomètre mesure la quantité de lumière **absorbée** par un écha
 | Grandeur | Symbole | Formule | Unité |
 |----------|:-------:|:-------:|:-----:|
 | **Transmittance** | T | T = I / I₀ | Sans unité (ou %) |
-| **Absorbance** | A | A = −log(T) | Sans unité |
+| **Absorbance** | A | A = −$log_{10}$(T) = $log_{10}$(I₀/I) | Sans unité |
 
 - I₀ = intensité incidente (lumière envoyée)
 - I = intensité transmise (lumière qui ressort)
+- ⚠️ Si **T** est exprimée en **%**, convertir : **T = T(%) / 100** avant d'utiliser **$log_{10}$**.
 - Si l'échantillon absorbe beaucoup : I petit → T petit → **A grand**
 - Si l'échantillon n'absorbe pas : I ≈ I₀ → T ≈ 1 → **A ≈ 0**
 
@@ -122,45 +119,27 @@ Un spectrophotomètre mesure la quantité de lumière **absorbée** par un écha
 
 #### Spectre 1 : Avobenzone (filtre UVA)
 
-```
-  A ↑
-    │
-2,0 │         ╭──╮
-    │        ╱    ╲
-1,5 │       ╱      ╲
-    │      ╱        ╲
-1,0 │     ╱          ╲
-    │    ╱            ╲
-0,5 │   ╱              ╲
-    │  ╱                ╲───
-0,0 │─╱──────────────────────────
-    └────────────────────────────► λ (nm)
-     280  300  320  340  360  380  400  420
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/avobenzone.png" alt="Avobenzone" style="width:75%;">
+  <br>
+  <em>Spectre de l'Avobenzone</em>
+</p>
 
-              λ_max ≈ 360 nm (domaine UVA)
-```
+👉 $λ_{max}$ ≈ 360 nm (domaine UVA)
+
 
 **Interprétation :** L'avobenzone absorbe fortement les UVA (pic à 360 nm) → c'est un **filtre UVA** efficace.
 
 #### Spectre 2 : β-carotène (colorant orange)
 
-```
-  A ↑
-    │
-2,0 │
-    │            ╭──╮
-1,5 │           ╱    ╲
-    │          ╱      ╲
-1,0 │         ╱        ╲
-    │        ╱          ╲
-0,5 │───────╱            ╲──────
-    │                          
-0,0 │──────────────────────────────
-    └──────────────────────────────► λ (nm)
-     350  380  410  440  470  500  530
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/carotene.png" alt="Carotène" style="width:75%;">
+  <br>
+  <em>Spectre du β-carotène</em>
+</p>
 
-              λ_max ≈ 450 nm (domaine visible : bleu-violet)
-```
+👉 $λ_{max}$ ≈ 450 nm (domaine visible : bleu-violet)
+
 
 **Interprétation :** Le β-carotène absorbe le bleu-violet (450 nm) → il apparaît de la couleur complémentaire = **orange**. Utilisé comme colorant alimentaire et cosmétique.
 
@@ -168,7 +147,7 @@ Un spectrophotomètre mesure la quantité de lumière **absorbée** par un écha
 
 | Ce qu'on cherche | Comment le trouver |
 |------------------|-------------------|
-| **λ_max** | Sommet du pic (valeur de λ au maximum d'absorption) |
+| **$λ_{max}$** | Sommet du pic (valeur de λ au maximum d'absorption) |
 | **Domaine** | UV (< 400 nm) ou visible (400-800 nm) |
 | **Usage** | UV → filtre solaire ; visible → colorant |
 
@@ -183,15 +162,15 @@ L'absorbance A d'une solution est **proportionnelle** à la concentration C de l
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│               A = ε × l × C                                 │
+│               A = ε × l × C                                  │
 │                                                              │
-│   A : absorbance (sans unité)                               │
-│   ε : coefficient d'absorption molaire (L·mol⁻¹·cm⁻¹)     │
-│   l : longueur de la cuve (cm) – en général l = 1 cm       │
-│   C : concentration molaire (mol·L⁻¹)                      │
+│   A : absorbance (sans unité)                                │
+│   ε : coefficient d'absorption molaire (L·mol⁻¹·cm⁻¹)        │
+│   l : longueur de la cuve (cm) – en général l = 1 cm         │
+│   C : concentration molaire (mol·L⁻¹)                        │
 │                                                              │
 │   Relations dérivées :                                       │
-│   C = A / (ε × l)        ε = A / (l × C)                  │
+│   C = A / (ε × l)        ε = A / (l × C)                     │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -237,14 +216,14 @@ La loi de Beer-Lambert est valable si :
 Pour doser un actif dans un produit cosmétique, on utilise une **courbe d'étalonnage** :
 
 1. On prépare des **solutions étalons** de concentration connue
-2. On mesure l'**absorbance** de chaque étalon à λ_max
+2. On mesure l'**absorbance** de chaque étalon à $λ_{max}$
 3. On trace la courbe **A = f(C)** → droite passant par l'origine
 4. On mesure l'absorbance de l'**échantillon inconnu**
 5. On lit la concentration par **lecture graphique**
 
 #### Exemple : dosage de l'acide salicylique
 
-**Contexte :** On dose l'acide salicylique dans un exfoliant. λ_max = 303 nm.
+**Contexte :** On dose l'acide salicylique dans un exfoliant. $λ_{max}$ = 303 nm.
 
 **Solutions étalons :**
 
@@ -254,28 +233,18 @@ Pour doser un actif dans un produit cosmétique, on utilise une **courbe d'étal
 
 **Courbe d'étalonnage :**
 
-```
-  A ↑
-    │
-1,0 │                              •
-    │                          ╱
-0,8 │                      • ╱
-    │                    ╱
-0,6 │                • ╱
-    │    - - - - A_éch = 0,50 - -
-0,4 │          • ╱  │
-    │        ╱      │
-0,2 │    • ╱        │
-    │  ╱            │
-0,0 •───────────────┼─────────────► C (mg/L)
-    0    5   10  13,9  15   20   25
-                  ↑
-              C_éch ≈ 13,9 mg/L
-```
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/courbe_etalonnage.png" alt="Corbe d'étalonnage" style="width:85%;">
+  <br>
+  <em>Courbe d'étalonnage</em>
+</p>
+
+👉 $C_{éch}$ ≈ 13,9 mg/L
+
 
 **Cahier des charges :** Acide salicylique : 12 à 16 mg/L
 
-**Conclusion :** C_éch ≈ 13,9 mg/L. Cette valeur est comprise dans l'intervalle [12 ; 16] mg/L → le produit est **conforme** au cahier des charges.
+**Conclusion :** $C_{éch}$ ≈ 13,9 mg/L. Cette valeur est comprise dans l'intervalle [12 ; 16] mg/L → le produit est **conforme** au cahier des charges.
 
 ---
 
@@ -336,7 +305,7 @@ Complétez le tableau comparatif :
 À partir du **Document 2**, légendez les 5 éléments du spectrophotomètre :
 
 ```
-┌─────①─────┐   ┌──────②──────┐   ┌───③────┐   ┌────④────┐   ┌───⑤───┐
+┌─────①──────┐   ┌──────②───────┐   ┌───③────┐   ┌────④────┐   ┌───⑤───┐
 │            │ → │              │ → │        │ → │         │ → │       │
 └────────────┘   └──────────────┘   └────────┘   └─────────┘   └───────┘
 ```
@@ -349,13 +318,13 @@ Complétez le tableau comparatif :
 
 À partir du **Document 3** :
 
-a) **Spectre de l'avobenzone :** Déterminez λ_max et le domaine d'absorption (UV ou visible).
+a) **Spectre de l'avobenzone :** Déterminez $λ_{max}$ et le domaine d'absorption (UV ou visible).
 
-λ_max = _________ nm → domaine : __________
+$λ_{max}$ = _________ nm → domaine : __________
 
-b) **Spectre du β-carotène :** Déterminez λ_max et la couleur de la molécule.
+b) **Spectre du β-carotène :** Déterminez $λ_{max}$ et la couleur de la molécule.
 
-λ_max = _________ nm → domaine : __________
+$λ_{max}$ = _________ nm → domaine : __________
 
 Couleur absorbée : __________ → Couleur observée : __________
 
@@ -381,7 +350,7 @@ Formule : A = _________ × _________ × _________
 
 ### 3.2 – Calcul direct
 
-On mesure l'absorbance d'une solution de panthenol à λ_max = 210 nm dans une cuve de l = 1 cm.
+On mesure l'absorbance d'une solution de panthenol à $λ_{max}$ = 210 nm dans une cuve de l = 1 cm.
 
 **Données :** A = 0,85 ; ε = 170 L·mol⁻¹·cm⁻¹ ; l = 1 cm.
 
@@ -421,7 +390,7 @@ L'absorbance mesurée pour l'échantillon d'exfoliant est A_éch = 0,50 (à λ =
 
 a) Déterminez la concentration en acide salicylique par lecture graphique sur la courbe du Document 5.
 
-C_éch = _________ mg/L
+$C_{éch}$ = _________ mg/L
 
 b) Décrivez la méthode de lecture graphique en 2-3 lignes :
 
@@ -447,7 +416,7 @@ Conclusion : ...................................................................
 
 ### 4.3 – Réflexion
 
-Pourquoi mesure-t-on toujours l'absorbance à **λ_max** et pas à une autre longueur d'onde ? (2-3 lignes)
+Pourquoi mesure-t-on toujours l'absorbance à **$λ_{max}$** et pas à une autre longueur d'onde ? (2-3 lignes)
 
 <br><br><br>
 
@@ -457,7 +426,7 @@ Pourquoi mesure-t-on toujours l'absorbance à **λ_max** et pas à une autre lon
 
 Rédigez une synthèse de **8 à 12 lignes** qui explique le principe de la spectrophotométrie UV-visible, la loi de Beer-Lambert, et son utilisation pour doser un actif cosmétique.
 
-**Mots obligatoires à utiliser** : spectre électromagnétique, UV, absorbance, Beer-Lambert, concentration, courbe d'étalonnage, λ_max, conformité.
+**Mots obligatoires à utiliser** : spectre électromagnétique, UV, absorbance, Beer-Lambert, concentration, courbe d'étalonnage, $λ_{max}$, conformité.
 
 <br><br><br><br><br><br><br><br>
 
@@ -467,7 +436,7 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique le principe de la spec
 
 **Situation :** Une collègue stagiaire au laboratoire CQ vous demande :
 
-> *« Pourquoi faut-il mesurer à λ_max et pas à n'importe quelle longueur d'onde ? »*
+> *« Pourquoi faut-il mesurer à $λ_{max}$ et pas à n'importe quelle longueur d'onde ? »*
 
 **Rédigez une réponse professionnelle (4 à 6 lignes).**
 
@@ -484,7 +453,7 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique le principe de la spec
 | Définir l'absorbance A | ☐ | ☐ | ☐ | ☐ |
 | Énoncer la loi de Beer-Lambert | ☐ | ☐ | ☐ | ☐ |
 | Utiliser A = ε × l × C pour un calcul | ☐ | ☐ | ☐ | ☐ |
-| Lire un spectre UV-vis (trouver λ_max) | ☐ | ☐ | ☐ | ☐ |
+| Lire un spectre UV-vis (trouver $λ_{max}$) | ☐ | ☐ | ☐ | ☐ |
 | Utiliser une courbe d'étalonnage | ☐ | ☐ | ☐ | ☐ |
 | Conclure sur la conformité d'un dosage | ☐ | ☐ | ☐ | ☐ |
 
@@ -508,6 +477,6 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique le principe de la spec
 
 ## 🔗 Lien avec la suite
 
-⬅️ Séance précédente : [S23 – Appareils à ondes : ultrasons](../23_ultrasons/)
+⬅️ Séance précédente : ⬅️ Séance précédente : [S23 – Appareils à ondes : ultrasons](../23_spectroscopie/)
 
-➡️ Séance suivante : [S25 – TP Spectrophotométrie (dosage d'un actif)](../25_TP_spectrophotometrie/)
+➡️ Séance suivante : [S25 – Choisir et sécuriser un appareil](../25_securite/)

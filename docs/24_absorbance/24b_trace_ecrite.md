@@ -78,7 +78,9 @@ Un spectrophotomètre mesure la quantité de lumière **absorbée** par un écha
 | Grandeur | Symbole | Définition | Unité |
 |----------|:-------:|------------|:-----:|
 | **Transmittance** | T | Fraction de lumière transmise : T = I/I₀ | Sans unité |
-| **Absorbance** | A | Mesure de la lumière absorbée : A = −log(T) | Sans unité |
+| **Absorbance** | A | Mesure de la lumière absorbée : A = −$log_{10}$(T) = $log_{10}$(I₀/I) | Sans unité |
+
+> ⚠️ Si **T** est exprimée en **%**, convertir : **T = T(%) / 100** avant d'utiliser **$log_{10}$**.
 
 **Signification :**
 - Si l'échantillon absorbe beaucoup → A grand (solution foncée, concentrée)
@@ -96,7 +98,7 @@ Un **spectre d'absorption** est le graphe de l'absorbance A en fonction de la lo
 
 | Élément | Comment le trouver | Signification |
 |---------|-------------------|---------------|
-| **λ_max** | Sommet du pic (maximum d'absorption) | Longueur d'onde où la mesure est la plus sensible |
+| **$λ_{max}$** | Sommet du pic (maximum d'absorption) | Longueur d'onde où la mesure est la plus sensible |
 | **Domaine** | UV (< 400 nm) ou visible (> 400 nm) | Détermine l'usage (filtre UV ou colorant) |
 
 ### Lien spectre – couleur
@@ -123,12 +125,12 @@ L'absorbance A d'une solution est **proportionnelle** à la concentration C de l
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│               A = ε × l × C                                 │
+│               A = ε × l × C                                  │
 │                                                              │
-│   A : absorbance (sans unité)                               │
-│   ε : coefficient d'absorption molaire (L·mol⁻¹·cm⁻¹)     │
-│   l : longueur de la cuve (cm) – en général l = 1 cm       │
-│   C : concentration molaire (mol·L⁻¹)                      │
+│   A : absorbance (sans unité)                                │
+│   ε : coefficient d'absorption molaire (L·mol⁻¹·cm⁻¹)        │
+│   l : longueur de la cuve (cm) – en général l = 1 cm         │
+│   C : concentration molaire (mol·L⁻¹)                        │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -146,12 +148,12 @@ L'absorbance A d'une solution est **proportionnelle** à la concentration C de l
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│   ⚠️  Si la CONCENTRATION DOUBLE → l'ABSORBANCE DOUBLE     │
+│   ⚠️  Si la CONCENTRATION DOUBLE → l'ABSORBANCE DOUBLE      │
 │                                                              │
-│   Analogie du thé :                                         │
-│   1 sachet → couleur claire (A faible)                      │
-│   2 sachets → couleur 2× plus foncée (A double)             │
-│   3 sachets → couleur 3× plus foncée (A triple)             │
+│   Analogie du thé :                                          │
+│   1 sachet → couleur claire (A faible)                       │
+│   2 sachets → couleur 2× plus foncée (A double)              │
+│   3 sachets → couleur 3× plus foncée (A triple)              │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -160,7 +162,7 @@ L'absorbance A d'une solution est **proportionnelle** à la concentration C de l
 
 La loi de Beer-Lambert est valable si :
 - La solution est **diluée** (A < 2)
-- La lumière est **monochromatique** (une seule λ, de préférence λ_max)
+- La lumière est **monochromatique** (une seule λ, de préférence $λ_{max}$)
 - La solution est **homogène**
 
 ---
@@ -170,34 +172,28 @@ La loi de Beer-Lambert est valable si :
 ### Méthode en 5 étapes
 
 1. Préparer des **solutions étalons** de concentration connue
-2. Mesurer l'**absorbance** de chaque étalon à λ_max
+2. Mesurer l'**absorbance** de chaque étalon à $λ_{max}$
 3. Tracer la courbe **A = f(C)** → droite passant par l'origine
 4. Mesurer l'absorbance de l'**échantillon inconnu** (A_éch)
-5. **Lecture graphique** : trait horizontal → droite → trait vertical → C_éch
+5. **Lecture graphique** : trait horizontal → droite → trait vertical → $C_{éch}$
 
 ### Lecture graphique
 
-```
-  A ↑
-    │                           •
-    │                       ╱
-    │                   • ╱
-    │    - - - A_éch - - -│
-    │               • ╱   │
-    │           ╱         │
-    │       • ╱           │
-    │   ╱                 │
-    • ────────────────────┼──────► C
-    0                   C_éch
-```
+<p style="text-align:center;">
+  <img src="/24_absorbance/images/courbe_etalonnage.png" alt="Corbe d'étalonnage" style="width:85%;">
+  <br>
+  <em>Courbe d'étalonnage</em>
+</p>
+
+
 
 ### Conclusion de conformité
 
 | Étape | Action |
 |-------|--------|
-| 1 | Déterminer C_éch par lecture graphique |
-| 2 | Rappeler l'intervalle du cahier des charges [C_min ; C_max] |
-| 3 | Comparer : C_min ≤ C_éch ≤ C_max ? |
+| 1 | Déterminer $C_{éch}$ par lecture graphique |
+| 2 | Rappeler l'intervalle du cahier des charges [$C_{min}$ ; $C_{max}$] |
+| 3 | Comparer : $C_{min}$ ≤ $C_{éch}$ ≤ $C_{max}$ ? |
 | 4 | Conclure : **conforme** (dans l'intervalle) ou **non conforme** |
 
 ---
@@ -207,20 +203,20 @@ La loi de Beer-Lambert est valable si :
 │                                                                 │
 │   📌 À RETENIR – DOSAGE SPECTROPHOTOMÉTRIQUE :                 │
 │                                                                 │
-│   • Mesurer TOUJOURS à λ_max (sensibilité maximale)            │
-│   • Loi de Beer-Lambert : A = ε × l × C                       │
-│   • Courbe d'étalonnage : droite A = f(C) par l'origine       │
-│   • Lecture graphique : horizontal → droite → vertical         │
-│   • Conformité : C_éch ∈ [C_min ; C_max] du CDC               │
+│   • Mesurer TOUJOURS à $λ_{max}$ (sensibilité maximale)         │
+│   • Loi de Beer-Lambert : A = ε × l × C                         │
+│   • Courbe d'étalonnage : droite A = f(C) par l'origine         │
+│   • Lecture graphique : horizontal → droite → vertical          │
+│   • Conformité : $C_{éch}$ ∈ [$C_{min}$ ; $C_{max}$] du CDC     |          │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 7️⃣ Pourquoi mesurer à λ_max ?
+## 7️⃣ Pourquoi mesurer à $λ_{max}$ ?
 
-À λ_max, l'absorbance est **maximale** → meilleure **sensibilité** :
+À $λ_{max}$, l'absorbance est **maximale** → meilleure **sensibilité** :
 
 - Petite variation de C → variation mesurable de A → dosage **précis**
 - À une autre λ, A serait plus faible → difficile de distinguer deux concentrations proches → dosage **imprécis**
@@ -235,10 +231,10 @@ La loi de Beer-Lambert est valable si :
 |-------|------------|
 | **Onde EM** | Perturbation qui se propage sans milieu matériel |
 | **Absorbance A** | Grandeur sans unité mesurant la lumière absorbée |
-| **λ_max** | Longueur d'onde du maximum d'absorption |
+| **$λ_{max}$** | Longueur d'onde du maximum d'absorption |
 | **Loi de Beer-Lambert** | A = ε × l × C (proportionnalité A ↔ C) |
 | **Courbe d'étalonnage** | Droite A = f(C) permettant de doser un inconnu |
-| **Filtre UV** | Molécule qui absorbe les UV (λ_max dans le domaine UV) |
+| **Filtre UV** | Molécule qui absorbe les UV ($λ_{max}$ dans le domaine UV) |
 | **Spectrophotomètre** | Appareil mesurant l'absorbance d'un échantillon |
 
 ### Règles pratiques
@@ -246,15 +242,15 @@ La loi de Beer-Lambert est valable si :
 | Règle | Application |
 |-------|-------------|
 | A ↑ quand C ↑ | Proportionnalité Beer-Lambert |
-| λ_max = sommet du pic | Lecture de spectre |
-| Mesure à λ_max | Meilleure sensibilité pour le dosage |
+| $λ_{max}$ = sommet du pic | Lecture de spectre |
+| Mesure à $λ_{max}$ | Meilleure sensibilité pour le dosage |
 | Droite par l'origine | Vérification de la loi de Beer-Lambert |
-| C_éch ∈ [C_min ; C_max] → conforme | Conclusion de contrôle qualité |
+| $C_{éch}$ ∈ [$C_{min}$ ; $C_{max}$] → conforme | Conclusion de contrôle qualité |
 
 ### Vocabulaire à maîtriser
 
 - **Spectre électromagnétique** – **UV, UVA, UVB, UVC** – **Visible, IR**
-- **Absorbance, transmittance** – **λ_max**
+- **Absorbance, transmittance** – **$λ_{max}$**
 - **Spectrophotomètre** – **Monochromateur, cuve, détecteur**
 - **Loi de Beer-Lambert** – **ε, l, C**
 - **Courbe d'étalonnage** – **Lecture graphique**
@@ -269,7 +265,6 @@ La loi de Beer-Lambert est valable si :
 | **S03** | Concentration massique → ici : dosage par spectrophotométrie |
 | **S05** | Échelle de teinte → ici : courbe d'étalonnage (même logique, plus précis) |
 | **S23** | Ondes mécaniques (US) → ici : ondes EM (c = λ × f identique) |
-| **S25** | TP Spectrophotométrie → appliquer Beer-Lambert au laboratoire |
 | **COSMÉTO S24** | Preuves d'efficacité → documents instrumentaux (spectres) |
 | **COSMÉTO S25** | Analyse résultats expérimentaux → dosage spectrophotométrique |
 
