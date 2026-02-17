@@ -43,7 +43,7 @@ title: 26 📖 Trace écrite
 | **Température** | +10 °C ≈ vitesse de réaction × 2 | Conserver au frais (15-25 °C) |
 | **Lumière (UV)** | Casse les liaisons chimiques (photolyse) | Flacon opaque ou ambré, étui carton |
 | **O₂ (air)** | Oxydation des lipides insaturés et des actifs | Packaging airless, azotage, antioxydants |
-| **pH** | Accélère l'hydrolyse, déstabilise les émulsions | Tamponnage du pH |
+| **pH** | Accélère l'hydrolyse, déstabilise les émulsions | Tamponnement du pH |
 | **Micro-organismes** | Contamination bactérienne, levures, moisissures | Conservateurs, PAO, hygiène de prélèvement |
 
 ---

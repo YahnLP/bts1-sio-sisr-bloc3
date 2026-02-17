@@ -55,10 +55,10 @@ Une réaction chimique transforme des **réactifs** en **produits**. On l'écrit
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│              Réactifs    →    Produits                        │
+│              Réactifs    →    Produits                       │
 │                                                              │
-│   Règle : conservation de la matière                        │
-│   = autant d'atomes de chaque élément à gauche et à droite │
+│   Règle : conservation de la matière                         │
+│   = autant d'atomes de chaque élément à gauche et à droite   │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -92,7 +92,7 @@ Ester + H₂O → Acide + Alcool
 | **Température** | Accélère toutes les réactions chimiques (+10 °C ≈ vitesse ×2) | Déphasage, odeur, changement de texture | Conserver au frais (15-25 °C), éviter chaleur |
 | **Lumière (UV)** | Casse les liaisons chimiques (photolyse) | Décoloration, perte d'efficacité des actifs | Flacon opaque ou ambré, étui carton |
 | **O₂ (air)** | Oxydation des lipides insaturés et des actifs | Rancissement, brunissement, odeur rance | Packaging airless, azotage, antioxydants |
-| **pH** | Accélère l'hydrolyse, déstabilise les émulsions | Déphasage, modification de texture | Tamponnage, contrôle pH en production |
+| **pH** | Accélère l'hydrolyse, déstabilise les émulsions | Déphasage, modification de texture | Tamponnement, contrôle du pH en production |
 | **Micro-organismes** | Bactéries, levures, moisissures se développent | Odeur suspecte, changement de couleur, moisissures | Conservateurs, PAO, hygiène de prélèvement |
 
 ---
@@ -106,16 +106,16 @@ Un **catalyseur** est une substance qui **accélère** une réaction chimique **
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│   Sans catalyseur :   Réactifs ──────(lent)──────→ Produits    │
+│   Sans catalyseur :   Réactifs ──────(lent)──────→ Produits     │
 │                                                                 │
-│   Avec catalyseur :   Réactifs ──(rapide)──→ Produits          │
+│   Avec catalyseur :   Réactifs ──(rapide)──→ Produits           │
 │                            ↑                                    │
 │                        catalyseur                               │
-│                    (non consommé)                                │
+│                    (non consommé)                               │
 │                                                                 │
 │   📌 Le catalyseur ne change PAS les réactifs ni les produits. │
 │      Il accélère la réaction en abaissant l'énergie             │
-│      d'activation (= l'énergie minimale pour démarrer).        │
+│      d'activation (= l'énergie minimale pour démarrer).         │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -142,19 +142,19 @@ Le catalyseur, c'est comme un **raccourci en montagne** : la montagne reste la m
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   INITIATION                                                │
-│   O₂ ou radical libre attaque la double liaison C=C        │
-│   → formation d'un radical lipidique R•                    │
+│   O₂ ou radical libre attaque la double liaison C=C         │
+│   → formation d'un radical lipidique R•                     │
 │                          ↓                                  │
-│   PROPAGATION (réaction en chaîne)                         │
-│   R• + O₂ → ROO• (radical peroxyde)                       │
-│   ROO• + lipide → ROOH + R• (nouveau radical)             │
-│   → la chaîne continue !                                   │
+│   PROPAGATION (réaction en chaîne)                          │
+│   R• + O₂ → ROO• (radical peroxyde)                         │
+│   ROO• + lipide → ROOH + R• (nouveau radical)               │
+│   → la chaîne continue !                                    │
 │                          ↓                                  │
 │   TERMINAISON                                               │
-│   2 radicaux se neutralisent → arrêt de la chaîne         │
+│   2 radicaux se neutralisent → arrêt de la chaîne           │
 │                                                             │
-│   Produits finaux : aldéhydes, cétones, acides courts      │
-│   → odeur RANCE + irritation + changement de couleur       │
+│   Produits finaux : aldéhydes, cétones, acides courts       │
+│   → odeur RANCE + irritation + changement de couleur        │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -186,15 +186,15 @@ Un **antioxydant** « piège » les radicaux libres en leur donnant un atome d'h
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│   ⚠️  NE PAS CONFONDRE :                                      │
+│   ⚠️  NE PAS CONFONDRE :                                       │
 │                                                                 │
 │   ANTIOXYDANT                    CONSERVATEUR                   │
-│   Protège contre l'OXYDATION     Protège contre les MICROBES   │
-│   (réaction chimique avec O₂)    (contamination biologique)    │
-│   Ex : vitamine E, BHT           Ex : phénoxyéthanol, acide   │
-│                                   benzoïque, sorbate K         │
+│   Protège contre l'OXYDATION     Protège contre les MICROBES    │
+│   (réaction chimique avec O₂)    (contamination biologique)     │
+│   Ex : vitamine E, BHT           Ex : phénoxyéthanol, acide     │
+│                                   benzoïque, sorbate K          │
 │                                                                 │
-│   Les deux sont COMPLÉMENTAIRES dans une formulation.          │
+│   Les deux sont COMPLÉMENTAIRES dans une formulation.           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -415,6 +415,5 @@ Rédigez une synthèse de **8 à 12 lignes** qui explique pourquoi un produit co
 
 ## 🔗 Lien avec la suite
 
-⬅️ Séance précédente : [S25 – Choisir et sécuriser un appareil](../25_securite_appareils/)
+⬅️ Séance précédente : [S25 – Choisir et sécuriser un appareil](../25_securite/)
 
-➡️ Séance suivante : [S27 – Bilan et préparation de l'évaluation](../27_bilan/)
