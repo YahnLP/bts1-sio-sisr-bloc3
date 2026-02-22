@@ -35,8 +35,8 @@ theme:
   font: false # RGPD ; pas de fonte Google
 
   # ⚠️ Si ces fichiers n'existent pas dans docs/images/, commente ces 2 lignes
-  #favicon: images/icon-bts-physique2.png
-  #logo: images/BTS.png
+  favicon: images/logo-b1.png
+  logo: images/logo-b1.png
 
   # ⚠️ Si ce dossier n'existe pas à la racine, commente cette ligne
   custom_dir: my_theme_customizations/
