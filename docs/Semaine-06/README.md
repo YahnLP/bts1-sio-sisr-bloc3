@@ -6,11 +6,11 @@
 | **Champ** | **Détail** |
 |-----------|-----------|
 | **Semaine** | S6 — Année 1 |
-| **Bloc** | Bloc 1 — Support et mise à disposition de services informatiques |
+| **Bloc** | Bloc 2 — Volet juridique RGPD |
 | **Durée totale** | 4 heures |
 | **Public** | Apprentis BTS SIO SISR — sixième semaine |
-| **Modalité** | Présentiel — salle TP (accès réseau, serveur GLPI disponible) |
-| **Prérequis** | S3 (ITIL, tickets), S5 (OCS Inventory, inventaire automatisé) |
+| **Modalité** | Présentiel — salle de cours avec accès internet |
+| **Prérequis** | S5 BLOC 2 (définitions RGPD, acteurs, 6 principes) |
 
 ---
 
@@ -18,12 +18,11 @@
 
 | **Code** | **Intitulé de la compétence** | **Niveau visé** |
 |----------|-------------------------------|-----------------|
-| **B1.3** | Mettre en place et exploiter des outils de support et d'assistance | Maîtrise |
-| **B1.4** | Mettre en place et exploiter des outils de gestion de parc | Maîtrise |
-| **B1.6** | Assurer le support des utilisateurs | Acquisition |
-| **B1.2** | Exploiter des référentiels, normes et standards (ITIL) | Maîtrise |
+| **B2.1** | Comprendre les obligations légales liées au traitement de données personnelles | Maîtrise |
+| **B2.2** | Identifier les acteurs de la protection des données | Maîtrise |
+| **B2.3** | Appliquer les principes du RGPD dans un contexte professionnel | Acquisition |
 
-> 📌 **S6 est la séance de convergence du Bloc 1.** GLPI réunit tout ce qui a été vu depuis S2 : l'inventaire de parc (S2-S5), le vocabulaire ITIL (S3), le cycle de vie des incidents (S3-S4), et l'automatisation OCS (S5). C'est aussi l'outil que les apprenants utiliseront pour documenter les projets à venir. Il doit être installé et maîtrisé avant d'entrer dans le Bloc 2.
+> 📌 **S6 BLOC 2 approfondit les mécanismes opérationnels du RGPD.** Après les fondamentaux de S5 (définitions, acteurs), on passe à la **pratique** : comment collecter des données légalement ? Qu'est-ce qu'un consentement valide ? Comment un technicien IT implémente-t-il la transparence ? Et comment traiter les demandes de droits des personnes ?
 
 ---
 
@@ -31,14 +30,14 @@
 
 À l'issue de cette séance, l'apprenant sera capable de :
 
-**Installation et configuration :**
-- ✅ Décrire l'**architecture GLPI** (serveur web, base de données, PHP, agents)
-- ✅ Naviguer dans l'interface GLPI et configurer les **catégories, priorités et SLA**
-- ✅ Créer des **profils utilisateurs** (technicien, administrateur, utilisateur final)
-- ✅ Configurer le **lien OCS → GLPI** via le plugin d'import
+**Collecte et bases légales :**
+- ✅ Détailler les **6 bases légales** du traitement (focus consentement et intérêt légitime)
+- ✅ Définir un **consentement valide** (libre, spécifique, éclairé, univoque)
+- ✅ Identifier les **formes de consentement** valides et invalides
+- ✅ Comprendre l'obligation de **transparence** (mentions d'information)
 
-**Gestion des tickets :**
-- ✅ Créer un ticket d'incident et un ticket de demande dans GLPI
-- ✅ **Catégoriser, affecter, suivre, résoudre et clôturer** un ticket
-- ✅ Lier un ticket à un **actif inventorié** (CI importé d'OCS)
-- ✅ Consulter les **statistiques et tableaux de bord** GLPI
+**Droits des personnes :**
+- ✅ Maîtriser les **4 droits principaux** : accès, rectification, opposition, portabilité
+- ✅ Connaître les **délais** de réponse et les procédures
+- ✅ Savoir **traiter techniquement** une demande de droit (export, suppression, correction)
+- ✅ Identifier les **exceptions** légales aux droits

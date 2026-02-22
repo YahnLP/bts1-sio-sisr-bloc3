@@ -4,7 +4,7 @@ title: 📚 FICHE DE COURS
 ---
 
 # 📚 FICHE DE COURS ÉLÈVE
-## "OCS Inventory — Gestion de Parc Automatisée"
+## "RGPD · Contexte · Définitions Fondamentales"
 
 *Version 1.0 — BTS SIO SISR — Année 1 — Semaine 5*
 
@@ -14,209 +14,395 @@ title: 📚 FICHE DE COURS
 
 | **Code** | **Compétence** |
 |----------|---------------|
-| **B1.1** | Recenser et identifier les ressources numériques |
-| **B1.4** | Mettre en place et exploiter des outils de gestion de parc |
+| **B2.1** | Comprendre les obligations légales liées au traitement de données personnelles |
+| **B2.2** | Identifier les acteurs de la protection des données |
 
 ---
 
-## PARTIE I — Pourquoi Automatiser l'Inventaire ?
+## PARTIE I — Contexte et Historique du RGPD
 
-En S2, vous avez rempli manuellement la fiche technique d'un seul poste — cela a pris 30 à 45 minutes. Projetons cette expérience à l'échelle :
+### I.A. Avant le RGPD : La Directive de 1995
 
-| **Taille du parc** | **Inventaire manuel** | **Inventaire automatisé** |
-|---|---|---|
-| 1 poste | 45 min | 2 min (installation agent) |
-| 50 postes | 37h30 (1 semaine) | 2h (déploiement agent en masse) |
-| 200 postes | 150h (1 mois) | 4h (déploiement GPO ou script) |
-| 1 000 postes | — (irréaliste) | ½ journée |
-
-**Trois problèmes supplémentaires de l'inventaire manuel :**
-
-1. **L'information vieillit dès qu'elle est écrite.** Une mise à jour Windows, un ajout de RAM, un changement de disque — la fiche manuelle est déjà obsolète.
-2. **L'inventaire n'est jamais exhaustif.** On oublie des postes, des imprimantes réseau, des équipements dans des armoires.
-3. **Aucune alerte sur les changements.** Si quelqu'un installe un logiciel non autorisé ou retire une barrette de RAM, on ne le sait pas.
-
-La **gestion de parc automatisée** résout ces trois problèmes : les agents remontent les informations périodiquement, l'inventaire se met à jour sans intervention humaine, et les modifications sont traçables.
-
----
-
-## PARTIE II — OCS Inventory NG
-
-### II.A. Présentation
-
-**OCS Inventory NG** (Open Computer and Software Inventory Next Generation) est un logiciel **open source** de gestion d'inventaire de parc informatique. Il est utilisé par des milliers d'organisations dans le monde, particulièrement en France où il est très répandu dans les collectivités et PME.
-
-| **Paramètre** | **Valeur** |
-|---|---|
-| **Licence** | GPL v2 (open source — gratuit) |
-| **Site officiel** | ocsinventory-ng.org |
-| **Éditeur communautaire** | OCS Inventory Team |
-| **Systèmes supportés (agent)** | Windows, Linux, macOS, Android, AIX, Solaris |
-| **Technologies serveur** | Apache + PHP + MySQL/MariaDB |
-| **Intégration** | GLPI (via plugin FusionInventory) |
-
----
-
-### II.B. Architecture Client/Serveur
+Avant le RGPD, la protection des données personnelles en Europe était régie par une **directive de 1995** (Directive 95/46/CE).
 
 ```
-   ┌─────────────────────────────────────────────────────────────────┐
-   │                    ARCHITECTURE OCS INVENTORY                    │
-   │                                                                 │
-   │   POSTES DU PARC                  SERVEUR OCS                  │
-   │   ─────────────                  ───────────                   │
-   │                                                                 │
-   │  PC Windows ──────── HTTPS ──────►┌─────────────────┐          │
-   │  PC Linux   ──────── HTTPS ──────►│  Serveur Apache │          │
-   │  Mac        ──────── HTTPS ──────►│  PHP            │          │
-   │  Laptop     ──────── HTTPS ──────►│  MySQL/MariaDB  │          │
-   │                                   └────────┬────────┘          │
-   │   ↑                                        │                   │
-   │   Agent OCS                                ▼                   │
-   │   installé sur                    ┌─────────────────┐          │
-   │   chaque poste                    │  Console Web    │          │
-   │                                   │  ocsreports     │          │
-   │                                   │  (navigateur)   │          │
-   │                                   └─────────────────┘          │
-   │                                          ↑                     │
-   │                                   Admin DSI                    │
-   └─────────────────────────────────────────────────────────────────┘
-```
-
-*Légende : Architecture OCS Inventory. L'agent installé sur chaque poste collecte les informations matérielles et logicielles, puis les envoie au serveur OCS via HTTPS. Le serveur stocke les données dans MySQL. L'administrateur accède aux inventaires via la console web `ocsreports`. Le protocole HTTPS garantit la confidentialité des données de parc en transit.*
-
----
-
-### II.C. Fonctionnement de l'Agent
-
-L'**agent OCS** est un service (daemon) qui s'exécute en arrière-plan sur chaque poste. Ses actions :
-
-```
-   DÉMARRAGE DU POSTE
-         │
-         ▼
-   Agent OCS démarre
-   (service Windows ou cron Linux)
-         │
-         ▼
-   Collecte des informations :
-   • Matériel (CPU, RAM, disques, cartes réseau...)
-   • OS (version, patches installés, clé de licence)
-   • Logiciels (liste complète avec versions)
-   • Réseau (IP, MAC, VLAN si disponible)
-   • Périphériques connectés
-         │
-         ▼
-   Comparaison avec le dernier inventaire envoyé
-   (changements uniquement si "ipdiscover" ou delta)
-         │
-         ▼
-   Envoi au serveur OCS via HTTPS (XML compressé)
-   URL : http(s)://[serveur]/ocsinventory
-         │
-         ▼
-   Serveur stocke en base de données
-   Console web mise à jour
+   PROBLÈMES DE LA DIRECTIVE 1995
+   ═══════════════════════════════════════════════════════════════
+   
+   ① FRAGMENTÉE
+   ──────────────────────────────────────────────────────────────
+   Chaque pays l'appliquait différemment
+   → 28 lois nationales différentes
+   → Entreprises : "On s'installe en Irlande, réglementation plus souple"
+   
+   ② OBSOLÈTE
+   ──────────────────────────────────────────────────────────────
+   Rédigée en 1995 → Avant Google, Amazon, Facebook, smartphone
+   → Ne prenait pas en compte le Big Data, les réseaux sociaux,
+     le profilage, le cloud
+   
+   ③ SANCTIONS INSUFFISANTES
+   ──────────────────────────────────────────────────────────────
+   Maximum : quelques milliers d'euros selon les pays
+   → Facebook, Google : Pas dissuasif du tout
 ```
 
 ---
 
-### II.D. Ce qu'OCS Inventory Collecte
+### I.B. Le RGPD : Naissance et Adoption
 
-| **Catégorie** | **Informations collectées** |
-|---|---|
-| **Matériel** | CPU (modèle, fréquence, cœurs), RAM (capacité, slots), Disques (modèle, taille, type), Carte mère, BIOS (version, date), Carte réseau (MAC, IP, type) |
-| **Système** | OS (nom, version, build, langue), Clé de licence OS, Domaine/groupe de travail, Nom du poste, Uptime |
-| **Logiciels** | Liste complète avec éditeur, version, date d'installation, chemin |
-| **Réseau** | Toutes les interfaces (IP, masque, MAC, VLAN) |
-| **Périphériques** | Moniteurs (marque, résolution), Imprimantes, Ports (USB, PCI...) |
-| **Sécurité** | Antivirus détecté, pare-feu, mises à jour manquantes (optionnel) |
+**RGPD** = **R**èglement **G**énéral sur la **P**rotection des **D**onnées
 
-> 📌 **Point sécurité :** OCS Inventory collecte des informations potentiellement sensibles (configuration du réseau, logiciels installés, parfois clés de licence). Le serveur OCS doit être sécurisé (HTTPS, authentification forte, accès restreint) et les données traitées conformément au RGPD.
-
----
-
-### II.E. Avantages et Limites
-
-| **Avantages** | **Limites** |
-|---|---|
-| ✅ Inventaire automatique et périodique | ❌ Nécessite un agent sur chaque poste |
-| ✅ Détection des changements | ❌ Agent = charge CPU/RAM (légère) |
-| ✅ 100% open source et gratuit | ❌ Interface web vieillissante |
-| ✅ Multi-OS (Windows, Linux, Mac) | ❌ Pas de gestion native des licences avancée |
-| ✅ Intégration GLPI (via plugin) | ❌ Nécessite un serveur dédié |
-| ✅ API REST disponible | ❌ Configuration initiale complexe |
-| ✅ Très répandu en France | ❌ Alternatives plus modernes existent (Lansweeper, Rudder) |
-
----
-
-### II.F. OCS et GLPI — L'Écosystème Complet
-
-OCS Inventory et GLPI fonctionnent souvent ensemble dans les organisations françaises :
+En anglais : **GDPR** (General Data Protection Regulation)
 
 ```
-   OCS INVENTORY                      GLPI
-   ─────────────                      ────
-   Collecte automatique   ──────────► Reçoit l'inventaire
-   des données matérielles            via plugin FusionInventory
-   et logicielles                     ou import natif
-
-                                       + Gestion des tickets
-                                       + CMDB relationnelle
-                                       + Gestion des licences
-                                       + Base de connaissances
-                                       + Planification
-                                       + Rapports SLA
-```
-
-> 💡 **En entreprise :** On dit souvent "on est sous GLPI + OCS". GLPI est l'outil de gestion (tickets, actifs, CMDB), OCS est le collecteur automatique qui l'alimente. L'un sans l'autre est moins efficace.
-
----
-
-### II.G. Commandes de l'Agent Windows
-
-```cmd
-:: Forcer un inventaire immédiat (lancer depuis le répertoire d'installation)
-"C:\Program Files\OCS Inventory Agent\OCSInventory.exe" /np /server:[IP_SERVEUR]
-
-:: Forcer un inventaire avec logs détaillés
-"C:\Program Files\OCS Inventory Agent\OCSInventory.exe" /np /server:[IP_SERVEUR] /debug /logfile:C:\Temp\ocs_debug.log
-
-:: Vérifier le service Windows OCS
-sc query OCS_AGENT
-Get-Service -Name "OCS_AGENT"
-
-:: Voir les logs de l'agent
-type "C:\ProgramData\OCS Inventory Agent\OCSInventory.log"
+   CHRONOLOGIE
+   ═══════════════════════════════════════════════════════════════
+   
+   2012 : La Commission européenne propose le RGPD
+   ──────────────────────────────────────────────────────────────
+   Après les révélations Snowden (2013) sur la surveillance
+   massive de la NSA → Réactions européennes
+   
+   27 AVRIL 2016 : RGPD adopté par le Parlement européen
+   ──────────────────────────────────────────────────────────────
+   Règlement n°2016/679 — publié au Journal Officiel de l'UE
+   
+   MAI 2016 : Entrée en vigueur (publication)
+   ──────────────────────────────────────────────────────────────
+   Période de transition : 2 ans pour se mettre en conformité
+   
+   25 MAI 2018 : APPLICATION OBLIGATOIRE
+   ──────────────────────────────────────────────────────────────
+   Toutes les organisations concernées DOIVENT être conformes
+   → Début des contrôles et sanctions
 ```
 
 ---
 
-### II.H. Comparaison des Outils de Gestion de Parc
+### I.C. Portée du RGPD
 
-| **Outil** | **Type** | **Inventaire Auto** | **Tickets** | **CMDB** | **Coût** |
-|---|---|---|---|---|---|
-| **OCS Inventory** | Open source | ✅ (agent) | ❌ | ❌ | Gratuit |
-| **GLPI seul** | Open source | ❌ (manuel) | ✅ | ✅ | Gratuit |
-| **GLPI + OCS** | Open source | ✅ | ✅ | ✅ | Gratuit |
-| **Lansweeper** | Freemium | ✅ (agentless) | ❌ | Limité | Free/<100 |
-| **SCCM/Intune** | Microsoft | ✅ (agent) | ❌ | ✅ | Inclus M365 |
-| **ServiceNow** | SaaS | ✅ | ✅ | ✅ | Très élevé |
+**Qui est concerné ?**
+
+```
+   CHAMP D'APPLICATION TERRITORIAL
+   ═══════════════════════════════════════════════════════════════
+   
+   ① Toute organisation ÉTABLIE dans l'UE
+   ──────────────────────────────────────────────────────────────
+   Exemple : Une PME française, une multinationale allemande,
+             une startup belge
+   
+   ② Toute organisation HORS UE qui traite des données
+      de personnes SE TROUVANT dans l'UE
+   ──────────────────────────────────────────────────────────────
+   Exemple : Amazon USA qui vend en France
+             Google Californie qui collecte données d'internautes français
+             Netflix qui propose des services en Europe
+   
+   → Le RGPD a une portée MONDIALE pour toute activité
+     ciblant les résidents européens
+```
+
+**Résumé :**
+- ✅ PME française → RGPD
+- ✅ Multinationale américaine avec clients en France → RGPD
+- ✅ Association loi 1901 qui gère des adhérents → RGPD
+- ✅ Auto-entrepreneur avec liste clients → RGPD
+- ❌ Fichier purement personnel (carnet d'adresses privé) → Pas RGPD
 
 ---
 
-## III. Vocabulaire Clé
+## PARTIE II — Qu'est-ce qu'une Donnée Personnelle ?
 
-| **Terme** | **Définition** |
-|-----------|---------------|
-| **Agent OCS** | Logiciel installé sur chaque poste qui collecte et envoie les données au serveur |
-| **Serveur OCS** | Serveur central qui reçoit, stocke et expose les inventaires |
-| **ocsreports** | Interface web d'administration d'OCS Inventory |
-| **XML** | Format de données utilisé par l'agent pour envoyer l'inventaire |
-| **ipdiscover** | Fonctionnalité OCS qui scanne le réseau pour détecter des équipements non inventoriés |
-| **FusionInventory** | Plugin GLPI permettant l'intégration avec OCS Inventory |
-| **Inventaire delta** | Envoi uniquement des modifications depuis le dernier inventaire (optimisation réseau) |
-| **Agentless** | Inventaire sans agent — utilise des protocoles réseau (SNMP, WMI) à distance |
-| **SNMP** | Protocole permettant l'inventaire à distance des équipements réseau |
-| **WMI** | Windows Management Instrumentation — interface Windows pour l'administration distante |
+### II.A. Définition Officielle
 
+**Article 4 du RGPD :**
+
+> *"Toute information se rapportant à une personne physique identifiée ou identifiable."*
+
+**Décomposons :**
+
+```
+   ANALYSE DE LA DÉFINITION
+   ═══════════════════════════════════════════════════════════════
+   
+   "TOUTE INFORMATION"
+   ──────────────────────────────────────────────────────────────
+   Peu importe le format :
+   • Texte (nom, adresse, email)
+   • Image (photo, vidéo)
+   • Son (enregistrement vocal)
+   • Données techniques (IP, cookie, géolocalisation)
+   • Données biologiques (ADN, empreinte)
+   
+   "PERSONNE PHYSIQUE"
+   ──────────────────────────────────────────────────────────────
+   Uniquement les HUMAINS (pas les entreprises)
+   • Une personne vivante (les morts : règles spéciales)
+   • Un individu (pas une organisation)
+   
+   "IDENTIFIÉE OU IDENTIFIABLE"
+   ──────────────────────────────────────────────────────────────
+   ① IDENTIFIÉE : On sait directement qui c'est
+      Exemple : Nom + Prénom
+   
+   ② IDENTIFIABLE : On peut retrouver qui c'est en croisant des infos
+      Exemple : Plaque d'immatriculation → fichier SIV → nom du propriétaire
+```
+
+---
+
+### II.B. Exemples : Donnée Personnelle ou Non ?
+
+```
+   EXEMPLES
+   ═══════════════════════════════════════════════════════════════
+
+   ✅ DONNÉES PERSONNELLES
+   ──────────────────────────────────────────────────────────────
+   • Nom et prénom                     → Direct (identifié)
+   • Adresse email                     → Direct (identifié)
+   • Numéro de téléphone               → Direct (identifié)
+   • Adresse postale                   → Direct (identifié)
+   • Date de naissance                 → Combiné = identifiable
+   • Photo de visage                   → Identifié (reconnaissance)
+   • Adresse IP                        → Identifiable (fournisseur)
+   • Numéro de sécurité sociale        → Direct (unique)
+   • Plaque d'immatriculation          → Identifiable (SIV)
+   • Données de géolocalisation        → Identifiable (domicile/travail)
+   • Cookie de navigation              → Identifiable (profil)
+   • Prénom uniquement (Monsieur Jean) → Identifiable (contexte)
+   • Voix enregistrée                  → Identifiable (reconnaissance)
+
+   ❌ PAS DES DONNÉES PERSONNELLES
+   ──────────────────────────────────────────────────────────────
+   • "Homme, 35-40 ans, Paris" (non identifiable sans autre info)
+   • Données anonymisées irréversiblement
+     (impossible de retrouver la personne)
+   • Données d'une entreprise (SIRET, raison sociale)
+   • Statistiques globales ("70% des Français...")
+```
+
+---
+
+### II.C. L'Anonymisation vs la Pseudonymisation
+
+**Deux techniques, deux niveaux de protection :**
+
+```
+   ANONYMISATION
+   ═══════════════════════════════════════════════════════════════
+   
+   Définition : Modification irréversible des données
+               → Impossible de retrouver la personne
+   
+   Exemple :
+   AVANT : Jean Dupont, né le 12/03/1985, Paris 75012
+   APRÈS : Personne de sexe masculin, 39 ans, habitant Paris
+   
+   Conditions strictes :
+   ① Individualisation impossible (isoler une personne)
+   ② Liaison impossible (relier deux enregistrements)
+   ③ Inférence impossible (déduire des infos sur une personne)
+   
+   Résultat : PLUS soumis au RGPD (données non personnelles)
+   
+   ⚠️ L'anonymisation vraie est TRÈS difficile à atteindre
+      Des études ont montré que 87% des Américains sont
+      identifiables uniquement avec code postal + date naissance + sexe
+   
+   
+   PSEUDONYMISATION
+   ═══════════════════════════════════════════════════════════════
+   
+   Définition : Remplacement des identifiants par un pseudonyme
+               → Possible de retrouver la personne avec la clé
+   
+   Exemple :
+   AVANT : Jean Dupont, jean.dupont@email.fr
+   APRÈS : ID_48291, user_a7x@temp.local
+   
+   La clé de correspondance est stockée séparément et sécurisée.
+   
+   Résultat : TOUJOURS soumis au RGPD (mais risque réduit)
+              Bonne pratique recommandée par le RGPD
+```
+
+---
+
+### II.D. Les Données Sensibles (Catégories Particulières)
+
+**Certaines données méritent une protection RENFORCÉE** car leur divulgation peut causer des préjudices graves.
+
+```
+   ARTICLE 9 DU RGPD — CATÉGORIES PARTICULIÈRES
+   ═══════════════════════════════════════════════════════════════
+   
+   LES 9 CATÉGORIES INTERDITES (en principe)
+   ──────────────────────────────────────────────────────────────
+   
+   ① Origines raciales ou ethniques
+   ② Opinions politiques
+   ③ Convictions religieuses ou philosophiques
+   ④ Appartenance syndicale
+   ⑤ Données génétiques (ADN)
+   ⑥ Données biométriques (empreintes, reconnaissance faciale)
+   ⑦ Données de santé
+   ⑧ Vie sexuelle ou orientation sexuelle
+   ⑨ Données relatives aux condamnations pénales
+   
+   RÈGLE : INTERDITES par défaut
+   SAUF si l'une des exceptions légales s'applique
+   (consentement explicite, nécessité médicale, recherche...)
+   
+   EXEMPLES CONCRETS
+   ──────────────────────────────────────────────────────────────
+   • Médecin collectant le groupe sanguin d'un patient → Donnée santé ✅ Exception médicale
+   • Employeur demandant les opinions politiques d'un candidat → ❌ INTERDIT
+   • Syndicat gérant ses membres → Appartenance syndicale ✅ Exception (organisation)
+   • Application de rencontres → Orientation sexuelle ✅ Exception (consentement explicite)
+   • Logiciel RH avec mesure biométrique (badge empreinte) → ❌ Besoin accord CNIL
+```
+
+---
+
+## PARTIE III — Les 6 Principes Fondamentaux du RGPD
+
+**Article 5 du RGPD — Les données personnelles doivent être :**
+
+### Principe 1 — Licéité, Loyauté, Transparence
+
+```
+   LICÉITÉ : La collecte doit avoir une BASE LÉGALE
+   ──────────────────────────────────────────────────────────────
+   6 bases légales possibles :
+   1. Consentement de la personne
+   2. Exécution d'un contrat
+   3. Obligation légale
+   4. Sauvegarde des intérêts vitaux
+   5. Mission d'intérêt public
+   6. Intérêts légitimes du responsable
+   
+   LOYAUTÉ : Pas de tromperie sur l'usage des données
+   ──────────────────────────────────────────────────────────────
+   ❌ Collecter des données pour "améliorer le service"
+      mais les revendre en réalité
+   
+   TRANSPARENCE : La personne doit être informée
+   ──────────────────────────────────────────────────────────────
+   ✅ Politique de confidentialité claire et accessible
+   ✅ Information au moment de la collecte
+```
+
+---
+
+### Principe 2 — Limitation des Finalités
+
+```
+   Données collectées pour une finalité précise
+   NE PEUVENT PAS être utilisées pour autre chose
+   
+   ❌ EXEMPLE DE VIOLATION
+   ──────────────────────────────────────────────────────────────
+   Clinique collecte adresses email pour envoyer des rappels de RDV
+   → Revend ces emails à une société pharmaceutique pour publicité
+   → VIOLATION (finalité différente de celle annoncée)
+   
+   ✅ EXEMPLE CONFORME
+   ──────────────────────────────────────────────────────────────
+   E-commerce collecte adresse pour livraison
+   → Utilise l'adresse uniquement pour livrer la commande
+   → OK (finalité respectée)
+```
+
+---
+
+### Principe 3 — Minimisation des Données
+
+```
+   Collecter uniquement ce qui est STRICTEMENT NÉCESSAIRE
+   
+   ❌ EXEMPLE DE VIOLATION
+   ──────────────────────────────────────────────────────────────
+   Formulaire d'inscription newsletter :
+   • Nom ✅ (nécessaire)
+   • Prénom ✅ (nécessaire)
+   • Email ✅ (nécessaire)
+   • Date de naissance ❌ (pas nécessaire pour newsletter)
+   • Numéro de téléphone ❌ (pas nécessaire pour newsletter)
+   • Adresse postale ❌ (pas nécessaire pour newsletter)
+   
+   ✅ EXEMPLE CONFORME
+   ──────────────────────────────────────────────────────────────
+   Formulaire d'inscription newsletter :
+   • Prénom ✅ (pour personnaliser "Bonjour Jean")
+   • Email ✅ (pour envoyer la newsletter)
+   
+   → SEULEMENT 2 champs suffisent
+```
+
+---
+
+### Principe 4 — Exactitude
+
+```
+   Les données doivent être EXACTES et à JOUR
+   
+   Obligations :
+   ✅ Mettre à jour les données qui changent
+   ✅ Effacer les données incorrectes
+   ✅ Permettre aux personnes de corriger leurs données
+   
+   Exemple : Base clients d'un e-commerce
+   → Si un client change d'adresse, l'ancienne doit être mise à jour
+   → Garder une ancienne adresse inexacte = violation
+```
+
+---
+
+### Principe 5 — Limitation de Conservation
+
+```
+   Les données ne peuvent pas être conservées INDÉFINIMENT
+   → Durée de conservation proportionnelle à la finalité
+   
+   EXEMPLES DE DURÉES LÉGALES
+   ──────────────────────────────────────────────────────────────
+   Données clients (e-commerce) : 3 ans après dernier achat
+   Données RH (fiches salaire) : 5 ans après fin contrat
+   Données comptables : 10 ans (obligation légale)
+   Vidéosurveillance : 30 jours maximum
+   Logs système : 1 an (recommandation CNIL)
+   Cookies : 13 mois maximum
+   
+   OBLIGATION
+   ──────────────────────────────────────────────────────────────
+   Définir une durée de conservation AVANT de collecter
+   → Et respecter cette durée (purger les données expirées)
+```
+
+---
+
+### Principe 6 — Intégrité et Confidentialité (Sécurité)
+
+```
+   Les données doivent être PROTÉGÉES contre :
+   • Accès non autorisé
+   • Divulgation accidentelle
+   • Perte / Destruction
+   • Altération
+   
+   MESURES TECHNIQUES ET ORGANISATIONNELLES
+   ──────────────────────────────────────────────────────────────
+   ✅ Chiffrement des données (AES-256)
+   ✅ Contrôle des accès (droits minimaux)
+   ✅ Sauvegardes régulières
+   ✅ Politique de mots de passe robustes
+   ✅ Formation des employés
+   ✅ Tests de pénétration réguliers
+   
+   → CE PRINCIPE CONCERNE DIRECTEMENT LES TECHNICIENS IT !
+```
+
+---

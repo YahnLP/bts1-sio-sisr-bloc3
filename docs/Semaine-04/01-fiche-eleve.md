@@ -4,312 +4,507 @@ title: 📚 FICHE DE COURS
 ---
 
 # 📚 FICHE DE COURS ÉLÈVE
+## "Stratégies de Sauvegarde · Types · Comparaison"
+
+*Version 1.0 — BTS SIO SISR — Année 1 — Semaine 4*
+
+---
 
 ## 🎯 Compétences Travaillées
 
 | **Code** | **Compétence** |
 |----------|---------------|
-| **B1.3** | Exploiter des outils de support (tickets, base de connaissances) |
-| **B1.6** | Assurer le support des utilisateurs |
-| **B3.3** | Documenter et communiquer professionnellement |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base |
+| **B1.7** | Assurer la disponibilité des services informatiques |
 
 ---
 
-## PARTIE I — Cycle de Vie Complet d'un Incident
+## PARTIE I — Pourquoi Sauvegarder ?
 
-### I.A. Les 7 Étapes
+### I.A. Les 5 Causes de Perte de Données
 
 ```
-   ① SIGNALEMENT          ② ENREGISTREMENT        ③ QUALIFICATION
-   ─────────────          ─────────────────        ───────────────
-   Utilisateur            Ticket ouvert            Catégorie
-   contacte le      →     dans l'outil       →     Priorité (P1-P4)
-   support                ITSM                     Impact / Urgence
-   (tel, mail,            Toutes les               Niveau attribué
-   portail)               infos collectées         (N1/N2/N3)
+   CAUSES DE PERTE DE DONNÉES (Statistiques 2023)
+   ═══════════════════════════════════════════════════════════════
+   
+   ① PANNE MATÉRIELLE (40%)
+   ──────────────────────────────────────────────────────────────
+   • Disque dur qui casse (têtes de lecture, moteur)
+   • SSD qui meurt (usure des cellules NAND)
+   • Serveur qui grille (alimentation, surtension)
+   
+   Espérance de vie :
+   • Disque dur (HDD) : 5-10 ans
+   • SSD : 5-7 ans (selon usage)
+   • Serveur : 5-8 ans
+   
+   ② RANSOMWARE / CYBERATTAQUE (30%)
+   ──────────────────────────────────────────────────────────────
+   • Fichiers chiffrés par ransomware (WannaCry, Ryuk...)
+   • Serveurs détruits par malware
+   • Base de données corrompue par attaque
+   
+   ③ ERREUR HUMAINE (20%)
+   ──────────────────────────────────────────────────────────────
+   • Suppression accidentelle (Shift+Delete)
+   • Formatage du mauvais disque
+   • Écrasement de fichiers
+   • Mauvaise manipulation (DROP TABLE users;)
+   
+   ④ CATASTROPHE NATURELLE (8%)
+   ──────────────────────────────────────────────────────────────
+   • Incendie (bureau détruit)
+   • Inondation (serveurs noyés)
+   • Foudre (surtension, grillage matériel)
+   
+   ⑤ VOL / PERTE (2%)
+   ──────────────────────────────────────────────────────────────
+   • Ordinateur portable volé
+   • Disque dur externe perdu
+   • Serveur volé lors d'un cambriolage
+```
 
-        │
-        ▼
-   ④ DIAGNOSTIC           ⑤ RÉSOLUTION            ⑥ VALIDATION
-   ────────────           ──────────────           ────────────
-   Méthode                Solution                 Utilisateur
-   structurée       →     appliquée          →     confirme
-   Hypothèses             Testée                   que le service
-   testées 1 à 1          Documentée               est restauré
+**Conclusion :** Toutes les entreprises subiront **au moins une** de ces causes.
 
-        │
-        ▼
-   ⑦ CLÔTURE
-   ─────────
-   Ticket fermé
-   MTTR calculé
-   Satisfaction recueillie
-   Alimentation base
-   de connaissances
+> *"Ce n'est pas SI vous perdrez des données, c'est QUAND."*
+
+---
+
+### I.B. Impact de la Perte de Données
+
+```
+   COÛT D'UNE PERTE DE DONNÉES (PME)
+   ═══════════════════════════════════════════════════════════════
+   
+   FINANCIER
+   ──────────────────────────────────────────────────────────────
+   • Perte d'activité : 10 000-100 000 € par jour
+   • Récupération données : 1 000-10 000 €
+   • Reconstruction : 5 000-50 000 €
+   
+   RÉPUTATIONNEL
+   ──────────────────────────────────────────────────────────────
+   • Clients perdent confiance
+   • Mauvaise publicité
+   • Action en justice possible (RGPD)
+   
+   OPÉRATIONNEL
+   ──────────────────────────────────────────────────────────────
+   • Impossibilité de travailler
+   • Retard dans les projets
+   • Perte de productivité
+   
+   STATISTIQUE CHOC
+   ──────────────────────────────────────────────────────────────
+   60% des PME qui perdent leurs données
+   FERMENT dans les 6 mois
+   (Source : National Cyber Security Alliance, 2023)
 ```
 
 ---
 
-### I.B. Ce Qui Doit Figurer dans le Ticket à Chaque Étape
+## PARTIE II — Les 3 Types de Sauvegardes
 
-| **Étape** | **Ce qu'on ajoute au ticket** |
-|---|---|
-| ① Signalement | — (avant l'ouverture du ticket) |
-| ② Enregistrement | Utilisateur, description, date/heure, équipement concerné |
-| ③ Qualification | Catégorie, priorité, niveau attribué, SLA applicable |
-| ④ Diagnostic | Actions de diagnostic tentées + résultats observés |
-| ⑤ Résolution | Solution complète appliquée, étapes détaillées |
-| ⑥ Validation | Confirmation de l'utilisateur (date/heure, moyen) |
-| ⑦ Clôture | MTTR, satisfaction si recueillie, flag "à mettre en KB" |
+### II.A. Sauvegarde Complète (Full Backup)
 
-> 📌 **Règle professionnelle :** Le ticket doit être rempli **en temps réel**, pas reconstruit de mémoire après la résolution. Un ticket rédigé après coup perd la chronologie et les hypothèses infructueuses — qui sont pourtant précieuses pour les incidents futurs.
+**Définition :** Copie **intégrale** de toutes les données, chaque fois.
+
+```
+   SAUVEGARDE COMPLÈTE
+   ═══════════════════════════════════════════════════════════════
+   
+   LUNDI : Sauvegarde complète (100 Go)
+   ──────────────────────────────────────────────────────────────
+   Tous les fichiers : A, B, C, D, E, F, G, H, I, J
+   Espace utilisé : 100 Go
+   
+   MARDI : Sauvegarde complète (100 Go)
+   ──────────────────────────────────────────────────────────────
+   Tous les fichiers : A, B, C, D, E, F, G, H, I, J
+   (même si certains n'ont pas changé)
+   Espace utilisé : 100 Go
+   
+   MERCREDI : Sauvegarde complète (100 Go)
+   ──────────────────────────────────────────────────────────────
+   Tous les fichiers : A, B, C, D, E, F, G, H, I, J
+   Espace utilisé : 100 Go
+   
+   TOTAL ESPACE : 300 Go (3 × 100 Go)
+```
+
+**Avantages :**
+- ✅ **Restauration simple et rapide** (1 seule sauvegarde à restaurer)
+- ✅ **Fiabilité maximale** (chaque sauvegarde est autonome)
+- ✅ **Facilité de gestion** (pas de dépendances entre sauvegardes)
+
+**Inconvénients :**
+- ❌ **Espace disque énorme** (copie tout à chaque fois)
+- ❌ **Temps de sauvegarde long** (plusieurs heures pour To de données)
+- ❌ **Bande passante réseau importante** (si sauvegarde distante)
+
+**Usage typique :**
+- Sauvegarde hebdomadaire (dimanche soir)
+- PME avec peu de données (< 500 Go)
+- Avant mise à jour majeure d'un système
 
 ---
 
-## PARTIE II — La Méthode de Diagnostic Structurée
+### II.B. Sauvegarde Différentielle (Differential Backup)
 
-### II.A. Le Principe des Couches OSI Appliqué au Diagnostic
-
-La méthode la plus efficace pour diagnostiquer un incident réseau ou système consiste à remonter les couches du modèle OSI **du bas vers le haut** — de la couche physique (câble, alimentation) vers la couche application (logiciel, droits).
+**Définition :** Sauvegarde complète initiale, puis sauvegardes des fichiers **modifiés depuis la dernière complète**.
 
 ```
-   COUCHE 7 — Application   ← Vérifier en dernier
-   COUCHE 6 — Présentation
-   COUCHE 5 — Session
-   COUCHE 4 — Transport     ← Ports, firewall, service actif ?
-   COUCHE 3 — Réseau        ← IP, routage, ping ?
-   COUCHE 2 — Liaison       ← MAC, switch, VLAN ?
-   COUCHE 1 — Physique      ← Vérifier en premier
-                               Câble branché ?
-                               Voyant allumé ?
-                               Alimentation ?
+   SAUVEGARDE DIFFÉRENTIELLE
+   ═══════════════════════════════════════════════════════════════
+   
+   LUNDI : Sauvegarde complète (100 Go)
+   ──────────────────────────────────────────────────────────────
+   Tous les fichiers : A, B, C, D, E, F, G, H, I, J
+   Espace utilisé : 100 Go
+   
+   MARDI : Sauvegarde différentielle (5 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis LUNDI : B, E
+   Espace utilisé : 5 Go
+   
+   MERCREDI : Sauvegarde différentielle (8 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis LUNDI : B, E, C
+   Espace utilisé : 8 Go (5 + 3)
+   ↑ Cumule les changements depuis la complète
+   
+   JEUDI : Sauvegarde différentielle (12 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis LUNDI : B, E, C, F
+   Espace utilisé : 12 Go (5 + 3 + 4)
+   ↑ Continue de cumuler
+   
+   TOTAL ESPACE : 125 Go (100 + 5 + 8 + 12)
 ```
 
-**En pratique pour chaque incident :**
+**Caractéristique clé :** Chaque sauvegarde différentielle **cumule** tous les changements depuis la dernière complète.
 
-> *"Avant de toucher au logiciel, vérifie le câble. Avant de vérifier le câble, regarde si la machine est allumée."*
+**Avantages :**
+- ✅ **Restauration simple** (2 sauvegardes : complète + dernière différentielle)
+- ✅ **Espace modéré** (moins que complète, plus qu'incrémentielle)
+
+**Inconvénients :**
+- ❌ **Espace croissant** (chaque diff grossit jour après jour)
+- ❌ **Nécessite complète récente** (si complète corrompue → toutes les diff inutiles)
+
+**Usage typique :**
+- Complète le dimanche, différentielle lundi-samedi
+- PME avec sauvegarde quotidienne
 
 ---
 
-### II.B. Méthode de Diagnostic Générale — 5 Questions
+### II.C. Sauvegarde Incrémentielle (Incremental Backup)
 
-Pour tout incident, se poser ces 5 questions dans l'ordre :
+**Définition :** Sauvegarde complète initiale, puis sauvegardes des fichiers **modifiés depuis la dernière sauvegarde** (quelle qu'elle soit).
 
-| **Question** | **Ce qu'elle révèle** | **Exemple** |
+```
+   SAUVEGARDE INCRÉMENTIELLE
+   ═══════════════════════════════════════════════════════════════
+   
+   LUNDI : Sauvegarde complète (100 Go)
+   ──────────────────────────────────────────────────────────────
+   Tous les fichiers : A, B, C, D, E, F, G, H, I, J
+   Espace utilisé : 100 Go
+   
+   MARDI : Sauvegarde incrémentielle (5 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis LUNDI : B, E
+   Espace utilisé : 5 Go
+   
+   MERCREDI : Sauvegarde incrémentielle (3 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis MARDI : C
+   Espace utilisé : 3 Go
+   ↑ Seulement les nouveaux changements depuis hier
+   
+   JEUDI : Sauvegarde incrémentielle (4 Go)
+   ──────────────────────────────────────────────────────────────
+   Fichiers modifiés depuis MERCREDI : F
+   Espace utilisé : 4 Go
+   ↑ Seulement les nouveaux changements depuis hier
+   
+   TOTAL ESPACE : 112 Go (100 + 5 + 3 + 4)
+```
+
+**Caractéristique clé :** Chaque sauvegarde incrémentielle ne prend que les **nouveaux changements** depuis la veille.
+
+**Avantages :**
+- ✅ **Espace minimal** (le plus efficace en stockage)
+- ✅ **Temps de sauvegarde rapide** (peu de données à copier)
+- ✅ **Bande passante faible** (idéal pour sauvegarde distante)
+
+**Inconvénients :**
+- ❌ **Restauration complexe et lente** (besoin de TOUTES les sauvegardes)
+  ```
+  Pour restaurer jeudi :
+  1. Restaurer complète lundi
+  2. Restaurer incrémentielle mardi
+  3. Restaurer incrémentielle mercredi
+  4. Restaurer incrémentielle jeudi
+  → 4 étapes
+  ```
+- ❌ **Risque accru** (si une incrémentielle est corrompue → chaîne brisée)
+
+**Usage typique :**
+- Grandes entreprises avec To de données
+- Sauvegarde quotidienne + complète mensuelle
+- Environnements avec sauvegarde continue (toutes les heures)
+
+---
+
+### II.D. Tableau Comparatif Récapitulatif
+
+| **Critère** | **Complète** | **Différentielle** | **Incrémentielle** |
+|---|---|---|---|
+| **Espace disque** | ❌ Maximum | 🟡 Moyen (croissant) | ✅ Minimum |
+| **Temps sauvegarde** | ❌ Long | 🟡 Moyen (croissant) | ✅ Court |
+| **Temps restauration** | ✅ Rapide (1 étape) | 🟡 Moyen (2 étapes) | ❌ Lent (N étapes) |
+| **Complexité** | ✅ Simple | 🟡 Moyenne | ❌ Complexe |
+| **Fiabilité** | ✅ Maximum | 🟡 Bonne | 🟡 Moyenne (chaîne) |
+| **Usage typique** | Hebdomadaire | Quotidienne | Horaire/Continue |
+
+---
+
+### II.E. Stratégie Combinée (Recommandée)
+
+**Principe :** Combiner les 3 types pour optimiser espace ET restauration.
+
+```
+   STRATÉGIE GRAND-PÈRE-PÈRE-FILS (GFS)
+   ═══════════════════════════════════════════════════════════════
+   
+   FILS (quotidien) : Incrémentielle
+   ──────────────────────────────────────────────────────────────
+   Lundi → Dimanche : Sauvegarde incrémentielle chaque soir
+   Rétention : 7 jours (1 semaine)
+   
+   PÈRE (hebdomadaire) : Différentielle ou Complète
+   ──────────────────────────────────────────────────────────────
+   Chaque dimanche : Sauvegarde complète
+   Rétention : 4 semaines (1 mois)
+   
+   GRAND-PÈRE (mensuel) : Complète
+   ──────────────────────────────────────────────────────────────
+   Premier dimanche du mois : Sauvegarde complète archivée
+   Rétention : 12 mois (1 an) ou plus
+   
+   AVANTAGES
+   ──────────────────────────────────────────────────────────────
+   ✅ Optimisation espace (incrémentielle quotidienne)
+   ✅ Restauration rapide récente (complète hebdomadaire)
+   ✅ Historique long terme (complète mensuelle)
+```
+
+---
+
+## PARTIE III — La Règle 3-2-1 (Approfondie)
+
+### III.A. Rappel de la Règle
+
+```
+   RÈGLE 3-2-1
+   ═══════════════════════════════════════════════════════════════
+   
+   3 COPIES de vos données
+   ├── 1 copie de production (données actives sur le serveur)
+   ├── 1 copie de sauvegarde locale (disque externe, NAS)
+   └── 1 copie de sauvegarde distante (cloud, site distant)
+   
+   2 SUPPORTS DIFFÉRENTS
+   ├── Support 1 : Disque dur (local)
+   └── Support 2 : Cloud / Bande magnétique / SSD (distant)
+   
+   1 COPIE HORS SITE (off-site)
+   └── Cloud (AWS, Azure, Backblaze) OU datacenter distant
+```
+
+---
+
+### III.B. Pourquoi 3 Copies ?
+
+```
+   SCÉNARIO : Incendie dans les locaux
+   ═══════════════════════════════════════════════════════════════
+   
+   AVEC 1 SEULE COPIE (serveur)
+   ──────────────────────────────────────────────────────────────
+   Serveur détruit → Données PERDUES
+   
+   AVEC 2 COPIES (serveur + disque externe à côté)
+   ──────────────────────────────────────────────────────────────
+   Serveur détruit + disque externe détruit → Données PERDUES
+   (même lieu = même risque)
+   
+   AVEC 3 COPIES (serveur + disque externe + cloud)
+   ──────────────────────────────────────────────────────────────
+   Serveur détruit + disque externe détruit
+   → Cloud intact → Données SAUVÉES ✅
+```
+
+---
+
+### III.C. Pourquoi 2 Supports Différents ?
+
+**Risque de défaillance corrélée :**
+
+Si vous utilisez 2 disques durs de **même marque** et **même modèle** achetés **en même temps** :
+- Ils ont été fabriqués dans le **même lot**
+- Ils ont les **mêmes défauts de fabrication**
+- Ils mourront **en même temps** (espérance de vie similaire)
+
+**Solution :** Diversifier les supports.
+
+```
+   EXEMPLES DE COMBINAISONS
+   ═══════════════════════════════════════════════════════════════
+   
+   ✅ BONNE COMBINAISON
+   ──────────────────────────────────────────────────────────────
+   • Support 1 : Disque dur HDD (Seagate)
+   • Support 2 : SSD (Samsung) + Cloud (Backblaze)
+   
+   ✅ BONNE COMBINAISON (entreprise)
+   ──────────────────────────────────────────────────────────────
+   • Support 1 : NAS local (RAID 5)
+   • Support 2 : Bande magnétique (LTO) stockée hors site
+   
+   ❌ MAUVAISE COMBINAISON
+   ──────────────────────────────────────────────────────────────
+   • Support 1 : Disque dur WD Blue 2 To
+   • Support 2 : Disque dur WD Blue 2 To (même modèle, même lot)
+```
+
+---
+
+### III.D. Pourquoi 1 Copie Hors Site ?
+
+**Protection contre les sinistres locaux :**
+
+```
+   SINISTRES LOCAUX
+   ═══════════════════════════════════════════════════════════════
+   
+   • Incendie (bureau détruit)
+   • Inondation (sous-sol inondé)
+   • Cambriolage (serveur + disque externe volés)
+   • Foudre (surtension grille tout le matériel)
+   • Catastrophe naturelle (tremblement de terre, ouragan)
+   
+   → TOUTES les sauvegardes sur place sont PERDUES
+   
+   SOLUTION : Copie hors site (différent bâtiment, ville, pays)
+```
+
+**Options hors site :**
+
+| **Option** | **Coût** | **Facilité** | **Sécurité** | **Usage** |
+|---|---|---|---|---|
+| **Cloud** (AWS, Azure, Backblaze) | 5-20 €/mois/To | ★★★★★ | ★★★★☆ | PME, particuliers |
+| **Datacenter distant** | 100-500 €/mois | ★★☆☆☆ | ★★★★★ | Grandes entreprises |
+| **Maison / Bureau distant** | Gratuit | ★★★☆☆ | ★★☆☆☆ | Petites structures |
+| **Coffre-fort bancaire** | 50-200 €/an | ★★☆☆☆ | ★★★★★ | Sauvegardes critiques (bande, disque) |
+
+---
+
+## PARTIE IV — Politique de Sauvegarde
+
+### IV.A. Fréquence de Sauvegarde
+
+**Question clé :** *"Combien de temps de données êtes-vous prêt à perdre ?"*
+
+```
+   RPO (Recovery Point Objective)
+   ═══════════════════════════════════════════════════════════════
+   
+   Objectif de Point de Restauration = Perte de données maximale
+   acceptable
+   
+   EXEMPLES
+   ──────────────────────────────────────────────────────────────
+   RPO = 24 heures → Sauvegarde quotidienne
+   (Perte max : 1 jour de données)
+   
+   RPO = 1 heure → Sauvegarde horaire
+   (Perte max : 1 heure de données)
+   
+   RPO = 0 (zéro) → Réplication en temps réel
+   (Aucune perte acceptable)
+   
+   SECTEURS ET RPO TYPIQUES
+   ──────────────────────────────────────────────────────────────
+   • PME bureautique : RPO = 24h (sauvegarde nocturne)
+   • E-commerce : RPO = 1h (sauvegarde continue)
+   • Banque : RPO = 0 (réplication synchrone)
+   • Hôpital : RPO = 15 min (vies en jeu)
+```
+
+---
+
+### IV.B. Rétention des Sauvegardes
+
+**Question clé :** *"Pendant combien de temps garder les anciennes sauvegardes ?"*
+
+```
+   STRATÉGIE DE RÉTENTION TYPE
+   ═══════════════════════════════════════════════════════════════
+   
+   QUOTIDIENNE : 7 jours (1 semaine)
+   ──────────────────────────────────────────────────────────────
+   Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche
+   → Après 7 jours, suppression de la plus ancienne
+   
+   HEBDOMADAIRE : 4 semaines (1 mois)
+   ──────────────────────────────────────────────────────────────
+   Semaine 1, Semaine 2, Semaine 3, Semaine 4
+   → Après 1 mois, suppression de la plus ancienne
+   
+   MENSUELLE : 12 mois (1 an)
+   ──────────────────────────────────────────────────────────────
+   Janvier, Février, Mars... Décembre
+   → Après 1 an, suppression de la plus ancienne
+   
+   ANNUELLE : 3-7 ans (selon obligations légales)
+   ──────────────────────────────────────────────────────────────
+   2024, 2023, 2022... (archives long terme)
+   → Selon RGPD et obligations comptables
+```
+
+**Obligations légales (France) :**
+- Comptabilité : **10 ans**
+- Documents fiscaux : **6 ans**
+- Contrats : **5 ans**
+- Données personnelles (RGPD) : Durée nécessaire uniquement
+
+---
+
+### IV.C. Tests de Restauration
+
+**Règle d'or :**
+> *"Une sauvegarde jamais testée est une sauvegarde qui n'existe pas."*
+
+```
+   STATISTIQUE CHOC
+   ═══════════════════════════════════════════════════════════════
+   
+   34% des entreprises découvrent que leurs sauvegardes
+   ne fonctionnent PAS quand elles essaient de restaurer
+   en situation de crise.
+   
+   (Source : Veeam Data Protection Report 2023)
+```
+
+**Plan de tests :**
+
+| **Fréquence** | **Type de test** | **Objectif** |
 |---|---|---|
-| **1. Est-ce que ça a déjà fonctionné ?** | Régression vs jamais configuré | "Ça marchait hier" → chercher ce qui a changé |
-| **2. Qu'est-ce qui a changé récemment ?** | Cause probable immédiate | Mise à jour, déplacement, nouveau câble... |
-| **3. Est-ce que c'est reproductible ?** | Incident ponctuel vs permanent | Toujours / parfois / une seule fois |
-| **4. Le problème est-il isolé ou généralisé ?** | 1 utilisateur vs infrastructure | 1 PC → poste / tous les PC → réseau ou serveur |
-| **5. Y a-t-il un message d'erreur ?** | Information diagnostique directe | Copier le message exact — ne pas paraphraser |
-
----
-
-### II.C. Diagnostic de Chaque Type d'Incident
-
-#### IMPRIMANTE
-
-```
-   NIVEAU 1 — PHYSIQUE
-   ├── Imprimante allumée ? Voyant d'état normal ?
-   ├── Câble alimentation branché ?
-   ├── Câble USB ou réseau branché des deux côtés ?
-   └── Papier présent ? Bourrage papier ?
-
-   NIVEAU 2 — SYSTÈME
-   ├── Imprimante visible dans "Périphériques et imprimantes" ?
-   ├── État de l'imprimante : en ligne / hors ligne / en pause ?
-   ├── File d'attente : travaux bloqués ? Vider la file.
-   └── Imprimante définie comme "Par défaut" ?
-
-   NIVEAU 3 — PILOTE / RÉSEAU
-   ├── Pilote installé et à jour ?
-   ├── Si réseau : ping vers l'IP de l'imprimante ?
-   ├── Port d'impression correct (IP, port 9100 ou 515) ?
-   └── Pare-feu bloquant le port d'impression ?
-
-   NIVEAU 4 — APPLICATION
-   ├── L'application peut-elle imprimer (test page Windows) ?
-   ├── Problème avec un seul logiciel ou tous ?
-   └── Droits d'impression pour l'utilisateur ?
-```
-
-#### ACCÈS DOSSIER REFUSÉ
-
-```
-   NIVEAU 1 — CONNECTIVITÉ
-   ├── Le partage réseau est-il accessible ? (ping du serveur)
-   ├── Le chemin UNC est-il correct ? (\\serveur\partage)
-   └── Le lecteur réseau est-il connecté ?
-
-   NIVEAU 2 — AUTHENTIFICATION
-   ├── L'utilisateur est-il authentifié sur le domaine ?
-   ├── Le compte est-il actif et non verrouillé ?
-   └── Mot de passe expiré ?
-
-   NIVEAU 3 — DROITS DE PARTAGE
-   ├── L'utilisateur (ou son groupe) est-il dans les droits de partage ?
-   └── Niveau de droits suffisant (Lecture / Modification / Contrôle total) ?
-
-   NIVEAU 4 — DROITS NTFS
-   ├── Droits NTFS sur le dossier pour l'utilisateur ou son groupe ?
-   ├── Vérifier les "Permissions effectives" (onglet Sécurité → Avancé)
-   ├── Un refus (Deny) explicite annule tout droit accordé
-   └── Héritage activé ou désactivé sur ce dossier ?
-
-   → Règle : c'est la permission LA PLUS RESTRICTIVE entre
-     droits de partage et droits NTFS qui s'applique
-```
-
-#### POSTE LENT
-
-```
-   NIVEAU 1 — RESSOURCES SYSTÈME (Gestionnaire des tâches)
-   ├── CPU : consommation anormale ? Quel processus ?
-   ├── RAM : utilisation > 85% ? Fichier d'échange actif ?
-   ├── Disque : activité à 100% ? Disque HDD saturé ?
-   └── Réseau : activité suspecte en arrière-plan ?
-
-   NIVEAU 2 — PROCESSUS ET SERVICES
-   ├── Processus inconnus consommant des ressources → malware ?
-   ├── Mises à jour Windows en cours silencieusement ?
-   ├── Antivirus en scan complet ?
-   └── Service défaillant en boucle ?
-
-   NIVEAU 3 — DÉMARRAGE ET PERSISTANCE
-   ├── Nombreux programmes au démarrage ? (msconfig / Démarrage)
-   ├── Espace disque disponible < 10% → ralentissement swap
-   └── Fragmentation disque HDD ? (SSD : non pertinent)
-
-   NIVEAU 4 — MATÉRIEL
-   ├── RAM insuffisante pour l'usage (< 4Go pour W11)
-   ├── Température CPU élevée → throttling (HWMonitor)
-   └── Disque dur défaillant ? (CrystalDiskInfo — état SMART)
-```
-
----
-
-## PARTIE III — La Base de Connaissances (Knowledge Base)
-
-### III.A. Pourquoi une Base de Connaissances ?
-
-La **base de connaissances** (KB) est le référentiel des solutions aux incidents déjà rencontrés et résolus. Elle transforme l'expérience individuelle d'un technicien en **capital collectif** de la DSI.
-
-```
-   SANS BASE DE CONNAISSANCES          AVEC BASE DE CONNAISSANCES
-   ──────────────────────────          ──────────────────────────
-   Incident résolu                →    Incident résolu
-   Le technicien "sait"           →    Solution documentée dans KB
-   3 mois plus tard, même         →    3 mois plus tard, même
-   incident, autre technicien          incident, autre technicien
-   → repart de zéro               →    → consulte KB → 5 min
-   → 45 min                            → Utilisateur satisfait
-   → Utilisateur frustré          →    → MTTR en baisse
-```
-
-### III.B. Structure d'une Fiche KB
-
-| **Section** | **Contenu** |
-|---|---|
-| **Titre** | Description concise du symptôme |
-| **Symptômes** | Comment se manifeste le problème (ce que voit l'utilisateur) |
-| **Cause(s) connue(s)** | Pourquoi ça arrive (1 à 3 causes les plus fréquentes) |
-| **Solution** | Étapes de résolution numérotées et précises |
-| **Vérification** | Comment s'assurer que c'est résolu |
-| **Escalade** | Quand escalader vers N2 (si non résolu après ces étapes) |
-| **Mots-clés** | Pour faciliter la recherche |
-| **Auteur / Date** | Traçabilité |
-
----
-
-## IV. Commandes Utiles par Incident
-
-### Imprimante — Windows
-
-```cmd
-:: Lister les imprimantes installées
-wmic printer list brief
-
-:: État de l'imprimante
-wmic printer where name="Nom_Imprimante" get PrinterStatus, WorkOffline
-
-:: Vider la file d'attente manuellement
-net stop spooler
-del /Q /F /S "%systemroot%\System32\spool\PRINTERS\*.*"
-net start spooler
-
-:: Ping vers une imprimante réseau
-ping [IP_imprimante]
-```
-
-```powershell
-# PowerShell — lister les imprimantes
-Get-Printer | Select-Object Name, PrinterStatus, PortName
-
-# Redémarrer le spooler
-Restart-Service -Name Spooler
-
-# Supprimer une imprimante
-Remove-Printer -Name "Nom_Imprimante"
-```
-
-### Droits et Accès — Windows
-
-```cmd
-:: Droits NTFS d'un dossier
-icacls "C:\Dossier\Cible"
-
-:: Appliquer des droits NTFS
-icacls "C:\Dossier\Cible" /grant "DOMAINE\Utilisateur:(R)"
-icacls "C:\Dossier\Cible" /grant "DOMAINE\Utilisateur:(M)"  :: Modification
-icacls "C:\Dossier\Cible" /grant "DOMAINE\GRP_RH:(F)"       :: Contrôle total
-
-:: Partages disponibles sur le serveur
-net share
-
-:: Tester l'accès à un partage
-net use \\serveur\partage
-```
-
-```powershell
-# Vérifier les droits NTFS sur un dossier
-Get-Acl "C:\Dossier\Cible" | Format-List
-
-# Droits effectifs pour un utilisateur (GUI nécessaire pour "Permissions effectives")
-# En PowerShell - vérifier l'appartenance aux groupes
-Get-ADGroupMember -Identity "GRP_RH" | Where-Object { $_.Name -eq "alice.martin" }
-```
-
-### Performances Système — Windows
-
-```cmd
-:: Processus consommateurs (tri par CPU)
-tasklist /fo table | sort /r /+65
-
-:: Espace disque
-wmic logicaldisk get name,freespace,size
-
-:: Informations RAM
-wmic computersystem get totalphysicalmemory
-wmic OS get FreePhysicalMemory
-```
-
-```powershell
-# Top 10 processus par CPU
-Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 Name, CPU, WorkingSet
-
-# Top 10 processus par RAM
-Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 10 Name, WorkingSet
-
-# Espace disque disponible
-Get-PSDrive -PSProvider FileSystem | Select-Object Name, Used, Free
-
-# Services en échec
-Get-Service | Where-Object { $_.Status -eq "Stopped" -and $_.StartType -eq "Automatic" }
-
-# Programmes au démarrage
-Get-CimInstance Win32_StartupCommand | Select-Object Name, Command, Location
-```
+| **Mensuel** | Restauration fichier | Vérifier intégrité fichiers |
+| **Trimestriel** | Restauration complète VM | Vérifier restauration serveur |
+| **Annuel** | Exercice PRA complet | Simulation catastrophe totale |
 
 ---
 
@@ -317,32 +512,15 @@ Get-CimInstance Win32_StartupCommand | Select-Object Name, Command, Location
 
 | **Terme** | **Définition** |
 |-----------|---------------|
-| **Cycle de vie d'un incident** | Séquence complète : signalement → enregistrement → qualification → diagnostic → résolution → validation → clôture |
-| **Base de connaissances (KB)** | Référentiel des solutions aux incidents résolus — capital collectif de la DSI |
-| **Diagnostic différentiel** | Méthode consistant à tester et éliminer des hypothèses une par une |
-| **Permissions effectives** | Résultat final des droits NTFS appliqués à un utilisateur, tenant compte de tous ses groupes |
-| **Héritage NTFS** | Transmission automatique des droits d'un dossier parent à ses sous-dossiers |
-| **Deny (Refus explicite)** | Droit NTFS qui annule tout droit accordé — prioritaire sur toute permission |
-| **Spooler** | Service Windows gérant la file d'attente d'impression |
-| **File d'attente** | Liste des travaux d'impression en attente d'être envoyés à l'imprimante |
-| **Throttling** | Réduction automatique des performances du CPU en cas de surchauffe |
-| **SMART** | Self-Monitoring, Analysis and Reporting Technology — système de surveillance des disques durs |
-| **Fichier d'échange (swap)** | Espace disque utilisé comme mémoire virtuelle quand la RAM est saturée |
-| **Permissions effectives** | Combinaison réelle des droits d'accès d'un utilisateur sur une ressource |
-| **`icacls`** | Outil Windows en ligne de commande pour gérer les droits NTFS |
-| **`net share`** | Commande Windows affichant les partages réseau du serveur |
-| **`tasklist`** | Commande Windows listant les processus en cours |
+| **Sauvegarde complète** | Copie intégrale de toutes les données |
+| **Sauvegarde différentielle** | Fichiers modifiés depuis la dernière complète |
+| **Sauvegarde incrémentielle** | Fichiers modifiés depuis la dernière sauvegarde (quelle qu'elle soit) |
+| **Règle 3-2-1** | 3 copies, 2 supports, 1 hors site |
+| **RPO** | Recovery Point Objective — perte de données max acceptable |
+| **RTO** | Recovery Time Objective — temps max de restauration acceptable |
+| **GFS** | Grand-père Père Fils — stratégie combinée de sauvegarde |
+| **Rétention** | Durée de conservation des sauvegardes |
+| **Hors site (off-site)** | Sauvegarde stockée dans un lieu géographiquement distinct |
 
 ---
 
-## ✅ Auto-évaluation : Suis-je Prêt ?
-
-- [ ] Je décris les 7 étapes du cycle de vie d'un incident
-- [ ] J'applique les 5 questions de diagnostic dans l'ordre
-- [ ] Je diagnostique une imprimante en partant de la couche physique
-- [ ] Je vérifie les droits NTFS avec `icacls` ou l'interface graphique
-- [ ] J'identifie un processus qui sature le CPU avec le Gestionnaire des tâches
-- [ ] Je remplis un ticket en temps réel pendant la résolution
-- [ ] Je rédige une fiche de base de connaissances exploitable par un collègue
-
----

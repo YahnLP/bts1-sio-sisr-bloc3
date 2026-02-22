@@ -2,32 +2,40 @@
 
 | **Champ** | **Détail** |
 |-----------|-----------|
-| **Semaine** | S1 — Début Année 1 |
-| **Bloc** | Bloc 1 (introduction transversale) |
+| **Semaine** | S1 — Année 1 |
+| **Bloc** | Bloc 3 — Cybersécurité des services informatiques |
 | **Durée totale** | 4 heures |
-| **Public** | Apprentis BTS SIO SISR — **première semaine de formation** |
+| **Public** | Apprentis BTS SIO SISR — première semaine |
 | **Modalité** | Présentiel — salle de cours |
-| **Prérequis** | Aucun — séance zéro |
+| **Prérequis** | Aucun (séance d'introduction au BLOC 3) |
 ---
 
 ## 🎯 Objectifs
 
-- ✅ Citer les **épreuves du BTS SIO** (E4, E5, E6) et leur contenu principal
-- ✅ Expliquer la différence entre les options **SLAM** et **SISR**
-- ✅ Décrire au moins 3 **métiers accessibles** après un BTS SIO SISR
-- ✅ Comprendre le rôle du **portfolio / dossier E5** et commencer à le construire dès S1
-- ✅ Identifier les **compétences transversales** attendues (communication écrite et orale, méthode, rigueur)
-- ✅ Se situer honnêtement par rapport au **niveau d'entrée attendu** (test de positionnement)
+**Hygiène numérique :**
+- ✅ Définir l'**hygiène numérique** et son importance
+- ✅ Connaître et appliquer les **10 règles essentielles** du guide ANSSI
+- ✅ Identifier les **risques** liés aux mauvaises pratiques
+
+**Menaces et attaques :**
+- ✅ Définir le **ransomware** et comprendre son mode opératoire
+- ✅ Définir le **phishing** (hameçonnage) et ses variantes
+- ✅ Analyser des **cas concrets** d'attaques médiatisées
+- ✅ Identifier les **signaux d'alerte** d'une tentative d'attaque
+
+**Posture sécurité :**
+- ✅ Adopter une **attitude critique** face aux emails et liens suspects
+- ✅ Comprendre le rôle du **facteur humain** dans la sécurité
 ---
 
 ## 🧠 Compétences travaillées
 
-| **Code** | **Intitulé** | **Niveau visé** |
-|----------|--------------|-----------------|
-| **B1.1** | Recenser et identifier les ressources numériques | Découverte |
-| **B3.3** | Participer à la gestion et au suivi d'un projet (se positionner) | Découverte |
+| **Code** | **Intitulé de la compétence** | **Niveau visé** |
+|----------|-------------------------------|-----------------|
+| **B3.1** | Identifier les principales menaces de sécurité | Sensibilisation |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base | Sensibilisation |
 
-> 📌 **S1 n'est pas une séance d'apprentissage technique — c'est une séance d'orientation, d'accueil et de positionnement.** Son enjeu pédagogique est double : (1) donner aux apprenants une **vision claire du parcours de 2 ans** qui les attend pour qu'ils puissent se projeter et s'y engager ; (2) **diagnostiquer le niveau de départ** pour adapter l'enseignement dès la S2.
+> 📌 **S1 BLOC 3 est la séance d'introduction à la cybersécurité.** Elle pose les bases de l'hygiène numérique et sensibilise aux menaces réelles (ransomware, phishing) par des cas concrets médiatisés. Cette première séance doit être **percutante et accessible** pour capter l'attention des apprenants, même ceux sans background sécurité.
 
 ---
 

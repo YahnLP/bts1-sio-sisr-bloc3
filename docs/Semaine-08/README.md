@@ -8,11 +8,11 @@
 | **Champ** | **Détail** |
 |-----------|-----------|
 | **Semaine** | S8 — Année 1 |
-| **Bloc** | Bloc 1 — Support et mise à disposition de services informatiques |
+| **Bloc** | Bloc 3 — Cybersécurité des services informatiques |
 | **Durée totale** | 4 heures |
 | **Public** | Apprentis BTS SIO SISR — huitième semaine |
-| **Modalité** | Présentiel — salle de cours |
-| **Prérequis** | S1 à S7 — tout le Bloc 1 |
+| **Modalité** | Présentiel — salle de cours avec accès internet |
+| **Prérequis** | S5-S7 BLOC 3 (RGPD fondamentaux, acteurs, droits, violations) |
 
 ---
 
@@ -20,19 +20,28 @@
 
 | **Code** | **Intitulé de la compétence** | **Niveau visé** |
 |----------|-------------------------------|-----------------|
-| **B1.6** | Assurer le support des utilisateurs | Maîtrise |
-| **B3.3** | Participer à la gestion et au suivi d'un projet (communication) | Maîtrise |
-| **B1.1 → B1.5** | Bloc 1 complet — évaluation formative | Consolidation |
+| **B3.1** | Identifier les principales menaces de sécurité | Maîtrise |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base | Maîtrise |
+| **B3.3** | Gérer les incidents de sécurité | Acquisition |
 
-> 📌 **S8 est la dernière séance du Bloc 1 avant l'entrée dans le Bloc 2.** Elle remplit deux fonctions complémentaires : (1) combler le seul angle non encore travaillé en profondeur — la **communication humaine** avec l'utilisateur non-technique, compétence décisive en E5 et en entreprise ; (2) conduire la **première évaluation formative notée** du Bloc 1, qui donne à l'enseignant et à l'apprenant une mesure fiable des acquis avant de basculer vers les sujets techniques du Bloc 2.
+> 📌 **S8 BLOC 3 est une séance double pivôt.** Elle clôture le volet RGPD (Module 4 — le plus "terrain" avec le monde du travail et la vidéosurveillance) et amorce le parcours **Cisco Networking Academy** avec la certification *Introduction to Cybersecurity* — certification officielle valorisable sur le CV des apprenants.
 
 ---
 
 ## Objectifs Pédagogiques
 
-**Communication non-technique :**
-- ✅ Adapter son **registre de langage** à l'interlocuteur (expert / non-expert)
-- ✅ Reformuler un message technique en **termes compréhensibles** par un non-technicien
-- ✅ Gérer un utilisateur **stressé, impatient ou mécontent** avec professionnalisme
-- ✅ Conduire une **prise d'appel N1** complète (accueil, collecte, diagnostic, clôture)
-- ✅ Rédiger un **email de support** clair, professionnel et exploitable
+à la fin du cours, les étudiants seront capables de :
+
+**RGPD Module 4 — Travail et données personnelles :**
+- ✅ Identifier les données personnelles collectées dans un contexte **RH**
+- ✅ Comprendre les limites légales de la **surveillance des salariés**
+- ✅ Appliquer les règles RGPD à la **messagerie professionnelle**
+- ✅ Connaître le cadre légal de la **vidéosurveillance** (30 jours, affichage obligatoire, zones interdites)
+- ✅ Distinguer **vidéosurveillance** et **vidéoprotection**
+
+**Cisco Cyber — Introduction à la cybersécurité :**
+- ✅ Présenter la certification **Cisco Introduction to Cybersecurity** et ses débouchés
+- ✅ Comprendre les **enjeux mondiaux** de la cybersécurité (statistiques, tendances)
+- ✅ Identifier les **types de données** (données personnelles, organisationnelles, confidentielles)
+- ✅ Comprendre la notion de **guerre cybernétique** (cyberwar, espionnage, sabotage)
+- ✅ Démarrer le **Module 1** du cours Cisco Networking Academy

@@ -7,11 +7,11 @@
 | **Champ** | **Détail** |
 |-----------|-----------|
 | **Semaine** | S7 — Année 1 |
-| **Bloc** | Bloc 1 — Support et mise à disposition de services informatiques |
+| **Bloc** | Bloc 3 — Cybersécurité des services informatiques |
 | **Durée totale** | 4 heures |
 | **Public** | Apprentis BTS SIO SISR — septième semaine |
-| **Modalité** | Présentiel — salle TP |
-| **Prérequis** | S3 (ITIL, SLA notion), S6 (GLPI opérationnel) |
+| **Modalité** | Présentiel — salle de cours avec accès internet |
+| **Prérequis** | S5 BLOC 3 (définitions RGPD, acteurs) · S6 BLOC 3 (bases légales, consentement, droits) |
 
 ---
 
@@ -19,12 +19,11 @@
 
 | **Code** | **Intitulé de la compétence** | **Niveau visé** |
 |----------|-------------------------------|-----------------|
-| **B1.5** | Mettre à disposition des utilisateurs un service informatique | Acquisition |
-| **B1.2** | Exploiter des référentiels, normes et standards (ITIL) | Maîtrise |
-| **B1.6** | Assurer le support des utilisateurs | Maîtrise |
-| **B3.3** | Participer à la gestion et au suivi d'un projet | Acquisition |
+| **B3.1** | Identifier les principales menaces de sécurité | Maîtrise |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base | Maîtrise |
+| **B3.3** | Gérer les incidents de sécurité et les violations de données | Acquisition |
 
-> 📌 **S7 clôture le Bloc 1** avant le virage technique du Bloc 2. Elle ancre deux compétences transversales qui traverseront tout le programme : savoir **mettre à disposition un service** de façon structurée (pas juste "l'installer"), et savoir mesurer et garantir la **qualité de ce service** via le SLA et les indicateurs de disponibilité. Ces deux compétences sont systématiquement évaluées en E5.
+> 📌 **S7 BLOC 3 est la séance la plus "technique" du volet RGPD.** Elle traite des deux obligations qui concernent directement le quotidien du technicien IT : (1) définir des durées de conservation et les appliquer techniquement, (2) sécuriser les données selon le RGPD, et (3) savoir réagir en cas de violation de données. Le technicien IT n'est plus spectateur — il est acteur central de la conformité.
 
 ---
 
@@ -32,17 +31,21 @@
 
 À l'issue de cette séance, l'apprenant sera capable de :
 
-**Mise à disposition d'un service :**
-- ✅ Décrire les **5 étapes** de mise à disposition d'un service IT (analyse → installation → documentation → communication → validation)
-- ✅ Distinguer "installer un service" de "mettre à disposition" un service
-- ✅ Produire un **document de mise en service** (PV de mise en production)
-- ✅ Rédiger une **communication utilisateur** pour l'annonce d'un nouveau service
-- ✅ Définir les **critères d'acceptation** d'un service avant sa mise en production
+**Durées de conservation :**
+- ✅ Comprendre le principe de **limitation de conservation** (Art. 5.1.e)
+- ✅ Distinguer **durée de conservation active** et **durée d'archivage**
+- ✅ Connaître les **durées légales** par type de données (comptable, RH, client, logs)
+- ✅ Implémenter techniquement une **politique de purge** (scripts, cron jobs)
 
-**Qualité de service :**
-- ✅ Calculer le **taux de disponibilité** d'un service (uptime/downtime)
-- ✅ Convertir un pourcentage de disponibilité en **temps d'indisponibilité annuel**
-- ✅ Distinguer **disponibilité planifiée** et **indisponibilité non planifiée**
-- ✅ Identifier les composantes d'un **SLA complet**
-- ✅ Expliquer les notions de **RTO** et **RPO** dans le contexte de la continuité de service
+**Sécurisation des données :**
+- ✅ Appliquer le **principe de sécurité par défaut** (Privacy by Design/Default)
+- ✅ Identifier les **mesures techniques** obligatoires (chiffrement, contrôle d'accès, audit)
+- ✅ Comprendre l'**Analyse d'Impact** (AIPD/PIA) et son déclenchement
+- ✅ Relier les mesures de sécurité RGPD aux **compétences techniques** déjà acquises
+
+**Violations de données :**
+- ✅ Définir une **violation de données** (confidentialité, disponibilité, intégrité)
+- ✅ Connaître la procédure de **notification CNIL sous 72h**
+- ✅ Savoir **quand notifier les personnes concernées**
+- ✅ Analyser des **cas concrets** de violations (Hôpital de Versailles, Free, Pôle Emploi)
 

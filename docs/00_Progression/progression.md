@@ -1,87 +1,89 @@
 # 🛣️ Progression 
-## BTS SIO SISR – BLOC 1
-### Année 1 – Support et mise à disposition de services informatiques (20 semaines – 400h)
+## BTS SIO SISR – BLOC 3
+### Année 1 – Cybersécurité (20 semaines – 400h)
 
 ---
 
 ## 🎯 Objectif
 
-Construire les compétences fondamentales du **Bloc 1** :
+Construire les compétences fondamentales du **Bloc 3 – Cybersécurité** :
 
-- Gérer le patrimoine informatique
-- Répondre aux incidents et demandes d’assistance
-- Mettre à disposition un service informatique
-- Installer, configurer et maintenir un environnement poste et serveur
-- Documenter une intervention technique
-- Préparer progressivement l’épreuve E4 (oral professionnel)
+- Identifier les menaces numériques courantes
+- Appliquer les bonnes pratiques d’hygiène informatique
+- Comprendre et appliquer le RGPD
+- Mettre en œuvre les premiers mécanismes de protection
+- Sécuriser les accès et les données
+- Analyser un incident de sécurité
+- Préparer progressivement l’épreuve E6 (analyse juridique et sécurité)
 
 ---
 
 ## 🧩 Principes structurants
 
 - Logique constante :  
-  **Situation professionnelle → Diagnostic → Mise en œuvre → Vérification → Documentation**
-- Alternance systématique : manipulation technique + formalisation écrite
-- Progression spiralée : complexification progressive des infrastructures
-- Entraînement régulier à la communication professionnelle
+  **Identifier la menace → Évaluer le risque → Mettre en place une mesure → Tester → Justifier**
+- Approche systématique par étude de cas
+- Lien constant entre technique et cadre légal
+- Documentation obligatoire des mesures de sécurité
+- Entraînement progressif à l’argumentation (E6)
 
 ---
 
 ## 🧾 Légende
 
-- 🧱 Installation (apprentissage d’une compétence)
+- 🔎 Sensibilisation / Analyse
 - 🛠️ TP (mise en situation professionnelle)
-- 🧭 Entraînement E4 (formalisation situation pro)
+- 🧭 Entraînement E6 (formalisation juridique et argumentée)
 - ✅ Évaluation
-- ⭐ Projet
+- ⭐ Projet intégré
 
 ---
 
-# 🔵 PHASE 1 – Découverte et fondamentaux du support (S1 à S5)
+# 🔵 PHASE 1 – Hygiène numérique & menaces (S1 à S5)
 
-| Semaine | Situation professionnelle | Compétences Bloc 1 | Statut | Livrable attendu |
+| Semaine | Situation professionnelle | Compétences Bloc 3 | Statut | Livrable attendu |
 |----------|--------------------------|--------------------|:------:|------------------|
-| S1 | Comprendre l’environnement professionnel SISR | Identifier le rôle du support IT | 🧱 | Synthèse métiers / posture professionnelle |
-| S2 | Inventorier un poste informatique | Gestion du patrimoine matériel et logiciel | 🛠️ | Fiche d’inventaire complète |
-| S3 | Configurer un poste Windows | Création comptes, gestion droits locaux | 🛠️ | Procédure de configuration poste |
-| S4 | Résoudre des incidents simples | Gestion ticket (cycle ouverture → résolution → clôture) | 🛠️ | Compte rendu d’intervention |
-| S5 | Centraliser l’inventaire avec OCS | Découverte outil gestion de parc | 🛠️ | Rapport d’inventaire exporté |
+| S1 | Une PME subit un ransomware médiatisé | Identifier menaces (phishing, ransomware) | 🔎 | Fiche analyse attaque |
+| S2 | Sécuriser un poste utilisateur | Comprendre malware + importance mises à jour | 🛠️ | Checklist sécurisation poste |
+| S3 | Mettre en place une politique MDP | Mots de passe robustes + MFA | 🛠️ | Politique MDP argumentée |
+| S4 | Mettre en place une stratégie sauvegarde | Sauvegardes + règle 3-2-1 | 🛠️ | Schéma stratégie sauvegarde |
+| S5 | Identifier données personnelles dans l’entreprise | Notion donnée perso + acteurs RGPD | 🔎 | Tableau données personnelles |
 
 ---
 
-# 🟠 PHASE 2 – Services réseau et assistance (S6 à S10)
+# 🟠 PHASE 2 – RGPD & droits d’accès (S6 à S10)
 
-| Semaine | Situation professionnelle | Compétences Bloc 1 | Statut | Livrable attendu |
+| Semaine | Situation professionnelle | Compétences Bloc 3 | Statut | Livrable attendu |
 |----------|--------------------------|--------------------|:------:|------------------|
-| S6 | Déployer GLPI | Gestion des incidents et tickets | 🛠️ | Ticket complet documenté |
-| S7 | Mettre à disposition un service utilisateur | Déploiement d’un service réseau simple | 🧱 | Fiche service + procédure |
-| S8 | Adapter sa communication au client | Support utilisateur / relation client | 🧱 | Simulation échange support |
-| S9 | Formaliser un catalogue de services | Structuration offre IT | 🧭 | Catalogue simplifié |
-| S10 | Sauvegarder une configuration | Maintien en condition opérationnelle | ✅ | TP noté + documentation |
+| S6 | Concevoir un formulaire conforme RGPD | Collecte, consentement, transparence | 🛠️ | Formulaire conforme commenté |
+| S7 | Gérer durées de conservation | Durée, sécurisation, notification CNIL | 🛠️ | Tableau conservation |
+| S8 | Analyse d’un cas vidéosurveillance | RGPD travail + données salariés | 🧭 | Analyse juridique courte |
+| S9 | Étudier une violation de données | Obligation légale de sécurité | 🧭 | Rapport incident structuré |
+| S10 | Définir droits d’accès internes | Principe moindre privilège | ✅ | Matrice de droits validée |
 
 ---
 
-# 🟡 PHASE 3 – Windows Server et mise à disposition de services (S11 à S15)
+# 🟡 PHASE 3 – Cryptographie & sécurisation technique (S11 à S15)
 
-| Semaine | Situation professionnelle | Compétences Bloc 1 | Statut | Livrable attendu |
+| Semaine | Situation professionnelle | Compétences Bloc 3 | Statut | Livrable attendu |
 |----------|--------------------------|--------------------|:------:|------------------|
-| S11 | Installer un contrôleur de domaine | Mise en place Active Directory | 🛠️ | Procédure installation AD |
-| S12 | Appliquer des stratégies de groupe | Gestion des accès (GPO) | 🛠️ | Rapport paramétrage GPO |
-| S13 | Déployer un serveur de fichiers | Gestion droits NTFS & partages | 🛠️ | Arborescence sécurisée documentée |
-| S14 | Automatiser une tâche d’administration | Script de création utilisateurs | 🛠️ | Script commenté + notice |
-| S15 | Formaliser une situation réelle | Entraînement Portfolio E4 #2 | 🧭 | Situation professionnelle rédigée |
+| S11 | Protéger un fichier sensible | Chiffrement symétrique (AES) | 🛠️ | Procédure chiffrement |
+| S12 | Évaluer un traitement de données | Méthode PIA (analyse d’impact) | 🛠️ | Mini-PIA rédigé |
+| S13 | Mettre en place un certificat | PKI, certificat X.509 | 🛠️ | Certificat généré + explication |
+| S14 | Sécuriser un accès distant | VPN concepts + asymétrique | 🔎 | Schéma tunnel sécurisé |
+| S15 | Protéger identité numérique | E-réputation + Secure Boot | 🔎 | Fiche sécurisation poste |
 
 ---
 
-# 🟢 PHASE 4 – Projet de synthèse Année 1 (S16 à S20)
+# 🟢 PHASE 4 – Analyse, audit & préparation E6 (S16 à S20)
 
-| Semaine | Situation professionnelle | Compétences Bloc 1 | Statut | Livrable attendu |
+| Semaine | Situation professionnelle | Compétences Bloc 3 | Statut | Livrable attendu |
 |----------|--------------------------|--------------------|:------:|------------------|
-| S16 | Documenter une infrastructure | Rédaction technique (wiki / DAT simplifié) | 🛠️ | Documentation d’équipe |
-| S17 | ⭐ PROJET 1 – Déploiement PME | Déploiement complet (AD + DHCP + DNS + partages) | ⭐ | Infrastructure fonctionnelle |
-| S18 | Formaliser le projet | Rédaction DAT (Dossier Architecture Technique) | 🧭 | DAT structuré |
-| S19 | Simulation orale E4 | Communication professionnelle | 🧭 | Passage oral blanc |
-| S20 | Examen blanc E4 | Évaluation certificative | ✅ | Oral simulé + grille |
+| S16 | Analyser un incident via logs | Lecture logs sécurité | 🛠️ | Diagnostic argumenté |
+| S17 | ⭐ PROJET 1 – Sécuriser infra PME | GPO, HTTPS, sauvegardes | ⭐ | Mesures sécurité documentées |
+| S18 | Étude de cas type E6 | Analyse contexte + propositions | 🧭 | Étude de cas 2h |
+| S19 | Réaliser mini audit vulnérabilités | Identifier failles + correctifs | 🛠️ | Rapport audit court |
+| S20 | Examen blanc E6 | Argumentation juridique sécurité | ✅ | Copie évaluée |
 
 ---
 
@@ -89,32 +91,33 @@ Construire les compétences fondamentales du **Bloc 1** :
 
 ## Compétences techniques
 
-- Installer un serveur Windows
-- Déployer Active Directory
-- Configurer des GPO
-- Mettre en place un serveur de fichiers sécurisé
-- Utiliser un outil de gestion de parc
-- Gérer des tickets d’incident
-- Documenter une intervention
+- Mettre en œuvre une politique de mots de passe
+- Appliquer une stratégie de sauvegarde
+- Comprendre et expliquer un chiffrement
+- Générer un certificat simple
+- Mettre en place une matrice de droits
+- Lire et interpréter des logs
+- Réaliser un mini audit sécurité
 
 ## Compétences professionnelles
 
-- Rédiger une procédure claire
-- Structurer un dossier technique
-- Argumenter un choix technique
-- Présenter une situation professionnelle à l’oral
+- Identifier un risque juridique
+- Argumenter une mesure de sécurité
+- Rédiger un rapport d’incident
+- Justifier une décision technique
+- Structurer une réponse type E6
 
 ---
 
-# 📋 Correspondance Référentiel Bloc 1 ↔ Progression Année 1
+# 📋 Correspondance Référentiel Bloc 3 ↔ Progression Année 1
 
 | Compétence référentiel | Séquences concernées |
 |------------------------|----------------------|
-| Gérer le patrimoine informatique | S2, S5, S6 |
-| Répondre aux incidents et demandes | S4, S6, S8 |
-| Mettre à disposition un service | S7, S11 à S15 |
-| Maintenir un service en condition opérationnelle | S10, S17 |
-| Documenter et formaliser | S16, S18 |
-| Communiquer en contexte professionnel | S8, S19, S20 |
+| Sensibilisation aux menaces | S1 à S4 |
+| Application RGPD | S5 à S9 |
+| Gestion des droits d’accès | S10 |
+| Mise en œuvre protection cryptographique | S11 à S14 |
+| Analyse incident & audit | S16 à S19 |
+| Argumentation juridique (E6) | S8, S9, S18, S20 |
 
 ---

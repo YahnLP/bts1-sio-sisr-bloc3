@@ -2,25 +2,30 @@
 
 | **Champ** | **Détail** |
 |-----------|-----------|
-| **Semaine** | S2 — Année 1 |
-| **Bloc** | Bloc 1 — Support et mise à disposition de services informatiques |
+| **Semaine** | S3 — Année 1 |
+| **Bloc** | Bloc 3 — Cybersécurité des services informatiques |
 | **Durée totale** | 4 heures |
-| **Public** | Apprentis BTS SIO SISR — deuxième semaine |
-| **Modalité** | Présentiel — salle TP (accès physique aux postes de travail) |
-| **Prérequis** | S1 — présentation BTS SIO, test de positionnement |
+| **Public** | Apprentis BTS SIO SISR — troisième semaine |
+| **Modalité** | Présentiel — salle de cours + TP |
+| **Prérequis** | S1 BLOC 3 (règle 1 mots de passe robustes, règle 6 2FA) |
 
 ---
 
 ## 🎯 Objectifs
 
-À l'issue de cette séance, l'apprenant sera capable de :
+**Mots de passe :**
+- ✅ Comprendre le concept d'**entropie** (force mathématique d'un mot de passe)
+- ✅ Calculer le **temps de craquage** selon la longueur et la complexité
+- ✅ Identifier les **attaques** sur mots de passe (brute force, dictionnaire, rainbow tables)
+- ✅ Appliquer les **bonnes pratiques** (longueur, complexité, unicité)
+- ✅ Utiliser un **gestionnaire de mots de passe** (Bitwarden, KeePass)
 
-- ✅ Expliquer **pourquoi un inventaire de parc** est indispensable dans une DSI
-- ✅ Distinguer les trois composantes d'un inventaire : **matériel**, **logiciel** et **licences**
-- ✅ Identifier les informations clés d'un équipement (CPU, RAM, stockage, OS, réseau)
-- ✅ Remplir une **fiche technique** complète et exploitable pour un poste de travail
-- ✅ Utiliser les **outils système** (gestionnaire de périphériques, `msinfo32`, `wmic`, `lshw`) pour collecter des informations matérielles
-- ✅ Comprendre le lien entre inventaire de parc et **pratiques ITIL** (Gestion des Actifs, Gestion des Configurations)
+**Authentification multi-facteurs :**
+- ✅ Définir les **3 facteurs d'authentification** (ce que je sais, ce que j'ai, ce que je suis)
+- ✅ Distinguer **2FA** et **MFA**
+- ✅ Comprendre les **types de facteurs** (SMS, app, clé physique, biométrie)
+- ✅ Évaluer la **sécurité** de chaque type
+- ✅ Configurer la **2FA** sur des services réels (Gmail, GitHub, etc.)
 
 ---
 
@@ -28,11 +33,9 @@
 
 | **Code** | **Intitulé de la compétence** | **Niveau visé** |
 |----------|-------------------------------|-----------------|
-| **B1.1** | Recenser et identifier les ressources numériques | Acquisition |
-| **B1.2** | Exploiter des référentiels, normes et standards adoptés par la DSI | Découverte |
-| **B1.4** | Mettre en place et exploiter des outils de gestion de parc | Découverte |
-| **B3.3** | Participer à la gestion et au suivi d'un projet | Découverte |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base | Maîtrise |
+| **B3.1** | Identifier les principales menaces de sécurité | Acquisition |
 
-> 📌 **S2 est la première séance vraiment opérationnelle.** Elle ancre immédiatement les apprenants dans une compétence B1 fondamentale — la **gestion de parc** — qui sera mobilisée tout au long du BTS et dans chaque mission en entreprise. Elle introduit aussi la discipline de la **documentation rigoureuse**, qui traversera tout le programme.
+> 📌 **S3 BLOC 3 approfondit la première ligne de défense : l'authentification.** Elle détaille la science des mots de passe robustes (entropie, attaques), présente les gestionnaires comme solution pragmatique, et introduit l'authentification multi-facteurs (MFA) comme couche de sécurité indispensable. C'est une séance **très pratique** avec configuration réelle de 2FA.
 
 ---

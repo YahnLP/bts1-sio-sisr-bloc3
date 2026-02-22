@@ -4,7 +4,7 @@ title: 📚 FICHE DE COURS
 ---
 
 # 📚 FICHE DE COURS ÉLÈVE
-## "GLPI — Gestion Libre de Parc Informatique"
+## "Collecte Légale · Bases Légales · Consentement · Transparence"
 
 *Version 1.0 — BTS SIO SISR — Année 1 — Semaine 6*
 
@@ -14,332 +14,325 @@ title: 📚 FICHE DE COURS
 
 | **Code** | **Compétence** |
 |----------|---------------|
-| **B1.2** | Exploiter des référentiels et standards (ITIL dans GLPI) |
-| **B1.3** | Mettre en place et exploiter des outils de support |
-| **B1.4** | Mettre en place et exploiter des outils de gestion de parc |
-| **B1.6** | Assurer le support des utilisateurs |
+| **B2.1** | Comprendre les obligations légales liées au traitement de données personnelles |
+| **B2.3** | Appliquer les principes du RGPD dans un contexte professionnel |
 
 ---
 
-## PARTIE I — Présentation de GLPI
+## PARTIE I — Les 6 Bases Légales du Traitement (Approfondissement)
 
-### I.A. Qu'est-ce que GLPI ?
+### I.A. Rappel : Pourquoi une Base Légale ?
 
-**GLPI** (Gestion Libre de Parc Informatique) est un logiciel **ITSM** (IT Service Management) open source développé en PHP, très répandu en France. Il intègre dans un seul outil :
-
-- La **gestion des tickets** (incidents, demandes, problèmes, changements)
-- La **CMDB** (inventaire des actifs IT)
-- La **base de connaissances** (solutions aux incidents récurrents)
-- La **gestion des licences** logicielles
-- La **planification** des maintenances et interventions
-- Les **statistiques et rapports** de performance (SLA, MTTR...)
-
-| **Paramètre** | **Valeur** |
-|---|---|
-| **Éditeur** | Teclib (France) + communauté open source |
-| **Licence** | GPL v2 (gratuit) |
-| **Langage** | PHP + MySQL/MariaDB |
-| **Interface** | Web (navigateur) |
-| **Plateformes** | Tout serveur Linux/Windows avec Apache/Nginx + PHP |
-| **Utilisateurs** | + de 300 000 organisations dans le monde |
-| **Intégration** | OCS Inventory, FusionInventory, LDAP/AD, SSO |
-
-> 💡 **GLPI dans le monde professionnel :** GLPI est l'outil ITSM le plus déployé dans les collectivités territoriales, établissements d'enseignement, administrations et PME françaises. Il est mentionné dans de très nombreuses fiches de poste technicien / admin système. Le maîtriser vous différencie immédiatement.
-
----
-
-### I.B. Architecture GLPI
+**Principe :** Tout traitement de données personnelles doit reposer sur **au moins une** des 6 bases légales définies par l'Article 6 du RGPD. Sans base légale, le traitement est **illicite**.
 
 ```
-   UTILISATEURS FINAUX        TECHNICIENS              ADMINISTRATEURS
-   (créent des tickets        (traitent les tickets,   (configurent GLPI,
-   via portail ou email)      accèdent à la CMDB)      gèrent les profils)
-         │                          │                          │
-         └──────────────────────────┴──────────────────────────┘
-                                    │
-                             HTTP / HTTPS
-                                    │
-                    ┌───────────────▼──────────────────┐
-                    │         SERVEUR WEB               │
-                    │    Apache / Nginx + PHP 8.x       │
-                    │                                   │
-                    │    ┌─────────────────────────┐   │
-                    │    │    APPLICATION GLPI      │   │
-                    │    │   (interface, logique,   │   │
-                    │    │    règles, workflows)    │   │
-                    │    └────────────┬────────────┘   │
-                    └─────────────────┼────────────────┘
-                                      │ SQL
-                    ┌─────────────────▼────────────────┐
-                    │         BASE DE DONNÉES           │
-                    │       MySQL / MariaDB             │
-                    │  (tickets, actifs, utilisateurs,  │
-                    │   connaissances, historique...)   │
-                    └──────────────────────────────────┘
+   ARTICLE 6 DU RGPD — LES 6 BASES LÉGALES
+   ═══════════════════════════════════════════════════════════════
 
-   ───── ALIMENTATION AUTOMATIQUE DE LA CMDB ─────
-
-   OCS Inventory ──── Plugin OCS Import ────►  GLPI CMDB
-   (inventaire)                                (actifs liés aux tickets)
-
-   FusionInventory ─── Agent natif GLPI ────►  GLPI CMDB
-   (alternative OCS)
+   1. CONSENTEMENT
+   2. EXÉCUTION D'UN CONTRAT
+   3. OBLIGATION LÉGALE
+   4. SAUVEGARDE DES INTÉRÊTS VITAUX
+   5. MISSION D'INTÉRÊT PUBLIC
+   6. INTÉRÊTS LÉGITIMES DU RESPONSABLE
 ```
 
 ---
 
-### I.C. La Place de GLPI dans l'Écosystème ITSM
+### I.B. Base 1 — Le Consentement (Art. 6.1.a)
+
+**Définition :**
+> *"La personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques."*
+
+**4 conditions CUMULATIVES du consentement valide :**
 
 ```
-   ┌─────────────────────────────────────────────────────────┐
-   │                      GLPI                               │
-   │                                                         │
-   │  ┌──────────────┐    ┌─────────────┐   ┌───────────┐  │
-   │  │   TICKETS     │    │    CMDB     │   │    KB     │  │
-   │  │ Incidents     │◄──►│ Computers   │◄──│ Solutions │  │
-   │  │ Demandes      │    │ Printers    │   │ Procédures│  │
-   │  │ Problèmes     │    │ Network     │   └───────────┘  │
-   │  │ Changements   │    │ Software    │                   │
-   │  └──────────────┘    └──────┬──────┘   ┌───────────┐  │
-   │                             │           │ LICENCES  │  │
-   │                    ┌────────▼────┐      │ Audit     │  │
-   │                    │ OCS Import  │      │ Expiration│  │
-   │                    │  (plugin)   │      └───────────┘  │
-   │                    └────────┬────┘                     │
-   └─────────────────────────────┼───────────────────────────┘
-                                  │
-                        ┌─────────▼──────────┐
-                        │   OCS Inventory    │
-                        │   (agents postes)  │
-                        └────────────────────┘
-```
-
----
-
-## PARTIE II — Interface GLPI : Les Modules Essentiels
-
-### II.A. Menu Principal
-
-```
-   GLPI — Barre de navigation principale
-   ─────────────────────────────────────────────────────────────────
-   Accueil   Parc   Assistance   Gestion   Outils   Admin   Config
-      │        │        │           │         │        │        │
-      │        │        │           │         │        │        └─ Profils, LDAP,
-      │        │        │           │         │        │           Plugins, Règles
-      │        │        │           │         │        └─ Utilisateurs, Entités
-      │        │        │           │         └─ Prise de notes, Tâches, Rapports
-      │        │        │           └─ Fournisseurs, Contrats, Documents, Licences
-      │        │        └─ Tickets ★, Problèmes, Changements, Planification
-      │        └─ Ordinateurs ★, Moniteurs, Logiciels, Réseau,
-      │           Périphériques, Imprimantes, Téléphones
-      └─ Tableau de bord — Vue d'ensemble des tickets ouverts
-```
-
-### II.B. La Fiche d'un Ticket GLPI
-
-Un ticket dans GLPI contient tous les champs que vous remplissez manuellement depuis S3 — mais dans une interface structurée et traçable :
-
-| **Champ** | **Équivalent cours** | **Options GLPI** |
-|---|---|---|
-| **Titre** | Titre du ticket | Texte libre |
-| **Type** | Incident / Demande | Incident / Demande de service |
-| **Catégorie** | Domaine technique | Réseau, Système, Matériel, Logiciel, Sécurité... |
-| **Demandeur** | Utilisateur concerné | Lié à l'annuaire GLPI / LDAP / AD |
-| **Technicien affecté** | Niveau N1/N2 | Utilisateur ou groupe technique |
-| **Priorité** | P1 à P4 | 1-Très haute à 5-Très basse (calculée automatiquement) |
-| **Urgence + Impact** | Matrice S3 | Saisie séparée → priorité calculée |
-| **Statut** | Étape du cycle | Nouveau → En cours → En attente → Résolu → Clôturé |
-| **Description** | Description incident | Texte riche (images, fichiers joints) |
-| **Suivi** | Actions N1 dans le ticket | Fils de messages (internes ou publics) |
-| **Solution** | Résolution | Texte + lien KB optionnel |
-| **CI lié** | Équipement concerné | Lié à un actif de la CMDB |
-| **SLA** | Délai contractuel | Calculé automatiquement, alerte si dépassement |
-
----
-
-### II.C. Cycle de Vie d'un Ticket dans GLPI
-
-```
-   STATUT          ACTION                    QUI
+   ① LIBRE
    ──────────────────────────────────────────────────────────────
-   [ Nouveau ]  ← Ticket créé (portail, email, téléphone)
-        │
-        ▼
-   [ En cours   ← Technicien s'affecte ou est affecté
-     (attribué)]
-        │
-        ▼
-   [ En cours   ← Technicien travaille sur la résolution
-     (planifié)]
-        │
-        ├──► [ En attente ] ← En attente d'info utilisateur / fournisseur
-        │         │
-        │         └──► Retour à En cours dès réponse reçue
-        │
-        ▼
-   [ Résolu   ] ← Solution saisie par le technicien
-        │
-        ▼
-   [ Clôturé  ] ← Validé par l'utilisateur OU clôture automatique (ex. 72h)
-```
+   La personne doit avoir un VRAI choix, sans pression ni
+   déséquilibre de pouvoir.
 
-> ⚠️ **Différence importante :** "Résolu" signifie que le technicien a appliqué une solution. "Clôturé" signifie que l'utilisateur a confirmé que la solution fonctionne. Un ticket peut rester en "Résolu" plusieurs jours si l'utilisateur n'a pas encore confirmé. La clôture automatique après X jours est configurable.
+   ❌ Refus impossible (ex : pas de service sans cookies)
+   ❌ Case pré-cochée (consentement par défaut)
+   ❌ Consentement demandé par l'employeur à ses salariés
+      (relation de subordination = pas libre)
 
----
+   ② SPÉCIFIQUE
+   ──────────────────────────────────────────────────────────────
+   Un consentement distinct pour CHAQUE finalité.
 
-### II.D. Les Profils Utilisateurs dans GLPI
+   ❌ "J'accepte que mes données soient utilisées à des fins
+      commerciales et partagées avec nos partenaires"
+      → 2 finalités groupées = invalide
 
-GLPI gère des **profils** (rôles) qui définissent ce que chaque type d'utilisateur peut voir et faire :
+   ✅ Case 1 : "J'accepte la newsletter mensuelle"
+   ✅ Case 2 : "J'accepte le partage avec nos partenaires"
+      → 2 cases séparées = valide
 
-| **Profil** | **Accès** | **Peut faire** |
-|---|---|---|
-| **Super-Admin** | Tout | Configuration complète, tous les modules |
-| **Admin** | Tout sauf configuration système | Gérer utilisateurs, profils, entités |
-| **Technicien** | Assistance + Parc | Créer/traiter tickets, consulter CMDB |
-| **Responsable** | Supervision | Voir statistiques, SLA, rapports |
-| **Utilisateur final** | Portail uniquement | Créer tickets pour soi-même, consulter ses tickets |
-| **Observateur** | Lecture seule | Voir sans modifier |
+   ③ ÉCLAIRÉ
+   ──────────────────────────────────────────────────────────────
+   La personne doit COMPRENDRE ce qu'elle accepte.
 
----
+   Informations obligatoires AVANT le consentement :
+   → Identité du responsable de traitement
+   → Finalité(s) du traitement
+   → Types de données collectées
+   → Droit de retirer le consentement à tout moment
 
-### II.E. Les Catégories de Tickets
+   ❌ "En cliquant ici, vous acceptez nos conditions"
+      (sans lien vers les conditions)
 
-Les **catégories** permettent de router automatiquement les tickets vers les bons groupes techniques et d'alimenter les statistiques par domaine. Une bonne arborescence de catégories est essentielle :
+   ④ UNIVOQUE
+   ──────────────────────────────────────────────────────────────
+   Acte positif et clair (pas d'ambiguïté).
 
-```
-Exemple d'arborescence de catégories SimIO SARL :
+   ❌ "En continuant à naviguer, vous acceptez..."
+      → Pas un acte positif (naviguer ≠ consentir)
 
-├── Matériel
-│   ├── Ordinateur (poste fixe)
-│   ├── Laptop
-│   ├── Imprimante
-│   └── Périphérique
-├── Logiciel
-│   ├── Système d'exploitation
-│   ├── Bureautique (Office)
-│   ├── Métier (ERP, CRM...)
-│   └── Sécurité (antivirus)
-├── Réseau
-│   ├── Connectivité (pas d'accès)
-│   ├── Lenteur réseau
-│   ├── WiFi
-│   └── VPN
-├── Accès et Comptes
-│   ├── Mot de passe oublié / expiré
-│   ├── Droits insuffisants
-│   └── Création de compte
-└── Autre
+   ❌ Case pré-cochée
+      → Pas un acte positif (ne rien faire ≠ consentir)
+
+   ✅ Cocher une case vide
+   ✅ Cliquer "J'accepte" après avoir lu l'information
+   ✅ Signer un document
 ```
 
 ---
 
-## PARTIE III — Le Lien OCS → GLPI
+### I.C. Retrait du Consentement
 
-### III.A. Pourquoi Lier OCS et GLPI ?
-
-Sans lien OCS-GLPI, les deux outils fonctionnent en silos :
-- OCS a l'inventaire des postes
-- GLPI a les tickets d'incidents
-
-Avec le lien OCS-GLPI (via le plugin **OCS Inventory NG**) :
-- Les postes inventoriés par OCS apparaissent automatiquement dans la CMDB GLPI
-- Un ticket peut être lié au CI du poste concerné
-- L'historique matériel du poste est visible depuis le ticket
-- Les changements matériels détectés par OCS sont visibles dans GLPI
-
-### III.B. Configuration du Plugin OCS Import
-
-**Depuis GLPI (Administration → Plugins → OCS Inventory NG) :**
+**Règle :** Le consentement peut être **retiré à tout moment**, aussi facilement qu'il a été donné.
 
 ```
-Étapes de configuration :
+   SYMÉTRIE OBLIGATOIRE
+   ═══════════════════════════════════════════════════════════════
 
-1. Renseigner l'URL du serveur OCS
-   Serveur OCS : http://[IP_OCS]/ocsreports
+   DONNER le consentement :     Se désabonner newsletter :
+   Cliquer "J'accepte"     →   Cliquer "Se désabonner"
+   (1 clic)                    (doit être en 1 clic maximum)
 
-2. Compte de connexion à la base OCS
-   Login : glpi (compte SQL dédié, créé sur le serveur OCS)
-   Password : [mot de passe]
-
-3. Options d'import :
-   ☑ Synchroniser les ordinateurs      → importer les postes OCS
-   ☑ Mettre à jour automatiquement     → synchro lors des scans OCS
-   ☑ Importer les logiciels            → liste logiciels dans CMDB
-
-4. Tester la connexion
-   → "Test de connexion" → attendu : "Connexion réussie"
-
-5. Lancer l'import initial
-   → "Synchroniser GLPI avec OCS" → les postes OCS apparaissent
-     dans Parc → Ordinateurs
+   ❌ S'abonner en 1 clic → Se désabonner par courrier postal
+   ❌ S'abonner en ligne → Appeler un numéro surtaxé pour se
+      désabonner
+   ❌ Désabonnement caché dans les paramètres (7 niveaux de menu)
 ```
 
-### III.C. Résultat dans GLPI
+**Conséquences du retrait :**
+- L'utilisation des données doit **cesser immédiatement**
+- Les données ne peuvent pas être conservées uniquement parce que le consentement existait avant
+- Sauf si une autre base légale s'applique (ex : obligation légale)
 
-Après import OCS, chaque poste inventorié par OCS devient un **CI (Configuration Item)** dans GLPI :
+---
+
+### I.D. Base 2 — Exécution d'un Contrat (Art. 6.1.b)
 
 ```
-GLPI → Parc → Ordinateurs → [Poste importé depuis OCS]
+   DÉFINITION
+   ═══════════════════════════════════════════════════════════════
+   Traitement nécessaire pour exécuter un contrat avec la personne
+   OU pour des mesures pré-contractuelles.
 
-Informations disponibles :
-├── Matériel (CPU, RAM, disque) ← vient d'OCS
-├── Logiciels installés         ← vient d'OCS
-├── Réseau (IP, MAC)            ← vient d'OCS
-├── Tickets liés                ← ajoutés par les techniciens dans GLPI
-├── Historique des modifications ← suivi automatique
-└── Utilisateur affecté         ← configuré dans GLPI
+   EXEMPLES VALIDES
+   ──────────────────────────────────────────────────────────────
+   • E-commerce : Adresse de livraison (pour livrer la commande)
+   • Employeur : RIB du salarié (pour payer le salaire)
+   • Médecin : Données santé (pour soigner le patient)
+   • Banque : Données financières (pour gérer le compte)
+
+   ⚠️ ATTENTION : Seulement les données NÉCESSAIRES au contrat
+   ──────────────────────────────────────────────────────────────
+   ❌ E-commerce : Date de naissance (pas nécessaire pour livrer)
+   ❌ Employeur : Opinion politique (pas nécessaire au travail)
 ```
 
 ---
 
-## PARTIE IV — Statistiques et Tableaux de Bord
+### I.E. Base 3 — Obligation Légale (Art. 6.1.c)
 
-GLPI génère automatiquement des statistiques exploitables pour le reporting DSI :
+```
+   DÉFINITION
+   ═══════════════════════════════════════════════════════════════
+   Traitement imposé par une loi ou réglementation.
 
-| **Rapport** | **Contenu** | **Usage** |
-|---|---|---|
-| **Tickets par statut** | Volume Nouveau / En cours / Résolu / Clôturé | État des files d'attente |
-| **MTTR moyen** | Temps de résolution par catégorie | Mesure d'efficacité |
-| **Tickets par technicien** | Charge de travail individuelle | Management d'équipe |
-| **Respect SLA** | % tickets traités dans les délais | Contractuel |
-| **Tickets par catégorie** | Volume par domaine technique | Identifier les incidents récurrents |
-| **Évolution mensuelle** | Tendance sur 12 mois | Pilotage long terme |
+   EXEMPLES
+   ──────────────────────────────────────────────────────────────
+   • Fiche de paie → Obligation Code du travail
+   • Déclaration fiscale → Obligation Code général des impôts
+   • Facture avec données client → Obligation comptable (TVA)
+   • Registre des accidents du travail → Obligation réglementaire
+   • Conservation des logs pendant 1 an → LCEN (Loi pour la
+     Confiance dans l'Économie Numérique)
 
-> 📌 **Lien avec l'E5 :** Savoir lire et commenter un tableau de bord GLPI est une compétence valorisable devant le jury E5. Un apprenant qui dit "j'ai configuré les SLA et généré les rapports mensuels pour la DSI" démontre B1.2 et B1.3 au niveau Maîtrise.
-
----
-
-## V. Vocabulaire Clé
-
-| **Terme** | **Définition** |
-|-----------|---------------|
-| **GLPI** | Gestion Libre de Parc Informatique — outil ITSM open source |
-| **ITSM** | IT Service Management — ensemble des pratiques de gestion des services IT |
-| **Plugin** | Extension ajoutant des fonctionnalités à GLPI |
-| **OCS Import** | Plugin GLPI permettant d'importer l'inventaire OCS dans la CMDB |
-| **Entité** | Unité organisationnelle dans GLPI (département, site, filiale) |
-| **Profil** | Rôle définissant les droits d'accès d'un utilisateur dans GLPI |
-| **Catégorie de ticket** | Classification du ticket par domaine technique |
-| **Suivi** | Message ajouté à un ticket pour documenter l'avancement |
-| **Solution** | Réponse finale ajoutée à un ticket pour le passer en "Résolu" |
-| **CI (Configuration Item)** | Actif géré dans la CMDB — ordinateur, imprimante, serveur... |
-| **SLA GLPI** | Service Level Agreement configuré dans GLPI — déclenche des alertes |
-| **Règle métier** | Automatisation dans GLPI (ex : si catégorie = Réseau → affecter au groupe Réseau) |
-| **Portail utilisateur** | Interface simplifiée GLPI pour les utilisateurs finaux |
-| **FusionInventory** | Alternative à OCS — agent d'inventaire intégré nativement à GLPI |
-| **Clôture automatique** | Mécanisme GLPI pour clôturer automatiquement les tickets résolus après X jours |
+   ⚠️ PAS BESOIN DE DEMANDER LE CONSENTEMENT
+   ──────────────────────────────────────────────────────────────
+   La loi l'impose → Pas de choix pour la personne
+   Mais obligation d'INFORMER la personne
+```
 
 ---
 
-## ✅ Auto-évaluation : Suis-je Prêt ?
+### I.F. Base 6 — Intérêts Légitimes (Art. 6.1.f)
 
-- [ ] J'explique l'architecture GLPI (serveur web + PHP + MySQL)
-- [ ] Je navigue dans les menus principaux de GLPI
-- [ ] Je crée un ticket avec tous les champs obligatoires
-- [ ] Je catégorise et affecte un ticket à un technicien
-- [ ] Je fais avancer le statut d'un ticket jusqu'à la clôture
-- [ ] J'explique la différence entre "Résolu" et "Clôturé"
-- [ ] Je sais configurer le lien OCS → GLPI via le plugin
-- [ ] Je consulte les statistiques GLPI (MTTR, SLA)
+**La base légale la plus souple (et la plus discutable)**
+
+```
+   DÉFINITION
+   ═══════════════════════════════════════════════════════════════
+   Le traitement est nécessaire pour les intérêts légitimes du
+   responsable, SAUF si les droits fondamentaux de la personne
+   prévalent.
+
+   → Nécessite une BALANCE D'INTÉRÊTS (test de proportionnalité)
+
+   EXEMPLES VALIDES
+   ──────────────────────────────────────────────────────────────
+   ✅ Vidéosurveillance des locaux pour la sécurité des biens
+   ✅ Prospection commerciale auprès de clients existants
+      (pas pour de nouveaux prospects)
+   ✅ Détection des fraudes (comportements suspects)
+   ✅ IT : Logs de sécurité pour détecter les intrusions
+
+   EXEMPLES INVALIDES
+   ──────────────────────────────────────────────────────────────
+   ❌ Suivi comportemental des salariés (intérêt salarié prévaut)
+   ❌ Vente de données à des tiers (pas "légitime")
+   ❌ Profilage intensif pour publicité ciblée sans lien avec
+      une relation commerciale existante
+```
+
+---
+
+## PARTIE II — La Transparence
+
+### II.A. L'Obligation d'Information
+
+Quand le RT collecte des données, il doit **informer la personne** au moment de la collecte (Articles 13-14 RGPD).
+
+**Informations obligatoires à fournir :**
+
+```
+   MENTIONS D'INFORMATION OBLIGATOIRES
+   ═══════════════════════════════════════════════════════════════
+
+   ① QUI traite ? (Identité du responsable de traitement)
+   ──────────────────────────────────────────────────────────────
+   Nom, adresse, coordonnées de contact
+
+   ② POURQUOI ? (Finalité(s) du traitement)
+   ──────────────────────────────────────────────────────────────
+   Objectif précis et explicite
+
+   ③ SUR QUELLE BASE LÉGALE ?
+   ──────────────────────────────────────────────────────────────
+   Consentement / Contrat / Obligation légale / Intérêt légitime
+
+   ④ QUELLES DONNÉES ? (Catégories de données collectées)
+   ──────────────────────────────────────────────────────────────
+   Liste des données collectées
+
+   ⑤ COMBIEN DE TEMPS ? (Durée de conservation)
+   ──────────────────────────────────────────────────────────────
+   Durée précise ou critères pour la déterminer
+
+   ⑥ QUI Y A ACCÈS ? (Destinataires)
+   ──────────────────────────────────────────────────────────────
+   Personnes internes habilitées + sous-traitants + partenaires
+
+   ⑦ QUELS DROITS ? (Droits des personnes)
+   ──────────────────────────────────────────────────────────────
+   Accès, rectification, effacement, portabilité, opposition...
+
+   ⑧ COMMENT EXERCER SES DROITS ?
+   ──────────────────────────────────────────────────────────────
+   Adresse email / formulaire / courrier postal
+
+   ⑨ TRANSFERTS HORS UE ?
+   ──────────────────────────────────────────────────────────────
+   Si données envoyées hors de l'UE → Mentionner et les garanties
+```
+
+---
+
+### II.B. Modèle de Politique de Confidentialité
+
+**Comment présenter ces informations sur un site web :**
+
+```
+   POLITIQUE DE CONFIDENTIALITÉ — MODÈLE
+   ═══════════════════════════════════════════════════════════════
+   Dernière mise à jour : [DATE]
+
+   1. QUI SOMMES-NOUS ?
+   ──────────────────────────────────────────────────────────────
+   [Nom de l'entreprise], [adresse], [email DPO ou contact RGPD]
+
+   2. QUELLES DONNÉES COLLECTONS-NOUS ?
+   ──────────────────────────────────────────────────────────────
+   • Via le formulaire de contact : Prénom, Email, Message
+   • Via la navigation : Adresse IP, cookies analytiques
+   • Via la commande : Nom, adresse, données bancaires
+
+   3. POURQUOI COLLECTONS-NOUS VOS DONNÉES ?
+   ──────────────────────────────────────────────────────────────
+   • Formulaire contact → Répondre à votre demande (base : consentement)
+   • Commande → Livrer votre colis (base : contrat)
+   • Analytics → Améliorer le site (base : intérêt légitime)
+
+   4. COMBIEN DE TEMPS ?
+   ──────────────────────────────────────────────────────────────
+   • Données clients : 3 ans après dernier achat
+   • Données comptables : 10 ans (obligation légale)
+   • Cookies : 13 mois maximum
+
+   5. QUI ACCÈDE À VOS DONNÉES ?
+   ──────────────────────────────────────────────────────────────
+   • Notre équipe commerciale (3 personnes habilitées)
+   • Notre hébergeur : [Nom] — serveurs en France
+   • Notre prestataire de paiement : [Nom] — certifié PCI-DSS
+
+   6. VOS DROITS
+   ──────────────────────────────────────────────────────────────
+   Vous pouvez exercer vos droits (accès, rectification,
+   effacement, portabilité, opposition) par email :
+   [email@entreprise.fr]
+   Réponse sous 1 mois.
+
+   Réclamation possible auprès de la CNIL : www.cnil.fr
+   ═══════════════════════════════════════════════════════════════
+```
+
+---
+
+### II.C. Mentions sur un Formulaire
+
+Tout formulaire de collecte doit comporter une **mention d'information courte** :
+
+```
+   EXEMPLE — Formulaire de contact
+   ═══════════════════════════════════════════════════════════════
+
+   ┌─────────────────────────────────────────────────────────┐
+   │  Prénom : [_______________]                              │
+   │  Email  : [_______________]                              │
+   │  Message: [                                             ]│
+   │           [                                             ]│
+   │                                                          │
+   │  ℹ️ Les données collectées via ce formulaire sont         │
+   │  traitées par MaBoîte SARL pour répondre à votre         │
+   │  demande (base : consentement). Elles sont conservées    │
+   │  3 ans. Vous disposez d'un droit d'accès, rectification  │
+   │  et effacement : rgpd@maboite.fr                         │
+   │  En savoir plus : [Politique de confidentialité]         │
+   │                                                          │
+   │  [ ] J'accepte que mes données soient traitées          │
+   │      pour répondre à ma demande ← (si base = consentement│
+   │                                    uniquement si nécessaire)│
+   │                                                          │
+   │              [  ENVOYER  ]                               │
+   └─────────────────────────────────────────────────────────┘
+```
+
+> 💡 **Note :** Si la base légale est le **contrat** ou l'**intérêt légitime**, pas besoin de case à cocher — mais l'information doit quand même être présente.
+
+---
 

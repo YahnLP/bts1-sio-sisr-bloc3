@@ -3,11 +3,11 @@
 | **Champ** | **Détail** |
 |-----------|-----------|
 | **Semaine** | S4 — Année 1 |
-| **Bloc** | Bloc 1 — Support et mise à disposition de services informatiques |
+| **Bloc** | Bloc 3 — Cybersécurité des services informatiques |
 | **Durée totale** | 4 heures |
 | **Public** | Apprentis BTS SIO SISR — quatrième semaine |
-| **Modalité** | Présentiel — salle TP (accès aux postes, imprimantes, réseau) |
-| **Prérequis** | S3 — ITIL, vocabulaire incident/problème/SLA, niveaux N1/N2/N3 |
+| **Modalité** | Présentiel — salle de cours + TP |
+| **Prérequis** | S1 BLOC 3 (règle 3 sauvegardes introduite) |
 
 ---
 
@@ -15,12 +15,18 @@
 
 À l'issue de cette séance, l'apprenant sera capable de :
 
-- ✅ Appliquer le **cycle complet de gestion d'un incident** : ouverture → prise en charge → diagnostic → résolution → validation → clôture
-- ✅ Utiliser une **méthode de diagnostic** structurée (du général au particulier, de la couche physique à la couche applicative)
-- ✅ Résoudre 3 incidents typiques N1 : **imprimante hors service**, **accès à un dossier refusé**, **poste lent**
-- ✅ Rédiger un ticket complet **pendant** la résolution (pas après)
-- ✅ Documenter la solution en vue d'une entrée dans la **base de connaissances**
-- ✅ Adopter la **posture professionnelle** du technicien N1 : communication claire avec l'utilisateur, MTTR maîtrisé
+**Sauvegardes :**
+- ✅ Comprendre les **3 types** de sauvegardes (complète, différentielle, incrémentielle)
+- ✅ Comparer leurs **avantages/inconvénients** (espace, temps, restauration)
+- ✅ Appliquer la **règle 3-2-1** (3 copies, 2 supports, 1 hors site)
+- ✅ Définir une **politique de sauvegarde** adaptée (fréquence, rétention, tests)
+- ✅ Identifier les **erreurs courantes** (sauvegarde unique, jamais testée, accessible au ransomware)
+
+**Supports amovibles :**
+- ✅ Distinguer les **types** (clé USB, disque externe HDD/SSD, NAS)
+- ✅ Identifier les **risques** (perte, vol, malware, corruption)
+- ✅ Appliquer les **bonnes pratiques** (chiffrement, déconnexion, scan antivirus)
+- ✅ Gérer la **politique d'usage** en entreprise
 
 ---
 
@@ -28,11 +34,9 @@
 
 | **Code** | **Intitulé de la compétence** | **Niveau visé** |
 |----------|-------------------------------|-----------------|
-| **B1.3** | Mettre en place et exploiter des outils de support et d'assistance | Acquisition |
-| **B1.6** | Assurer le support des utilisateurs | Acquisition |
-| **B2.2** | Installer et configurer des éléments d'infrastructure | Découverte |
-| **B3.3** | Participer à la gestion et au suivi d'un projet | Acquisition |
+| **B3.2** | Mettre en œuvre les mesures de sécurité de base | Maîtrise |
+| **B1.7** | Assurer la disponibilité, l'intégrité et la confidentialité des services informatiques | Acquisition |
 
-> 📌 **S4 est la première séance entièrement orientée pratique.** La théorie ITIL de S3 se concrétise : les apprenants traitent de vrais incidents (simulés) de bout en bout — ouverture du ticket, diagnostic, résolution, documentation, clôture. C'est le cycle complet qu'ils répéteront des centaines de fois en entreprise.
+> 📌 **S4 BLOC 3 traite de la disponibilité des données**, pilier fondamental de la sécurité (triade CIA : Confidentialité, Intégrité, **Disponibilité**). Les sauvegardes sont la dernière ligne de défense contre les ransomwares, pannes matérielles, erreurs humaines et catastrophes. Cette séance est **critique et très pratique**.
 
 ---
