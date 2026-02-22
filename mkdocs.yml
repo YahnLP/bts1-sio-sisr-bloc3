@@ -1,121 +1,128 @@
 # À modifier avec le nom et la description du site
 site_name: "Support et Services - BTS SIO SISR 1ère année"
-site_description: Cours de Support et Services (Bloc1) du BTS SIO
+site_description: "Cours de Support et Services (Bloc 1) du BTS SIO"
+
+# Auteur / dépôt / URL (version GitHub Pages)
+site_url: "https://yahnlp.github.io/bts1-sio-sisr-bloc1/"
+site_author: "Yahn Le Prettre"
+repo_url: "https://github.com/YahnLP/bts1-sio-sisr-bloc1"
+edit_uri: "edit/main/docs/"
 
 # À modifier, avec votre nom et la licence choisie
 copyright: |
-    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>
-    Hébergé sur la forge gérée par l'<a href="https://forge.apps.education.fr">Education</a>
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">
+    <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+  </a>
+  <br/>
+  Hébergé sur GitHub Pages
 
 # À modifier, avec votre mail
 extra:
-    social:
-        - icon: fontawesome/regular/envelope
-          link: mailto:yahn.leprettre.mfr@gmail.com
-          name: Écrire à l'auteur
-        - icon: fontawesome/brands/gitlab
-          link: !ENV [CI_PROJECT_URL]
-          name: GitLab
+  social:
+    - icon: fontawesome/regular/envelope
+      link: "mailto:yahn.leprettre.mfr@gmail.com"
+      name: "Écrire à l'auteur"
+    - icon: fontawesome/brands/github
+      link: "https://github.com/YahnLP/bts1-sio-sisr-bloc1"
+      name: "GitHub"
+
+docs_dir: docs
 
 # Éventuellement à modifier avec votre thème de couleurs
 theme:
-    favicon: images/icon-bts-physique2.png
-    logo: images/BTS.png
-    custom_dir: my_theme_customizations/
-    name: material
-    font: false                     # RGPD ; pas de fonte Google
-    language: fr                    # français
-    palette:                        # Palettes de couleurs jour/nuit
-      - media: "(prefers-color-scheme: light)"
-        scheme: default
-        primary: indigo
-        accent: indigo
-        toggle:
-            icon: material/weather-sunny
-            name: Passer au mode nuit
-      - media: "(prefers-color-scheme: dark)"
-        scheme: slate
-        primary: black
-        accent: green
-        toggle:
-            icon: material/weather-night
-            name: Passer au mode jour
-    features:
-        - navigation.instant
-        # - navigation.tabs   Pour avoir le menu vertical il fallait supprimer ça
-        - navigation.top
-        - toc.integrate
-        - header.autohide
-        - content.code.annotate   # Pour les annotations de code deroulantes avec +
+  name: material
+  language: fr
+  font: false # RGPD ; pas de fonte Google
 
-# Fin de modifications à effectuer, ne pas toucher les lignes suivantes sauf si vous comprenez ce que vous faites.
+  # ⚠️ Si ces fichiers n'existent pas dans docs/images/, commente ces 2 lignes
+  favicon: images/icon-bts-physique2.png
+  logo: images/BTS.png
 
-site_url: !ENV [CI_PAGES_URL, "http://127.0.0.1:8000/"]
-site_author: !ENV [CI_COMMIT_AUTHOR, "Nom d'auteur"]
-repo_url: !ENV [CI_PROJECT_URL]
-edit_uri: !ENV [EDIT_VARIABLE]
+  # ⚠️ Si ce dossier n'existe pas à la racine, commente cette ligne
+  custom_dir: my_theme_customizations/
 
-docs_dir: docs
+  palette: # Palettes de couleurs jour/nuit
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: "Passer au mode nuit"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: "Passer au mode jour"
+
+  features:
+    - navigation.instant
+    # - navigation.tabs   Pour avoir le menu vertical il fallait supprimer ça
+    - navigation.top
+    - toc.integrate
+    - header.autohide
+    - content.code.annotate
 
 nav:
   - "🏡 Accueil": index.md
   - ... | regex=^(?:(?!_REM.md).)*$
 
 markdown_extensions:
-    - meta
-    - abbr
-    - def_list                      # Les listes de définition.
-    - attr_list                     # Un peu de CSS et des attributs HTML.
-    - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
-    - admonition                    # Blocs colorés  !!! info "ma remarque"
-    - pymdownx.details              #   qui peuvent se plier/déplier.
-    - pymdownx.caret                # Passage ^^souligné^^ ou en ^exposant^.
-    - pymdownx.mark                 # Passage ==surligné==.
-    - pymdownx.tilde                # Passage ~~barré~~ ou en ~indice~.
-    - pymdownx.highlight:           # Coloration syntaxique du code
-        auto_title: true
-        auto_title_map:
-            "Python": "🐍 Script Python"
-            "Python Console Session": "🐍 Console Python"
-            "Text Only": "📋 Texte"
-            "E-mail": "📥 Entrée"
-            "Text Output": "📤 Sortie"
-    - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
-    - pymdownx.snippets             # Inclusion de fichiers externe.
-    - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
-        custom_checkbox:    false   #   avec cases d'origine
-        clickable_checkbox: true    #   et cliquables.
-    - pymdownx.tabbed:              # Volets glissants.  === "Mon volet"
-        alternate_style: true 
-    - pymdownx.keys:                # Touches du clavier.  ++ctrl+d++
-        separator: "\uff0b"
-    - pymdownx.emoji:               # Émojis  :boom:
-        emoji_index:     !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.arithmatex:
-        generic: true
-    - toc:
-        permalink: ⚓︎
-        toc_depth: 2
+  - meta
+  - abbr
+  - def_list
+  - attr_list
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      auto_title: true
+      auto_title_map:
+        Python: "🐍 Script Python"
+        Python Console Session: "🐍 Console Python"
+        Text Only: "📋 Texte"
+        E-mail: "📥 Entrée"
+        Text Output: "📤 Sortie"
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys:
+      separator: "\uff0b"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: "⚓︎"
+      toc_depth: 2
 
 plugins:
   - search
   - awesome-pages:
-        collapse_single_pages: true
+      collapse_single_pages: true
   - macros
-  #- tags:
-      #tags_file: defis.md
-  
+  # - tags:
+  #     tags_file: defis.md
 
 extra_javascript:
-  - xtra/javascripts/mathjax-config.js                    # MathJax
+  - xtra/javascripts/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - xtra/stylesheets/qcm.css ##
-  - xtra/stylesheets/ajustements.css  # ajustements
+  - xtra/stylesheets/qcm.css
+  - xtra/stylesheets/ajustements.css
