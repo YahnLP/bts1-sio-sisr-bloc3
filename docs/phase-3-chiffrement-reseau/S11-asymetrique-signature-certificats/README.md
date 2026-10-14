@@ -7,7 +7,7 @@
 | **Durée** | 4 heures |
 | **Prérequis** | S10 (chiffrement symétrique, hachage, HMAC). |
 | **Matériel** | VM Debian de laboratoire (`openssl`, `gpg`) ; navigateur web |
-| **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
+| **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
 
 > [!NOTE]
 > **Question qui guide la séance :** *« Comment échanger un secret avec quelqu'un qu'on n'a jamais rencontré, et comment être sûr de sa véritable identité ? »*

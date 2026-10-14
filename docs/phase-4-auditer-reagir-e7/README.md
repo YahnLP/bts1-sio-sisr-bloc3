@@ -9,6 +9,9 @@
 
 | Séance | Semaine | Thème | Statut |
 |---|---|---|---|
-
+| S16 | 16 | [Audit de vulnérabilités](S16-audit-vulnerabilites/README.md) | **disponible** |
+| S17 | 17 | [Gérer un incident de sécurité et préserver les preuves](S17-incident-reponse-preuves/README.md) | **disponible** |
+| S18 | 18 | [Méthode de l'étude de cas E7](S18-methode-etude-de-cas-e7/README.md) | **disponible** |
+| S19 | 19 | [Épreuve blanche E7 (4 h)](S19-epreuve-blanche-e7/README.md) | **à valider** |
 
 Les numéros de semaine sont ceux de la séquence (semaine 01 à 19) : ils ne correspondent pas à des dates, les 19 semaines d'alternance étant réparties sur l'année.

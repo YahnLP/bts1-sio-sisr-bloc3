@@ -30,5 +30,11 @@ Ces licences sont données **à titre d'information** ; seuls les textes fournis
 | cryptsetup (LUKS) | GPL v2 ou ultérieure (bibliothèque : LGPL) | **à vérifier** |
 | John the Ripper | GPL v2 (version communautaire) | **à vérifier** |
 | OATH Toolkit (`oathtool`) | GPL v3 ou ultérieure (bibliothèque : LGPL) | **à vérifier** |
+| SQLite | Domaine public | **à vérifier** |
+| nginx | BSD 2 clauses | **à vérifier** |
+| vsftpd | GPL v2 | **à vérifier** |
+| OpenSSH | Licence BSD | **à vérifier** |
+| Lynis | GPL v3 | **à vérifier** |
+| UFW | GPL v3 | **à vérifier** |
 
 Les marques citées (Cisco, Microsoft, Oracle, etc.) appartiennent à leurs propriétaires respectifs. Le contenu des parcours Cisco Networking Academy appartient à Cisco et n'est pas reproduit sur ce site.

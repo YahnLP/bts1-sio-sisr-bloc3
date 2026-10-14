@@ -1,3 +1,7 @@
 title: "Phase 4 – Auditer, réagir et préparer l'épreuve E7"
 nav:
   - README.md
+  - S16-audit-vulnerabilites
+  - S17-incident-reponse-preuves
+  - S18-methode-etude-de-cas-e7
+  - S19-epreuve-blanche-e7

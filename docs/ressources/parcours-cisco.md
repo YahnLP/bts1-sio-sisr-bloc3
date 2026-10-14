@@ -12,4 +12,4 @@ Ce parcours en ligne de Cisco Networking Academy est un **complément en autonom
 > [!NOTE]
 > Le contenu exact et la durée du parcours dépendent de la version proposée par la plateforme à la date de ton inscription : vérifie-les sur ton compte. Le site ne reproduit pas le contenu Cisco, qui est la propriété de Cisco.
 
-Les fiches de prise de notes de la version précédente du site (chapitres 1 à 5) sont conservées dans la séance S01 sous forme d'**annexe de lecture guidée**.
+Le site ne propose pas de fiches de lecture de ce parcours : les notions utiles sont traitées dans les séances (S01 pour les menaces, S14 pour la défense en profondeur, S15 et S17 pour la détection et la réponse).

@@ -7,7 +7,7 @@
 | **Durée** | 4 heures |
 | **Prérequis** | S11 (certificats, chaîne de confiance, signature). |
 | **Matériel** | VM Debian de laboratoire (`openssl`, `nginx`, `curl`) ; droits `sudo` |
-| **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
+| **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
 
 > [!NOTE]
 > **Question qui guide la séance :** *« Comment faire pour qu'un site interne soit en HTTPS sans avertissement, et comment diagnostiquer une erreur de certificat ? »*

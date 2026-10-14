@@ -7,7 +7,7 @@
 | **Durée** | 4 heures |
 | **Prérequis** | S03 (empreintes de mots de passe) et S05 (chiffrement d'un volume). |
 | **Matériel** | VM Debian de laboratoire (`openssl`, `gpg`, `coreutils`) |
-| **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
+| **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
 
 > [!NOTE]
 > **Question qui guide la séance :** *« Comment garder un fichier secret, et comment être sûr qu'il n'a pas été modifié ? »*

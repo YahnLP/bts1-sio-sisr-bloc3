@@ -20,10 +20,10 @@ Les bilans de séance renvoient aux compétences du **bloc 3 « Cybersécurité 
 | Compétence | Séances principales |
 |---|---|
 | B3.1 Données à caractère personnel | S06, S07, S08, S09 |
-| B3.2 Identité numérique et preuve | S09, S10, S11, S12 |
-| B3.3 Équipements et usages | S01, S02, S03, S04, S14 |
-| B3.4 Disponibilité, intégrité, confidentialité | S05, S08, S10, S11, S13, S17 |
-| B3.5A Cybersécurité de l'infrastructure | S12, S13, S14, S15, S16, S17 |
+| B3.2 Identité numérique et preuve | S09, S10, S11, S12, S17 |
+| B3.3 Équipements et usages | S01, S02, S03, S04, S05, S14 |
+| B3.4 Disponibilité, intégrité, confidentialité | S01, S04, S05, S08, S10, S11, S12, S13, S14, S15, S16, S17 |
+| B3.5A Cybersécurité de l'infrastructure | S02, S10, S11, S12, S13, S14, S15, S16, S17 |
 | Toutes (entraînement à l'épreuve) | S18, S19 |
 
 ## Niveaux utilisés dans les bilans
