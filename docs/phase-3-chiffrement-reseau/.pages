@@ -1,0 +1,9 @@
+title: "Phase 3 – Chiffrement, réseau et détection"
+nav:
+  - README.md
+  - S10-chiffrement-symetrique-hachage
+  - S11-asymetrique-signature-certificats
+  - S12-mini-pki-https
+  - S13-vpn-wireguard
+  - S14-architecture-durcissement
+  - S15-journaux-detection-ids

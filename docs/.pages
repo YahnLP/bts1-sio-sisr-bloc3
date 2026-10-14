@@ -1,1 +1,7 @@
-arrange:
+nav:
+  - Accueil: index.md
+  - phase-1-menaces-postes-acces
+  - phase-2-donnees-personnelles
+  - phase-3-chiffrement-reseau
+  - phase-4-auditer-reagir-e7
+  - ressources
