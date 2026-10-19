@@ -44,11 +44,38 @@ La **cryptographie** est la science des secrets et de la preuve. Elle répond à
 
 On utilise **la même clé** pour chiffrer et déchiffrer.
 
-```mermaid
-flowchart LR
-    A["Message clair"] -->|"chiffrement<br/>avec la clé K"| B["Message chiffré"]
-    B -->|"déchiffrement<br/>avec la <b>même</b> clé K"| C["Message clair"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 235.60 302.60" style="max-width:315px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 291.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M136,-281C136,-281 20,-281 20,-281 14,-281 8,-275 8,-269 8,-269 8,-256 8,-256 8,-250 14,-244 20,-244 20,-244 136,-244 136,-244 142,-244 148,-250 148,-256 148,-256 148,-269 148,-269 148,-275 142,-281 136,-281"/>
+<text text-anchor="start" x="27" y="-259" font-family="Helvetica,sans-Serif" font-size="15.00">Message clair</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M144,-158C144,-158 12,-158 12,-158 6,-158 0,-152 0,-146 0,-146 0,-133 0,-133 0,-127 6,-121 12,-121 12,-121 144,-121 144,-121 150,-121 156,-127 156,-133 156,-133 156,-146 156,-146 156,-152 150,-158 144,-158"/>
+<text text-anchor="start" x="19" y="-136" font-family="Helvetica,sans-Serif" font-size="15.00">Message chiffré</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M78,-243.91C78,-223.74 78,-190.48 78,-167.14"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="81.15,-167.12 78,-158.12 74.85,-167.12 81.15,-167.12"/>
+<text text-anchor="start" x="82" y="-204.6" font-family="Helvetica,sans-Serif" font-size="13.00">chiffrement</text>
+<text text-anchor="start" x="78" y="-190.6" font-family="Helvetica,sans-Serif" font-size="13.00">avec la clé K</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M136,-37C136,-37 20,-37 20,-37 14,-37 8,-31 8,-25 8,-25 8,-12 8,-12 8,-6 14,0 20,0 20,0 136,0 136,0 142,0 148,-6 148,-12 148,-12 148,-25 148,-25 148,-31 142,-37 136,-37"/>
+<text text-anchor="start" x="27" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">Message clair</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M78,-120.94C78,-101.25 78,-69.1 78,-46.28"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="81.15,-46.13 78,-37.13 74.85,-46.13 81.15,-46.13"/>
+<text text-anchor="start" x="99" y="-82.6" font-family="Helvetica,sans-Serif" font-size="13.00">déchiffrement</text>
+<text text-anchor="start" x="78" y="-69.6" font-family="Helvetica,sans-Serif" font-size="13.00">avec la </text>
+<text text-anchor="start" x="131" y="-69.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">même</text>
+<text text-anchor="start" x="177" y="-69.6" font-family="Helvetica,sans-Serif" font-size="13.00"> clé K</text>
+</g>
+</g>
+</svg>
+</figure>
 
 | Avantage | Limite |
 |---|---|

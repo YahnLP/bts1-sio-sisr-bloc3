@@ -56,14 +56,61 @@ Les mesures techniques (pare-feu, antivirus, filtrage) arrêtent beaucoup d'atta
 
 Un **rançongiciel** (*ransomware*) est un logiciel malveillant qui **chiffre** les fichiers de la victime, puis réclame une **rançon** contre la clé de déchiffrement. Les attaquants volent souvent aussi des données avant de chiffrer, pour menacer de les publier : c'est la **double extorsion**.
 
-```mermaid
-flowchart LR
-    A["1. Accès initial<br/>message piégé, mot de passe volé,<br/>service exposé non corrigé"] --> B["2. Installation<br/>et déplacement dans le réseau"]
-    B --> C["3. Élévation de privilèges<br/>compte administrateur"]
-    C --> D["4. Vol de données<br/>et destruction des sauvegardes accessibles"]
-    D --> E["5. Chiffrement des fichiers"]
-    E --> F["6. Demande de rançon"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 384.60 618.60" style="max-width:513px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 607.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M319.5,-597C319.5,-597 43.5,-597 43.5,-597 37.5,-597 31.5,-591 31.5,-585 31.5,-585 31.5,-538 31.5,-538 31.5,-532 37.5,-526 43.5,-526 43.5,-526 319.5,-526 319.5,-526 325.5,-526 331.5,-532 331.5,-538 331.5,-538 331.5,-585 331.5,-585 331.5,-591 325.5,-597 319.5,-597"/>
+<text text-anchor="start" x="127" y="-575" font-family="Helvetica,sans-Serif" font-size="15.00">1. Accès initial</text>
+<text text-anchor="start" x="50.5" y="-558" font-family="Helvetica,sans-Serif" font-size="15.00">message piégé, mot de passe volé,</text>
+<text text-anchor="start" x="80.5" y="-541" font-family="Helvetica,sans-Serif" font-size="15.00">service exposé non corrigé</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M304.5,-468C304.5,-468 58.5,-468 58.5,-468 52.5,-468 46.5,-462 46.5,-456 46.5,-456 46.5,-426 46.5,-426 46.5,-420 52.5,-414 58.5,-414 58.5,-414 304.5,-414 304.5,-414 310.5,-414 316.5,-420 316.5,-426 316.5,-426 316.5,-456 316.5,-456 316.5,-462 310.5,-468 304.5,-468"/>
+<text text-anchor="start" x="130" y="-446" font-family="Helvetica,sans-Serif" font-size="15.00">2. Installation</text>
+<text text-anchor="start" x="65.5" y="-429" font-family="Helvetica,sans-Serif" font-size="15.00">et déplacement dans le réseau</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M181.5,-525.91C181.5,-510.63 181.5,-492.7 181.5,-477.34"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="184.65,-477.15 181.5,-468.15 178.35,-477.15 184.65,-477.15"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M284,-356C284,-356 79,-356 79,-356 73,-356 67,-350 67,-344 67,-344 67,-314 67,-314 67,-308 73,-302 79,-302 79,-302 284,-302 284,-302 290,-302 296,-308 296,-314 296,-314 296,-344 296,-344 296,-350 290,-356 284,-356"/>
+<text text-anchor="start" x="86" y="-334" font-family="Helvetica,sans-Serif" font-size="15.00">3. Élévation de privilèges</text>
+<text text-anchor="start" x="95.5" y="-317" font-family="Helvetica,sans-Serif" font-size="15.00">compte administrateur</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M181.5,-413.93C181.5,-399.52 181.5,-381.39 181.5,-365.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="184.65,-365.26 181.5,-356.26 178.35,-365.26 184.65,-365.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M351,-244C351,-244 12,-244 12,-244 6,-244 0,-238 0,-232 0,-232 0,-202 0,-202 0,-196 6,-190 12,-190 12,-190 351,-190 351,-190 357,-190 363,-196 363,-202 363,-202 363,-232 363,-232 363,-238 357,-244 351,-244"/>
+<text text-anchor="start" x="115" y="-222" font-family="Helvetica,sans-Serif" font-size="15.00">4. Vol de données</text>
+<text text-anchor="start" x="19" y="-205" font-family="Helvetica,sans-Serif" font-size="15.00">et destruction des sauvegardes accessibles</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M181.5,-301.93C181.5,-287.52 181.5,-269.39 181.5,-253.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="184.65,-253.26 181.5,-244.26 178.35,-253.26 184.65,-253.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M288,-132C288,-132 75,-132 75,-132 69,-132 63,-126 63,-120 63,-120 63,-107 63,-107 63,-101 69,-95 75,-95 75,-95 288,-95 288,-95 294,-95 300,-101 300,-107 300,-107 300,-120 300,-120 300,-126 294,-132 288,-132"/>
+<text text-anchor="start" x="82" y="-110" font-family="Helvetica,sans-Serif" font-size="15.00">5. Chiffrement des fichiers</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M181.5,-189.86C181.5,-175.02 181.5,-156.48 181.5,-141.5"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="184.65,-141.24 181.5,-132.24 178.35,-141.24 184.65,-141.24"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M274,-37C274,-37 89,-37 89,-37 83,-37 77,-31 77,-25 77,-25 77,-12 77,-12 77,-6 83,0 89,0 89,0 274,0 274,0 280,0 286,-6 286,-12 286,-12 286,-25 286,-25 286,-31 280,-37 274,-37"/>
+<text text-anchor="start" x="96" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">6. Demande de rançon</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M181.5,-94.57C181.5,-80.84 181.5,-61.7 181.5,-46.18"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="184.65,-46.06 181.5,-37.06 178.35,-46.06 184.65,-46.06"/>
+</g>
+</g>
+</svg>
+</figure>
 
 **Cas réel : WannaCry (12 mai 2017).** Ce ver s'est propagé de poste en poste en exploitant une faille du protocole de partage de fichiers de Windows (SMBv1, vulnérabilité **CVE-2017-0144**, outil *EternalBlue*). Microsoft avait publié le correctif (bulletin MS17-010) le **14 mars 2017**, soit près de deux mois avant. Les machines non mises à jour ont été chiffrées : on cite couramment plus de 200 000 machines dans environ 150 pays, dont des hôpitaux britanniques et des industriels. La propagation a été freinée par un chercheur qui a enregistré un nom de domaine servant d'« interrupteur » au code.
 

@@ -36,11 +36,35 @@ Deux questions guident toute stratégie de sauvegarde :
 | **RPO** (*Recovery Point Objective*) | Quelle durée de données peut-on **perdre** au maximum ? | Il fixe la **fréquence** des sauvegardes |
 | **RTO** (*Recovery Time Objective*) | Quelle durée d'**interruption** peut-on supporter au maximum ? | Il fixe la **vitesse de restauration** exigée et donc les moyens |
 
-```mermaid
-flowchart LR
-    A["Dernière sauvegarde<br/>valide"] -->|"RPO : données perdues"| B["Incident"]
-    B -->|"RTO : service indisponible"| C["Service rétabli"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 291.10 293.60" style="max-width:388px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 282.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M183,-272C183,-272 12,-272 12,-272 6,-272 0,-266 0,-260 0,-260 0,-230 0,-230 0,-224 6,-218 12,-218 12,-218 183,-218 183,-218 189,-218 195,-224 195,-230 195,-230 195,-260 195,-260 195,-266 189,-272 183,-272"/>
+<text text-anchor="start" x="19" y="-250" font-family="Helvetica,sans-Serif" font-size="15.00">Dernière sauvegarde</text>
+<text text-anchor="start" x="74.5" y="-233" font-family="Helvetica,sans-Serif" font-size="15.00">valide</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M135.5,-146C135.5,-146 59.5,-146 59.5,-146 53.5,-146 47.5,-140 47.5,-134 47.5,-134 47.5,-121 47.5,-121 47.5,-115 53.5,-109 59.5,-109 59.5,-109 135.5,-109 135.5,-109 141.5,-109 147.5,-115 147.5,-121 147.5,-121 147.5,-134 147.5,-134 147.5,-140 141.5,-146 135.5,-146"/>
+<text text-anchor="start" x="66.5" y="-124" font-family="Helvetica,sans-Serif" font-size="15.00">Incident</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M97.5,-217.79C97.5,-199.09 97.5,-174.02 97.5,-155.2"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="100.65,-155 97.5,-146 94.35,-155 100.65,-155"/>
+<text text-anchor="start" x="97.5" y="-178.6" font-family="Helvetica,sans-Serif" font-size="13.00">RPO : données perdues</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M159,-37C159,-37 36,-37 36,-37 30,-37 24,-31 24,-25 24,-25 24,-12 24,-12 24,-6 30,0 36,0 36,0 159,0 159,0 165,0 171,-6 171,-12 171,-12 171,-25 171,-25 171,-31 165,-37 159,-37"/>
+<text text-anchor="start" x="43" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">Service rétabli</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M97.5,-108.83C97.5,-91.79 97.5,-65.78 97.5,-46.22"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="100.65,-46.2 97.5,-37.2 94.35,-46.2 100.65,-46.2"/>
+<text text-anchor="start" x="97.5" y="-69.6" font-family="Helvetica,sans-Serif" font-size="13.00">RTO : service indisponible</text>
+</g>
+</g>
+</svg>
+</figure>
 
 Ces valeurs viennent du **métier**, pas de l'informatique : on demande aux responsables ce que coûte une heure d'arrêt, et ce qu'ils peuvent se permettre de ressaisir.
 

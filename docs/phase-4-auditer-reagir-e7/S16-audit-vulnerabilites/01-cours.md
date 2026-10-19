@@ -18,16 +18,75 @@
 
 Un **audit de vulnérabilités** recherche les failles d'un système **avant** qu'un attaquant ne les exploite. Une **vulnérabilité** est une faiblesse (logiciel non corrigé, mauvaise configuration, mot de passe faible) qui peut être exploitée par une menace (S01).
 
-```mermaid
-flowchart LR
-    A["1. Cadrer<br/>autorisation, périmètre"] --> B["2. Découvrir<br/>machines, ports, services"]
-    B --> C["3. Identifier<br/>versions, vulnérabilités"]
-    C --> D["4. Évaluer<br/>score, exposition, valeur"]
-    D --> E["5. Rapporter<br/>fiche d'audit"]
-    E --> F["6. Corriger<br/>plan de remédiation"]
-    F --> G["7. Vérifier<br/>nouveau scan"]
-    G --> B
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 332.60 747.60" style="max-width:444px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 736.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M290.5,-726C290.5,-726 103.5,-726 103.5,-726 97.5,-726 91.5,-720 91.5,-714 91.5,-714 91.5,-684 91.5,-684 91.5,-678 97.5,-672 103.5,-672 103.5,-672 290.5,-672 290.5,-672 296.5,-672 302.5,-678 302.5,-684 302.5,-684 302.5,-714 302.5,-714 302.5,-720 296.5,-726 290.5,-726"/>
+<text text-anchor="start" x="162" y="-704" font-family="Helvetica,sans-Serif" font-size="15.00">1. Cadrer</text>
+<text text-anchor="start" x="110.5" y="-687" font-family="Helvetica,sans-Serif" font-size="15.00">autorisation, périmètre</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M299,-614C299,-614 95,-614 95,-614 89,-614 83,-608 83,-602 83,-602 83,-572 83,-572 83,-566 89,-560 95,-560 95,-560 299,-560 299,-560 305,-560 311,-566 311,-572 311,-572 311,-602 311,-602 311,-608 305,-614 299,-614"/>
+<text text-anchor="start" x="151" y="-592" font-family="Helvetica,sans-Serif" font-size="15.00">2. Découvrir</text>
+<text text-anchor="start" x="102" y="-575" font-family="Helvetica,sans-Serif" font-size="15.00">machines, ports, services</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M197,-671.93C197,-657.52 197,-639.39 197,-623.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="200.15,-623.26 197,-614.26 193.85,-623.26 200.15,-623.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M207.5,-502C207.5,-502 18.5,-502 18.5,-502 12.5,-502 6.5,-496 6.5,-490 6.5,-490 6.5,-460 6.5,-460 6.5,-454 12.5,-448 18.5,-448 18.5,-448 207.5,-448 207.5,-448 213.5,-448 219.5,-454 219.5,-460 219.5,-460 219.5,-490 219.5,-490 219.5,-496 213.5,-502 207.5,-502"/>
+<text text-anchor="start" x="69" y="-480" font-family="Helvetica,sans-Serif" font-size="15.00">3. Identifier</text>
+<text text-anchor="start" x="25.5" y="-463" font-family="Helvetica,sans-Serif" font-size="15.00">versions, vulnérabilités</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M177.09,-559.93C165.57,-544.84 150.93,-525.67 138.56,-509.47"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="141.02,-507.5 133.06,-502.26 136.01,-511.33 141.02,-507.5"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M210,-390C210,-390 12,-390 12,-390 6,-390 0,-384 0,-378 0,-378 0,-348 0,-348 0,-342 6,-336 12,-336 12,-336 210,-336 210,-336 216,-336 222,-342 222,-348 222,-348 222,-378 222,-378 222,-384 216,-390 210,-390"/>
+<text text-anchor="start" x="73" y="-368" font-family="Helvetica,sans-Serif" font-size="15.00">4. Évaluer</text>
+<text text-anchor="start" x="19" y="-351" font-family="Helvetica,sans-Serif" font-size="15.00">score, exposition, valeur</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M112.53,-447.93C112.26,-433.52 111.93,-415.39 111.65,-399.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="114.79,-399.2 111.48,-390.26 108.49,-399.32 114.79,-399.2"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M173,-278C173,-278 65,-278 65,-278 59,-278 53,-272 53,-266 53,-266 53,-236 53,-236 53,-230 59,-224 65,-224 65,-224 173,-224 173,-224 179,-224 185,-230 185,-236 185,-236 185,-266 185,-266 185,-272 179,-278 173,-278"/>
+<text text-anchor="start" x="72" y="-256" font-family="Helvetica,sans-Serif" font-size="15.00">5. Rapporter</text>
+<text text-anchor="start" x="72" y="-239" font-family="Helvetica,sans-Serif" font-size="15.00">fiche d&#39;audit</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M112.9,-335.93C113.94,-321.52 115.26,-303.39 116.41,-287.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="119.58,-287.47 117.09,-278.26 113.3,-287.01 119.58,-287.47"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M206,-166C206,-166 40,-166 40,-166 34,-166 28,-160 28,-154 28,-154 28,-124 28,-124 28,-118 34,-112 40,-112 40,-112 206,-112 206,-112 212,-112 218,-118 218,-124 218,-124 218,-154 218,-154 218,-160 212,-166 206,-166"/>
+<text text-anchor="start" x="83" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">6. Corriger</text>
+<text text-anchor="start" x="47" y="-127" font-family="Helvetica,sans-Serif" font-size="15.00">plan de remédiation</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M119.95,-223.93C120.47,-209.52 121.13,-191.39 121.7,-175.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="124.87,-175.37 122.04,-166.26 118.57,-175.14 124.87,-175.37"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M260.5,-54C260.5,-54 141.5,-54 141.5,-54 135.5,-54 129.5,-48 129.5,-42 129.5,-42 129.5,-12 129.5,-12 129.5,-6 135.5,0 141.5,0 141.5,0 260.5,0 260.5,0 266.5,0 272.5,-6 272.5,-12 272.5,-12 272.5,-42 272.5,-42 272.5,-48 266.5,-54 260.5,-54"/>
+<text text-anchor="start" x="164.5" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">7. Vérifier</text>
+<text text-anchor="start" x="148.5" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">nouveau scan</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M141.48,-111.93C152.09,-96.97 165.53,-78.02 176.95,-61.91"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="179.74,-63.43 182.38,-54.26 174.6,-59.78 179.74,-63.43"/>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M217.59,-54.18C241.55,-94.56 283,-175.22 283,-250 283,-364 283,-364 283,-364 283,-434.67 244.64,-509.97 219.16,-552.19"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="216.43,-550.61 214.4,-559.93 221.8,-553.91 216.43,-550.61"/>
+</g>
+</g>
+</svg>
+</figure>
 
 L'audit est **récurrent** : de nouvelles vulnérabilités sont publiées chaque jour. Un scan régulier fait partie de la gestion du parc (S02, S14).
 

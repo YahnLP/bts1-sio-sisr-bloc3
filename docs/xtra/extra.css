@@ -269,3 +269,36 @@ html.projection .side-toggle { display: none; }
 .hero .hero-author { font-size: .85rem; opacity: .85; }
 .hero .hero-quote { margin: 1.1rem auto .2rem; padding-top: .9rem; border-top: 1px solid rgba(255,255,255,.3); max-width: 30rem; font-size: 1rem; font-style: italic; line-height: 1.5; }
 .hero .hero-quote strong { font-style: normal; }
+
+.graphe { margin: 1.2em auto; text-align: center; }
+.graphe figcaption { font-size: .8rem; color: var(--md-default-fg-color--light); }
+/* Schémas générés (Graphviz) : couleurs du thème */
+.diagramme { --g-fill:#e8eaf6; --g-stroke:#3f51b5; --g-line:#5c6bc0; --g-cluster:#f5f6fc; --g-cluster-stroke:#9fa8da; --g-text:#1a1a2e; }
+[data-md-color-scheme="slate"] .diagramme { --g-fill:#2a2f55; --g-stroke:#8c9eff; --g-line:#9fa8da; --g-cluster:#1f2340; --g-cluster-stroke:#5c6bc0; --g-text:#e8eaf6; }
+.diagramme svg { width:100%; height:auto; }
+.diagramme text { fill: var(--g-text); }
+.diagramme .node > polygon, .diagramme .node > ellipse, .diagramme .node > path { fill: var(--g-fill); stroke: var(--g-stroke); }
+.diagramme .n-circle > ellipse { fill: var(--g-stroke); }
+.diagramme .n-circle > text { fill: #fff; font-weight: 700; }
+.diagramme .cluster > polygon, .diagramme .cluster > path { fill: var(--g-cluster); stroke: var(--g-cluster-stroke); stroke-dasharray: none; }
+.diagramme .cluster text { font-weight: 700; }
+.diagramme .edge > path { stroke: var(--g-line); }
+.diagramme .edge > polygon { fill: var(--g-line); stroke: var(--g-line); }
+.diagramme .edge text { font-weight: 600; fill: var(--g-text); }
+.diagramme .seq-box { fill: var(--g-fill); stroke: var(--g-stroke); stroke-width: 1.8; }
+.diagramme .seq-title { font-weight: 700; }
+.diagramme .seq-life { stroke: var(--g-cluster-stroke); stroke-width: 1.2; stroke-dasharray: 5 5; fill: none; }
+.diagramme .seq-msg { stroke: var(--g-line); stroke-width: 2; fill: none; }
+.diagramme .seq-msg.dash { stroke-dasharray: 7 5; }
+.diagramme .seq-head { fill: var(--g-line); }
+.diagramme .seq-note { fill: #fff8e1; stroke: #f9a825; stroke-width: 1.5; }
+.diagramme .seq-note + text { fill: #1a1a2e; font-weight: 600; }
+.diagramme .gt-bar { fill: var(--g-stroke); }
+.diagramme .gt-dur { fill: #fff; font-weight: 700; font-size: 13px; }
+.diagramme .gt-ms { fill: #f9a825; stroke: none; }
+.diagramme .gt-axis { font-size: 12px; fill: var(--g-text); }
+.diagramme svg text { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.md-typeset figure.graphe { width: 100%; }
+.md-typeset figure.diagramme svg { margin: 0 auto; display: block; }
+[data-md-color-scheme="slate"] .diagramme .n-circle > text { fill: #12122a; }
+.md-typeset figure.diagramme { overflow-x: auto; }

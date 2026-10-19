@@ -105,12 +105,43 @@ Le **bourrage d'identifiants** est la raison principale pour laquelle la **réut
 
 Un service ne doit **jamais** conserver les mots de passe en clair, ni chiffrés avec une clé qu'il possède. Il conserve une **empreinte** (*hash*) : résultat d'une fonction **à sens unique**. À la connexion, il calcule l'empreinte de ce qu'on saisit et compare.
 
-```mermaid
-flowchart LR
-    A["Mot de passe saisi"] --> B["Ajout d'un sel<br/>aléatoire propre à l'utilisateur"]
-    B --> C["Fonction de hachage lente<br/>(Argon2, scrypt, bcrypt)"]
-    C --> D["Empreinte comparée<br/>à celle enregistrée"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 282.60 394.60" style="max-width:377px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 383.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M205.5,-373C205.5,-373 55.5,-373 55.5,-373 49.5,-373 43.5,-367 43.5,-361 43.5,-361 43.5,-348 43.5,-348 43.5,-342 49.5,-336 55.5,-336 55.5,-336 205.5,-336 205.5,-336 211.5,-336 217.5,-342 217.5,-348 217.5,-348 217.5,-361 217.5,-361 217.5,-367 211.5,-373 205.5,-373"/>
+<text text-anchor="start" x="62.5" y="-351" font-family="Helvetica,sans-Serif" font-size="15.00">Mot de passe saisi</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M249,-278C249,-278 12,-278 12,-278 6,-278 0,-272 0,-266 0,-266 0,-236 0,-236 0,-230 6,-224 12,-224 12,-224 249,-224 249,-224 255,-224 261,-230 261,-236 261,-236 261,-266 261,-266 261,-272 255,-278 249,-278"/>
+<text text-anchor="start" x="79" y="-256" font-family="Helvetica,sans-Serif" font-size="15.00">Ajout d&#39;un sel</text>
+<text text-anchor="start" x="19" y="-239" font-family="Helvetica,sans-Serif" font-size="15.00">aléatoire propre à l&#39;utilisateur</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M130.5,-335.82C130.5,-322.53 130.5,-303.87 130.5,-287.53"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="133.65,-287.24 130.5,-278.24 127.35,-287.24 133.65,-287.24"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M237.5,-166C237.5,-166 23.5,-166 23.5,-166 17.5,-166 11.5,-160 11.5,-154 11.5,-154 11.5,-124 11.5,-124 11.5,-118 17.5,-112 23.5,-112 23.5,-112 237.5,-112 237.5,-112 243.5,-112 249.5,-118 249.5,-124 249.5,-124 249.5,-154 249.5,-154 249.5,-160 243.5,-166 237.5,-166"/>
+<text text-anchor="start" x="30.5" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">Fonction de hachage lente</text>
+<text text-anchor="start" x="40" y="-127" font-family="Helvetica,sans-Serif" font-size="15.00">(Argon2, scrypt, bcrypt)</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M130.5,-223.93C130.5,-209.52 130.5,-191.39 130.5,-175.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="133.65,-175.26 130.5,-166.26 127.35,-175.26 133.65,-175.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M216,-54C216,-54 45,-54 45,-54 39,-54 33,-48 33,-42 33,-42 33,-12 33,-12 33,-6 39,0 45,0 45,0 216,0 216,0 222,0 228,-6 228,-12 228,-12 228,-42 228,-42 228,-48 222,-54 216,-54"/>
+<text text-anchor="start" x="52" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">Empreinte comparée</text>
+<text text-anchor="start" x="61" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">à celle enregistrée</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M130.5,-111.93C130.5,-97.52 130.5,-79.39 130.5,-63.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="133.65,-63.26 130.5,-54.26 127.35,-63.26 133.65,-63.26"/>
+</g>
+</g>
+</svg>
+</figure>
 
 - Le **sel** (*salt*) est une valeur aléatoire, **propre à chaque utilisateur**, ajoutée avant le calcul : deux utilisateurs ayant le même mot de passe ont des empreintes **différentes**, et les tables précalculées deviennent inutilisables.
 - Une fonction **lente** (Argon2, scrypt, bcrypt, citées par la CNIL) rend chaque essai coûteux, donc l'attaque hors ligne beaucoup moins rapide qu'avec un format rapide comme MD5 ou SHA-1.
