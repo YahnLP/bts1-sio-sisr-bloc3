@@ -144,7 +144,7 @@ html.projection .side-toggle { display: none; }
 @page {
   size: A4;
   margin: 22mm 20mm 24mm 20mm;
-  @bottom-left  { content: "yahnlp.github.io/BTS-SIO1-gustave-eiffel"; font: 7.5pt "Segoe UI", Helvetica, Arial, sans-serif; color: #6b7280; }
+  @bottom-left  { content: "yahnlp.github.io/bts1-sio-sisr-bloc3"; font: 7.5pt "Segoe UI", Helvetica, Arial, sans-serif; color: #6b7280; }
   @bottom-right { content: "Page " counter(page) " / " counter(pages); font: 7.5pt "Segoe UI", Helvetica, Arial, sans-serif; color: #6b7280; }
 }
 
