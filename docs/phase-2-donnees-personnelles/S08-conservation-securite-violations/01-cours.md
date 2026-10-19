@@ -20,11 +20,39 @@ Le principe de **limitation de la conservation** (article 5) impose de ne garder
 
 ### Les trois phases de vie d'une donnée
 
-```mermaid
-flowchart LR
-    A["<b>Base active</b><br/>utilisée au quotidien<br/>accès large"] -->|"fin de la finalité"| B["<b>Archive intermédiaire</b><br/>obligation légale, litige<br/>accès restreint"]
-    B -->|"fin du délai légal"| C["<b>Suppression</b><br/>ou anonymisation"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 245.60 345.60" style="max-width:328px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 334.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M196.5,-324C196.5,-324 27.5,-324 27.5,-324 21.5,-324 15.5,-318 15.5,-312 15.5,-312 15.5,-271 15.5,-271 15.5,-265 21.5,-259 27.5,-259 27.5,-259 196.5,-259 196.5,-259 202.5,-259 208.5,-265 208.5,-271 208.5,-271 208.5,-312 208.5,-312 208.5,-318 202.5,-324 196.5,-324"/>
+<text text-anchor="start" x="63" y="-303" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Base active</text>
+<text text-anchor="start" x="34.5" y="-288" font-family="Helvetica,sans-Serif" font-size="15.00">utilisée au quotidien</text>
+<text text-anchor="start" x="69.5" y="-273" font-family="Helvetica,sans-Serif" font-size="15.00">accès large</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M212,-187C212,-187 12,-187 12,-187 6,-187 0,-181 0,-175 0,-175 0,-134 0,-134 0,-128 6,-122 12,-122 12,-122 212,-122 212,-122 218,-122 224,-128 224,-134 224,-134 224,-175 224,-175 224,-181 218,-187 212,-187"/>
+<text text-anchor="start" x="19" y="-166" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Archive intermédiaire</text>
+<text text-anchor="start" x="25" y="-151" font-family="Helvetica,sans-Serif" font-size="15.00">obligation légale, litige</text>
+<text text-anchor="start" x="56.5" y="-136" font-family="Helvetica,sans-Serif" font-size="15.00">accès restreint</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M112,-258.85C112,-240.28 112,-216.61 112,-196.61"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="115.15,-196.42 112,-187.42 108.85,-196.42 115.15,-196.42"/>
+<text text-anchor="start" x="112" y="-219.6" font-family="Helvetica,sans-Serif" font-size="13.00">fin de la finalité</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M186.5,-50C186.5,-50 37.5,-50 37.5,-50 31.5,-50 25.5,-44 25.5,-38 25.5,-38 25.5,-12 25.5,-12 25.5,-6 31.5,0 37.5,0 37.5,0 186.5,0 186.5,0 192.5,0 198.5,-6 198.5,-12 198.5,-12 198.5,-38 198.5,-38 198.5,-44 192.5,-50 186.5,-50"/>
+<text text-anchor="start" x="59.5" y="-29" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Suppression</text>
+<text text-anchor="start" x="44.5" y="-14" font-family="Helvetica,sans-Serif" font-size="15.00">ou anonymisation</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M112,-121.98C112,-102.97 112,-78.77 112,-59.42"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="115.15,-59.36 112,-50.36 108.85,-59.36 115.15,-59.36"/>
+<text text-anchor="start" x="112" y="-82.6" font-family="Helvetica,sans-Serif" font-size="13.00">fin du délai légal</text>
+</g>
+</g>
+</svg>
+</figure>
 
 | Phase | Ce qui la justifie | Qui y accède |
 |---|---|---|
@@ -112,17 +140,84 @@ Une **violation de données à caractère personnel** est une atteinte à la **s
 
 ### Que faire ?
 
-```mermaid
-flowchart TD
-    A["Constat d'un incident<br/>touchant des données personnelles"] --> B["Contenir<br/>et préserver les preuves"]
-    B --> C{"Risque pour les droits<br/>et libertés des personnes ?"}
-    C -->|"Aucun risque"| D["Documenter dans le registre<br/>des violations"]
-    C -->|"Risque"| E["<b>Notifier la CNIL</b><br/>sous 72 h"]
-    E --> F{"Risque <b>élevé</b> ?"}
-    F -->|"Oui"| G["<b>Informer les personnes</b><br/>dans les meilleurs délais"]
-    F -->|"Non"| D
-    G --> D
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 663.60 845.60" style="max-width:885px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 834.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M380.5,-824C380.5,-824 99.5,-824 99.5,-824 93.5,-824 87.5,-818 87.5,-812 87.5,-812 87.5,-782 87.5,-782 87.5,-776 93.5,-770 99.5,-770 99.5,-770 380.5,-770 380.5,-770 386.5,-770 392.5,-776 392.5,-782 392.5,-782 392.5,-812 392.5,-812 392.5,-818 386.5,-824 380.5,-824"/>
+<text text-anchor="start" x="159" y="-802" font-family="Helvetica,sans-Serif" font-size="15.00">Constat d&#39;un incident</text>
+<text text-anchor="start" x="106.5" y="-785" font-family="Helvetica,sans-Serif" font-size="15.00">touchant des données personnelles</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M337.5,-711C337.5,-711 142.5,-711 142.5,-711 136.5,-711 130.5,-705 130.5,-699 130.5,-699 130.5,-669 130.5,-669 130.5,-663 136.5,-657 142.5,-657 142.5,-657 337.5,-657 337.5,-657 343.5,-657 349.5,-663 349.5,-669 349.5,-669 349.5,-699 349.5,-699 349.5,-705 343.5,-711 337.5,-711"/>
+<text text-anchor="start" x="207.5" y="-689" font-family="Helvetica,sans-Serif" font-size="15.00">Contenir</text>
+<text text-anchor="start" x="149.5" y="-672" font-family="Helvetica,sans-Serif" font-size="15.00">et préserver les preuves</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M240,-769.98C240,-755.19 240,-736.48 240,-720.37"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="243.15,-720.25 240,-711.25 236.85,-720.25 243.15,-720.25"/>
+</g>
+<g class="node n&#45;diamond">
+<polygon fill="none" stroke="black" stroke-width="1.8" points="240,-598 0,-544 240,-490 480,-544 240,-598"/>
+<text text-anchor="start" x="158.5" y="-549" font-family="Helvetica,sans-Serif" font-size="15.00">Risque pour les droits</text>
+<text text-anchor="start" x="139" y="-532" font-family="Helvetica,sans-Serif" font-size="15.00">et libertés des personnes ?</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M240,-656.72C240,-642.6 240,-624.55 240,-607.09"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="243.15,-607.04 240,-598.04 236.85,-607.04 243.15,-607.04"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M422,-54C422,-54 194,-54 194,-54 188,-54 182,-48 182,-42 182,-42 182,-12 182,-12 182,-6 188,0 194,0 194,0 422,0 422,0 428,0 434,-6 434,-12 434,-12 434,-42 434,-42 434,-48 428,-54 422,-54"/>
+<text text-anchor="start" x="201" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">Documenter dans le registre</text>
+<text text-anchor="start" x="256" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">des violations</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M223.4,-493.6C215.19,-464.87 207,-427.78 207,-394 207,-394 207,-394 207,-137 207,-104.95 230.79,-78.34 255.27,-59.43"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="257.17,-61.95 262.52,-54.06 253.42,-56.89 257.17,-61.95"/>
+<text text-anchor="start" x="207" y="-268.6" font-family="Helvetica,sans-Serif" font-size="13.00">Aucun risque</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M492,-418C492,-418 348,-418 348,-418 342,-418 336,-412 336,-406 336,-406 336,-380 336,-380 336,-374 342,-368 348,-368 348,-368 492,-368 492,-368 498,-368 504,-374 504,-380 504,-380 504,-406 504,-406 504,-412 498,-418 492,-418"/>
+<text text-anchor="start" x="355" y="-397" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Notifier la CNIL</text>
+<text text-anchor="start" x="383.5" y="-382" font-family="Helvetica,sans-Serif" font-size="15.00">sous 72 h</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M290.62,-501.1C320.18,-476.63 356.8,-446.32 383.53,-424.19"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="385.86,-426.35 390.79,-418.18 381.85,-421.49 385.86,-426.35"/>
+<text text-anchor="start" x="351" y="-450.6" font-family="Helvetica,sans-Serif" font-size="13.00">Risque</text>
+</g>
+<g class="node n&#45;diamond">
+<polygon fill="none" stroke="black" stroke-width="1.8" points="488,-309 334,-272 488,-235 642,-272 488,-309"/>
+<text text-anchor="start" x="430" y="-269.5" font-family="Helvetica,sans-Serif" font-size="15.00">Risque </text>
+<text text-anchor="start" x="486" y="-269.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">élevé</text>
+<text text-anchor="start" x="533" y="-269.5" font-family="Helvetica,sans-Serif" font-size="15.00"> ?</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M433.76,-367.92C442.78,-352.13 454.79,-331.12 465.21,-312.88"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="468.14,-314.1 469.87,-304.72 462.67,-310.98 468.14,-314.1"/>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M433.11,-247.92C397.59,-230.05 353.54,-201.77 329,-163 310.14,-133.2 306.1,-92.47 306.03,-63.57"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="309.19,-63.29 306.15,-54.25 302.89,-63.21 309.19,-63.29"/>
+<text text-anchor="start" x="329" y="-134.6" font-family="Helvetica,sans-Serif" font-size="13.00">Non</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M600.5,-163C600.5,-163 387.5,-163 387.5,-163 381.5,-163 375.5,-157 375.5,-151 375.5,-151 375.5,-125 375.5,-125 375.5,-119 381.5,-113 387.5,-113 387.5,-113 600.5,-113 600.5,-113 606.5,-113 612.5,-119 612.5,-125 612.5,-125 612.5,-151 612.5,-151 612.5,-157 606.5,-163 600.5,-163"/>
+<text text-anchor="start" x="394.5" y="-142" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Informer les personnes</text>
+<text text-anchor="start" x="402" y="-127" font-family="Helvetica,sans-Serif" font-size="15.00">dans les meilleurs délais</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M489.62,-235.28C490.52,-215.59 491.62,-191.32 492.5,-172.07"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="495.64,-172.2 492.91,-163.07 489.35,-171.92 495.64,-172.2"/>
+<text text-anchor="start" x="491" y="-195.6" font-family="Helvetica,sans-Serif" font-size="13.00">Oui</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M452.72,-112.81C425.52,-96.87 389.68,-75.86 360.46,-58.74"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="361.77,-55.86 352.41,-54.03 358.58,-61.29 361.77,-55.86"/>
+</g>
+</g>
+</svg>
+</figure>
 
 | Obligation | Détail |
 |---|---|

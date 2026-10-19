@@ -30,27 +30,124 @@ Il apporte, grâce à S10 et S11 :
 
 La **tunnelisation** consiste à **encapsuler** un paquet entier dans un autre paquet, après l'avoir chiffré.
 
-```mermaid
-flowchart LR
-    A["Paquet d'origine<br/>10.8.0.2 → 172.16.0.1"] --> B["Chiffrement<br/>+ authentification"] --> C["Nouveau paquet<br/>IP publique client → IP publique serveur<br/>(contenu chiffré)"]
-    C -->|"Internet"| D["Déchiffrement<br/>par le serveur VPN"] --> E["Paquet d'origine<br/>livré au réseau interne"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 358.60 557.60" style="max-width:479px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 546.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M258.5,-536C258.5,-536 78.5,-536 78.5,-536 72.5,-536 66.5,-530 66.5,-524 66.5,-524 66.5,-494 66.5,-494 66.5,-488 72.5,-482 78.5,-482 78.5,-482 258.5,-482 258.5,-482 264.5,-482 270.5,-488 270.5,-494 270.5,-494 270.5,-524 270.5,-524 270.5,-530 264.5,-536 258.5,-536"/>
+<text text-anchor="start" x="107" y="-514" font-family="Helvetica,sans-Serif" font-size="15.00">Paquet d&#39;origine</text>
+<text text-anchor="start" x="85.5" y="-497" font-family="Helvetica,sans-Serif" font-size="15.00">10.8.0.2 → 172.16.0.1</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M244.5,-423C244.5,-423 92.5,-423 92.5,-423 86.5,-423 80.5,-417 80.5,-411 80.5,-411 80.5,-381 80.5,-381 80.5,-375 86.5,-369 92.5,-369 92.5,-369 244.5,-369 244.5,-369 250.5,-369 256.5,-375 256.5,-381 256.5,-381 256.5,-411 256.5,-411 256.5,-417 250.5,-423 244.5,-423"/>
+<text text-anchor="start" x="123.5" y="-401" font-family="Helvetica,sans-Serif" font-size="15.00">Chiffrement</text>
+<text text-anchor="start" x="99.5" y="-384" font-family="Helvetica,sans-Serif" font-size="15.00">+ authentification</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M168.5,-481.98C168.5,-467.19 168.5,-448.48 168.5,-432.37"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="171.65,-432.25 168.5,-423.25 165.35,-432.25 171.65,-432.25"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M325,-310C325,-310 12,-310 12,-310 6,-310 0,-304 0,-298 0,-298 0,-251 0,-251 0,-245 6,-239 12,-239 12,-239 325,-239 325,-239 331,-239 337,-245 337,-251 337,-251 337,-298 337,-298 337,-304 331,-310 325,-310"/>
+<text text-anchor="start" x="106" y="-288" font-family="Helvetica,sans-Serif" font-size="15.00">Nouveau paquet</text>
+<text text-anchor="start" x="19" y="-271" font-family="Helvetica,sans-Serif" font-size="15.00">IP publique client → IP publique serveur</text>
+<text text-anchor="start" x="105" y="-254" font-family="Helvetica,sans-Serif" font-size="15.00">(contenu chiffré)</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M168.5,-368.78C168.5,-354.28 168.5,-335.9 168.5,-319.29"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="171.65,-319.28 168.5,-310.28 165.35,-319.28 171.65,-319.28"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M245,-167C245,-167 92,-167 92,-167 86,-167 80,-161 80,-155 80,-155 80,-125 80,-125 80,-119 86,-113 92,-113 92,-113 245,-113 245,-113 251,-113 257,-119 257,-125 257,-125 257,-155 257,-155 257,-161 251,-167 245,-167"/>
+<text text-anchor="start" x="114.5" y="-145" font-family="Helvetica,sans-Serif" font-size="15.00">Déchiffrement</text>
+<text text-anchor="start" x="99" y="-128" font-family="Helvetica,sans-Serif" font-size="15.00">par le serveur VPN</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M168.5,-238.69C168.5,-219.45 168.5,-195.6 168.5,-176.29"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="171.65,-176.21 168.5,-167.21 165.35,-176.21 171.65,-176.21"/>
+<text text-anchor="start" x="168.5" y="-199.6" font-family="Helvetica,sans-Serif" font-size="13.00">Internet</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M260.5,-54C260.5,-54 76.5,-54 76.5,-54 70.5,-54 64.5,-48 64.5,-42 64.5,-42 64.5,-12 64.5,-12 64.5,-6 70.5,0 76.5,0 76.5,0 260.5,0 260.5,0 266.5,0 272.5,-6 272.5,-12 272.5,-12 272.5,-42 272.5,-42 272.5,-48 266.5,-54 260.5,-54"/>
+<text text-anchor="start" x="107" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">Paquet d&#39;origine</text>
+<text text-anchor="start" x="83.5" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">livré au réseau interne</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M168.5,-112.98C168.5,-98.19 168.5,-79.48 168.5,-63.37"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="171.65,-63.25 168.5,-54.25 165.35,-63.25 171.65,-63.25"/>
+</g>
+</g>
+</svg>
+</figure>
 
 Un observateur sur Internet ne voit que **deux adresses publiques** et des données chiffrées.
 
 ## II. Deux grands usages
 
-```mermaid
-flowchart TD
-    subgraph N["VPN nomade (accès distant)"]
-    direction LR
-    P["Poste d'un<br/>télétravailleur"] -->|"tunnel"| G["Serveur VPN<br/>de l'entreprise"] --> L["Réseau interne"]
-    end
-    subgraph SS["VPN site à site"]
-    direction LR
-    S1["Réseau du site A"] --- R1["Routeur / pare-feu A"] -->|"tunnel permanent"| R2["Routeur / pare-feu B"] --- S2["Réseau du site B"]
-    end
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 480.60 477.60" style="max-width:641px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 466.8)">
+<g class="cluster cl">
+<path fill="transparent" stroke="black" d="M20,-104C20,-104 208,-104 208,-104 214,-104 220,-110 220,-116 220,-116 220,-436 220,-436 220,-442 214,-448 208,-448 208,-448 20,-448 20,-448 14,-448 8,-442 8,-436 8,-436 8,-116 8,-116 8,-110 14,-104 20,-104"/>
+<text text-anchor="start" x="16" y="-432.8" font-family="Helvetica,sans-Serif" font-size="14.00">VPN nomade (accès distant)</text>
+</g>
+<g class="cluster cl">
+<path fill="transparent" stroke="black" d="M240,-8C240,-8 438,-8 438,-8 444,-8 450,-14 450,-20 450,-20 450,-427.5 450,-427.5 450,-433.5 444,-439.5 438,-439.5 438,-439.5 240,-439.5 240,-439.5 234,-439.5 228,-433.5 228,-427.5 228,-427.5 228,-20 228,-20 228,-14 234,-8 240,-8"/>
+<text text-anchor="start" x="236" y="-424.3" font-family="Helvetica,sans-Serif" font-size="14.00">VPN site à site</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M174,-409C174,-409 54,-409 54,-409 48,-409 42,-403 42,-397 42,-397 42,-367 42,-367 42,-361 48,-355 54,-355 54,-355 174,-355 174,-355 180,-355 186,-361 186,-367 186,-367 186,-397 186,-397 186,-403 180,-409 174,-409"/>
+<text text-anchor="start" x="75" y="-387" font-family="Helvetica,sans-Serif" font-size="15.00">Poste d&#39;un</text>
+<text text-anchor="start" x="61" y="-370" font-family="Helvetica,sans-Serif" font-size="15.00">télétravailleur</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M175.5,-283C175.5,-283 52.5,-283 52.5,-283 46.5,-283 40.5,-277 40.5,-271 40.5,-271 40.5,-241 40.5,-241 40.5,-235 46.5,-229 52.5,-229 52.5,-229 175.5,-229 175.5,-229 181.5,-229 187.5,-235 187.5,-241 187.5,-241 187.5,-271 187.5,-271 187.5,-277 181.5,-283 175.5,-283"/>
+<text text-anchor="start" x="67" y="-261" font-family="Helvetica,sans-Serif" font-size="15.00">Serveur VPN</text>
+<text text-anchor="start" x="59.5" y="-244" font-family="Helvetica,sans-Serif" font-size="15.00">de l&#39;entreprise</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M114,-354.7C114,-336.54 114,-312.17 114,-292.31"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="117.15,-292.26 114,-283.26 110.85,-292.26 117.15,-292.26"/>
+<text text-anchor="start" x="114" y="-315.6" font-family="Helvetica,sans-Serif" font-size="13.00">tunnel</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M177.5,-157C177.5,-157 50.5,-157 50.5,-157 44.5,-157 38.5,-151 38.5,-145 38.5,-145 38.5,-132 38.5,-132 38.5,-126 44.5,-120 50.5,-120 50.5,-120 177.5,-120 177.5,-120 183.5,-120 189.5,-126 189.5,-132 189.5,-132 189.5,-145 189.5,-145 189.5,-151 183.5,-157 177.5,-157"/>
+<text text-anchor="start" x="57.5" y="-135" font-family="Helvetica,sans-Serif" font-size="15.00">Réseau interne</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M114,-228.79C114,-210.09 114,-185.02 114,-166.2"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="117.15,-166 114,-157 110.85,-166 117.15,-166"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M408.5,-400.5C408.5,-400.5 269.5,-400.5 269.5,-400.5 263.5,-400.5 257.5,-394.5 257.5,-388.5 257.5,-388.5 257.5,-375.5 257.5,-375.5 257.5,-369.5 263.5,-363.5 269.5,-363.5 269.5,-363.5 408.5,-363.5 408.5,-363.5 414.5,-363.5 420.5,-369.5 420.5,-375.5 420.5,-375.5 420.5,-388.5 420.5,-388.5 420.5,-394.5 414.5,-400.5 408.5,-400.5"/>
+<text text-anchor="start" x="276.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="15.00">Réseau du site A</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M422,-274.5C422,-274.5 256,-274.5 256,-274.5 250,-274.5 244,-268.5 244,-262.5 244,-262.5 244,-249.5 244,-249.5 244,-243.5 250,-237.5 256,-237.5 256,-237.5 422,-237.5 422,-237.5 428,-237.5 434,-243.5 434,-249.5 434,-249.5 434,-262.5 434,-262.5 434,-268.5 428,-274.5 422,-274.5"/>
+<text text-anchor="start" x="263" y="-252.5" font-family="Helvetica,sans-Serif" font-size="15.00">Routeur / pare&#45;feu A</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M339,-363.5C339,-340 339,-298.47 339,-274.82"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M422,-157C422,-157 256,-157 256,-157 250,-157 244,-151 244,-145 244,-145 244,-132 244,-132 244,-126 250,-120 256,-120 256,-120 422,-120 422,-120 428,-120 434,-126 434,-132 434,-132 434,-145 434,-145 434,-151 428,-157 422,-157"/>
+<text text-anchor="start" x="263" y="-135" font-family="Helvetica,sans-Serif" font-size="15.00">Routeur / pare&#45;feu B</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M339,-237.46C339,-218.55 339,-188.22 339,-166.31"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="342.15,-166.21 339,-157.21 335.85,-166.21 342.15,-166.21"/>
+<text text-anchor="start" x="339" y="-189.6" font-family="Helvetica,sans-Serif" font-size="13.00">tunnel permanent</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M408.5,-61C408.5,-61 269.5,-61 269.5,-61 263.5,-61 257.5,-55 257.5,-49 257.5,-49 257.5,-36 257.5,-36 257.5,-30 263.5,-24 269.5,-24 269.5,-24 408.5,-24 408.5,-24 414.5,-24 420.5,-30 420.5,-36 420.5,-36 420.5,-49 420.5,-49 420.5,-55 414.5,-61 408.5,-61"/>
+<text text-anchor="start" x="276.5" y="-39" font-family="Helvetica,sans-Serif" font-size="15.00">Réseau du site B</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M339,-119.82C339,-103.01 339,-77.88 339,-61.1"/>
+</g>
+</g>
+</svg>
+</figure>
 
 | | **VPN nomade** | **VPN site à site** |
 |---|---|---|
@@ -75,10 +172,33 @@ flowchart TD
 
 Chaque machine possède une **clé privée** et une **clé publique**. Une machine ne parle qu'aux **pairs** dont elle connaît la clé publique, et leur associe des **adresses autorisées** (`AllowedIPs`).
 
-```mermaid
-flowchart LR
-    C["<b>Client</b><br/>clé privée C<br/>connaît la publique S<br/>adresse tunnel 10.8.0.2"] <-->|"UDP 51820<br/>trafic chiffré"| S["<b>Serveur</b><br/>clé privée S<br/>connaît la publique C<br/>adresse tunnel 10.8.0.1"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 593.60 101.60" style="max-width:792px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 90.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M204,-80C204,-80 12,-80 12,-80 6,-80 0,-74 0,-68 0,-68 0,-12 0,-12 0,-6 6,0 12,0 12,0 204,0 204,0 210,0 216,-6 216,-12 216,-12 216,-68 216,-68 216,-74 210,-80 204,-80"/>
+<text text-anchor="start" x="82.5" y="-59" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Client</text>
+<text text-anchor="start" x="63.5" y="-44" font-family="Helvetica,sans-Serif" font-size="15.00">clé privée C</text>
+<text text-anchor="start" x="28" y="-29" font-family="Helvetica,sans-Serif" font-size="15.00">connaît la publique S</text>
+<text text-anchor="start" x="19" y="-14" font-family="Helvetica,sans-Serif" font-size="15.00">adresse tunnel 10.8.0.2</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M560,-80C560,-80 368,-80 368,-80 362,-80 356,-74 356,-68 356,-68 356,-12 356,-12 356,-6 362,0 368,0 368,0 560,0 560,0 566,0 572,-6 572,-12 572,-12 572,-68 572,-68 572,-74 566,-80 560,-80"/>
+<text text-anchor="start" x="430.5" y="-59" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">Serveur</text>
+<text text-anchor="start" x="420" y="-44" font-family="Helvetica,sans-Serif" font-size="15.00">clé privée S</text>
+<text text-anchor="start" x="383.5" y="-29" font-family="Helvetica,sans-Serif" font-size="15.00">connaît la publique C</text>
+<text text-anchor="start" x="375" y="-14" font-family="Helvetica,sans-Serif" font-size="15.00">adresse tunnel 10.8.0.1</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M225.34,-40C264.28,-40 307.67,-40 346.61,-40"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="225.17,-36.85 216.17,-40 225.17,-43.15 225.17,-36.85"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="346.89,-43.15 355.89,-40 346.89,-36.85 346.89,-43.15"/>
+<text text-anchor="start" x="249.5" y="-57.6" font-family="Helvetica,sans-Serif" font-size="13.00">UDP 51820</text>
+<text text-anchor="start" x="245" y="-43.6" font-family="Helvetica,sans-Serif" font-size="13.00">trafic chiffré</text>
+</g>
+</g>
+</svg>
+</figure>
 
 `AllowedIPs` joue **deux rôles** :
 1. à l'**envoi** : le trafic vers ces adresses est envoyé dans le tunnel (c'est une **table de routage**) ;

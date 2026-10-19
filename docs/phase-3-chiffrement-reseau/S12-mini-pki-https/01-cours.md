@@ -35,16 +35,18 @@ Une **AC interne** est un petit système dont la **clé privée est la plus pré
 
 ### Le circuit d'une demande
 
-```mermaid
-sequenceDiagram
-    participant S as Serveur / administrateur
-    participant AC as Autorité de certification
-    S->>S: 1. Génère la paire de clés (la clé privée ne bouge pas)
-    S->>AC: 2. Envoie une demande de signature (CSR) : nom + clé publique
-    AC->>AC: 3. Vérifie l'identité du demandeur et les noms demandés
-    AC->>S: 4. Renvoie le certificat signé
-    S->>S: 5. Installe clé privée + certificat dans le service
-```
+<figure class="graphe diagramme"><svg viewBox="0 0 1003 380" style="max-width:1003px" role="img" aria-label="Diagramme de séquence" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="s7c6d81" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="seq-head"/></marker></defs>
+<line class="seq-life" x1="251" y1="62" x2="251" y2="374"/>
+<rect class="seq-box" x="143" y="12" width="215" height="40" rx="8"/><text x="251" y="37" text-anchor="middle" class="seq-title">Serveur / administrateur</text>
+<line class="seq-life" x1="752" y1="62" x2="752" y2="374"/>
+<rect class="seq-box" x="645" y="12" width="215" height="40" rx="8"/><text x="752" y="37" text-anchor="middle" class="seq-title">Autorité de certification</text>
+<path class="seq-msg" d="M251,88 h34 v22 h-30" marker-end="url(#s7c6d81)"/><text x="295" y="104">1. Génère la paire de clés (la clé privée ne bouge pas)</text>
+<line class="seq-msg" x1="251" y1="154" x2="748" y2="154" marker-end="url(#s7c6d81)"/><text x="501" y="146" text-anchor="middle">2. Envoie une demande de signature (CSR) : nom + clé publique</text>
+<path class="seq-msg" d="M752,196 h34 v22 h-30" marker-end="url(#s7c6d81)"/><text x="796" y="212">3. Vérifie l'identité du demandeur et les noms demandés</text>
+<line class="seq-msg" x1="752" y1="262" x2="255" y2="262" marker-end="url(#s7c6d81)"/><text x="501" y="254" text-anchor="middle">4. Renvoie le certificat signé</text>
+<path class="seq-msg" d="M251,304 h34 v22 h-30" marker-end="url(#s7c6d81)"/><text x="295" y="320">5. Installe clé privée + certificat dans le service</text>
+</svg></figure>
 
 **La clé privée du serveur n'est jamais envoyée à l'AC.** Seule la **CSR** (*Certificate Signing Request*) circule : elle contient la clé publique et les noms demandés, signés avec la clé privée pour prouver qu'on la détient.
 

@@ -41,12 +41,47 @@ La CNIL s'appuie sur **neuf critères** :
 
 ### Les quatre étapes de la méthode CNIL
 
-```mermaid
-flowchart LR
-    A["<b>1. Contexte</b><br/>décrire le traitement"] --> B["<b>2. Principes</b><br/>nécessité, proportionnalité,<br/>droits des personnes"]
-    B --> C["<b>3. Risques</b><br/>accès illégitime, modification,<br/>disparition + mesures"]
-    C --> D["<b>4. Validation</b><br/>plan d'action,<br/>avis du DPO"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 284.60 440.60" style="max-width:380px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 429.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M216,-419C216,-419 47,-419 47,-419 41,-419 35,-413 35,-407 35,-407 35,-381 35,-381 35,-375 41,-369 47,-369 47,-369 216,-369 216,-369 222,-369 228,-375 228,-381 228,-381 228,-407 228,-407 228,-413 222,-419 216,-419"/>
+<text text-anchor="start" x="81.5" y="-398" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">1. Contexte</text>
+<text text-anchor="start" x="54" y="-383" font-family="Helvetica,sans-Serif" font-size="15.00">décrire le traitement</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M241.5,-311C241.5,-311 21.5,-311 21.5,-311 15.5,-311 9.5,-305 9.5,-299 9.5,-299 9.5,-258 9.5,-258 9.5,-252 15.5,-246 21.5,-246 21.5,-246 241.5,-246 241.5,-246 247.5,-246 253.5,-252 253.5,-258 253.5,-258 253.5,-299 253.5,-299 253.5,-305 247.5,-311 241.5,-311"/>
+<text text-anchor="start" x="81" y="-290" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">2. Principes</text>
+<text text-anchor="start" x="28.5" y="-275" font-family="Helvetica,sans-Serif" font-size="15.00">nécessité, proportionnalité,</text>
+<text text-anchor="start" x="53.5" y="-260" font-family="Helvetica,sans-Serif" font-size="15.00">droits des personnes</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M131.5,-368.93C131.5,-354.9 131.5,-336.82 131.5,-320.59"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="134.65,-320.3 131.5,-311.3 128.35,-320.3 134.65,-320.3"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M251,-188C251,-188 12,-188 12,-188 6,-188 0,-182 0,-176 0,-176 0,-135 0,-135 0,-129 6,-123 12,-123 12,-123 251,-123 251,-123 257,-123 263,-129 263,-135 263,-135 263,-176 263,-176 263,-182 257,-188 251,-188"/>
+<text text-anchor="start" x="87.5" y="-167" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">3. Risques</text>
+<text text-anchor="start" x="19" y="-152" font-family="Helvetica,sans-Serif" font-size="15.00">accès illégitime, modification,</text>
+<text text-anchor="start" x="48.5" y="-137" font-family="Helvetica,sans-Serif" font-size="15.00">disparition + mesures</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M131.5,-245.71C131.5,-230.84 131.5,-212.96 131.5,-197.13"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="134.65,-197.08 131.5,-188.08 128.35,-197.08 134.65,-197.08"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M192,-65C192,-65 71,-65 71,-65 65,-65 59,-59 59,-53 59,-53 59,-12 59,-12 59,-6 65,0 71,0 71,0 192,0 192,0 198,0 204,-6 204,-12 204,-12 204,-53 204,-53 204,-59 198,-65 192,-65"/>
+<text text-anchor="start" x="78" y="-44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">4. Validation</text>
+<text text-anchor="start" x="80" y="-29" font-family="Helvetica,sans-Serif" font-size="15.00">plan d&#39;action,</text>
+<text text-anchor="start" x="86" y="-14" font-family="Helvetica,sans-Serif" font-size="15.00">avis du DPO</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M131.5,-122.71C131.5,-107.84 131.5,-89.96 131.5,-74.13"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="134.65,-74.08 131.5,-65.08 128.35,-74.08 134.65,-74.08"/>
+</g>
+</g>
+</svg>
+</figure>
 
 | Étape | Contenu |
 |---|---|

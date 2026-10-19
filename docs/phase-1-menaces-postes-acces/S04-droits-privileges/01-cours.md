@@ -61,12 +61,44 @@ Dans le **RBAC**, un changement de poste se traduit par un changement de groupe,
 
 Dans un domaine Active Directory, on évite de donner des droits à des personnes. L'enchaînement classique est **AGDLP** :
 
-```mermaid
-flowchart LR
-    A["Comptes<br/>(Account)"] --> G["Groupes globaux<br/>par métier (Global)"]
-    G --> DL["Groupes de domaine local<br/>par ressource (Domain Local)"]
-    DL --> P["Permissions NTFS<br/>sur le dossier (Permission)"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 279.60 411.60" style="max-width:373px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 400.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M172.5,-390C172.5,-390 85.5,-390 85.5,-390 79.5,-390 73.5,-384 73.5,-378 73.5,-378 73.5,-348 73.5,-348 73.5,-342 79.5,-336 85.5,-336 85.5,-336 172.5,-336 172.5,-336 178.5,-336 184.5,-342 184.5,-348 184.5,-348 184.5,-378 184.5,-378 184.5,-384 178.5,-390 172.5,-390"/>
+<text text-anchor="start" x="95.5" y="-368" font-family="Helvetica,sans-Serif" font-size="15.00">Comptes</text>
+<text text-anchor="start" x="92.5" y="-351" font-family="Helvetica,sans-Serif" font-size="15.00">(Account)</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M207.5,-278C207.5,-278 50.5,-278 50.5,-278 44.5,-278 38.5,-272 38.5,-266 38.5,-266 38.5,-236 38.5,-236 38.5,-230 44.5,-224 50.5,-224 50.5,-224 207.5,-224 207.5,-224 213.5,-224 219.5,-230 219.5,-236 219.5,-236 219.5,-266 219.5,-266 219.5,-272 213.5,-278 207.5,-278"/>
+<text text-anchor="start" x="65" y="-256" font-family="Helvetica,sans-Serif" font-size="15.00">Groupes globaux</text>
+<text text-anchor="start" x="57.5" y="-239" font-family="Helvetica,sans-Serif" font-size="15.00">par métier (Global)</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M129,-335.93C129,-321.52 129,-303.39 129,-287.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="132.15,-287.26 129,-278.26 125.85,-287.26 132.15,-287.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M246,-166C246,-166 12,-166 12,-166 6,-166 0,-160 0,-154 0,-154 0,-124 0,-124 0,-118 6,-112 12,-112 12,-112 246,-112 246,-112 252,-112 258,-118 258,-124 258,-124 258,-154 258,-154 258,-160 252,-166 246,-166"/>
+<text text-anchor="start" x="31" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">Groupes de domaine local</text>
+<text text-anchor="start" x="19" y="-127" font-family="Helvetica,sans-Serif" font-size="15.00">par ressource (Domain Local)</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M129,-223.93C129,-209.52 129,-191.39 129,-175.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="132.15,-175.26 129,-166.26 125.85,-175.26 132.15,-175.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M234,-54C234,-54 24,-54 24,-54 18,-54 12,-48 12,-42 12,-42 12,-12 12,-12 12,-6 18,0 24,0 24,0 234,0 234,0 240,0 246,-6 246,-12 246,-12 246,-42 246,-42 246,-48 240,-54 234,-54"/>
+<text text-anchor="start" x="63.5" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">Permissions NTFS</text>
+<text text-anchor="start" x="31" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">sur le dossier (Permission)</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M129,-111.93C129,-97.52 129,-79.39 129,-63.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="132.15,-63.26 129,-54.26 125.85,-63.26 132.15,-63.26"/>
+</g>
+</g>
+</svg>
+</figure>
 
 Les utilisateurs entrent dans un **groupe de métier** (`G_Compta`), qui est lui-même membre d'un **groupe de ressource** (`DL_Compta_Modif`) auquel on donne la permission NTFS. Pour changer l'accès d'un dossier, on modifie un seul groupe.
 

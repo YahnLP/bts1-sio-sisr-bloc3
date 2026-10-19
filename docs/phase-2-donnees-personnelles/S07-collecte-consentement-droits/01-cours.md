@@ -111,14 +111,63 @@ Le droit à l'**effacement** n'est pas absolu : on ne supprime pas ce qu'une **o
 
 ### Le rôle du technicien dans une demande d'accès
 
-```mermaid
-flowchart LR
-    A["Réception<br/>de la demande"] --> B["Vérifier<br/>l'identité"]
-    B --> C["Rechercher dans<br/>tous les systèmes"]
-    C --> D["Extraire <b>uniquement</b><br/>les données du demandeur"]
-    D --> E["Répondre de façon sécurisée<br/>dans le délai"]
-    E --> F["Tracer la demande<br/>et la réponse"]
-```
+<figure class="graphe diagramme">
+<svg viewBox="0.00 0.00 276.60 631.60" style="max-width:369px" role="img" aria-label="Schéma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" transform="scale(1 1) rotate(0) translate(10.8 620.8)">
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M190.5,-610C190.5,-610 64.5,-610 64.5,-610 58.5,-610 52.5,-604 52.5,-598 52.5,-598 52.5,-568 52.5,-568 52.5,-562 58.5,-556 64.5,-556 64.5,-556 190.5,-556 190.5,-556 196.5,-556 202.5,-562 202.5,-568 202.5,-568 202.5,-598 202.5,-598 202.5,-604 196.5,-610 190.5,-610"/>
+<text text-anchor="start" x="89.5" y="-588" font-family="Helvetica,sans-Serif" font-size="15.00">Réception</text>
+<text text-anchor="start" x="71.5" y="-571" font-family="Helvetica,sans-Serif" font-size="15.00">de la demande</text>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M168,-498C168,-498 87,-498 87,-498 81,-498 75,-492 75,-486 75,-486 75,-456 75,-456 75,-450 81,-444 87,-444 87,-444 168,-444 168,-444 174,-444 180,-450 180,-456 180,-456 180,-486 180,-486 180,-492 174,-498 168,-498"/>
+<text text-anchor="start" x="100.5" y="-476" font-family="Helvetica,sans-Serif" font-size="15.00">Vérifier</text>
+<text text-anchor="start" x="94" y="-459" font-family="Helvetica,sans-Serif" font-size="15.00">l&#39;identité</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M127.5,-555.93C127.5,-541.52 127.5,-523.39 127.5,-507.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="130.65,-507.26 127.5,-498.26 124.35,-507.26 130.65,-507.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M201,-386C201,-386 54,-386 54,-386 48,-386 42,-380 42,-374 42,-374 42,-344 42,-344 42,-338 48,-332 54,-332 54,-332 201,-332 201,-332 207,-332 213,-338 213,-344 213,-344 213,-374 213,-374 213,-380 207,-386 201,-386"/>
+<text text-anchor="start" x="64.5" y="-364" font-family="Helvetica,sans-Serif" font-size="15.00">Rechercher dans</text>
+<text text-anchor="start" x="61" y="-347" font-family="Helvetica,sans-Serif" font-size="15.00">tous les systèmes</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M127.5,-443.93C127.5,-429.52 127.5,-411.39 127.5,-395.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="130.65,-395.26 127.5,-386.26 124.35,-395.26 130.65,-395.26"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M237,-274C237,-274 18,-274 18,-274 12,-274 6,-268 6,-262 6,-262 6,-236 6,-236 6,-230 12,-224 18,-224 18,-224 237,-224 237,-224 243,-224 249,-230 249,-236 249,-236 249,-262 249,-262 249,-268 243,-274 237,-274"/>
+<text text-anchor="start" x="44" y="-253" font-family="Helvetica,sans-Serif" font-size="15.00">Extraire </text>
+<text text-anchor="start" x="108" y="-253" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="15.00">uniquement</text>
+<text text-anchor="start" x="25" y="-238" font-family="Helvetica,sans-Serif" font-size="15.00">les données du demandeur</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M127.5,-331.86C127.5,-317.28 127.5,-298.97 127.5,-283.36"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="130.65,-283.06 127.5,-274.06 124.35,-283.06 130.65,-283.06"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M243,-166C243,-166 12,-166 12,-166 6,-166 0,-160 0,-154 0,-154 0,-124 0,-124 0,-118 6,-112 12,-112 12,-112 243,-112 243,-112 249,-112 255,-118 255,-124 255,-124 255,-154 255,-154 255,-160 249,-166 243,-166"/>
+<text text-anchor="start" x="19" y="-144" font-family="Helvetica,sans-Serif" font-size="15.00">Répondre de façon sécurisée</text>
+<text text-anchor="start" x="79.5" y="-127" font-family="Helvetica,sans-Serif" font-size="15.00">dans le délai</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M127.5,-223.76C127.5,-209.41 127.5,-190.99 127.5,-175.07"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="130.65,-175.04 127.5,-166.04 124.35,-175.04 130.65,-175.04"/>
+</g>
+<g class="node n&#45;rect">
+<path fill="none" stroke="black" stroke-width="1.8" d="M204,-54C204,-54 51,-54 51,-54 45,-54 39,-48 39,-42 39,-42 39,-12 39,-12 39,-6 45,0 51,0 51,0 204,0 204,0 210,0 216,-6 216,-12 216,-12 216,-42 216,-42 216,-48 210,-54 204,-54"/>
+<text text-anchor="start" x="58" y="-32" font-family="Helvetica,sans-Serif" font-size="15.00">Tracer la demande</text>
+<text text-anchor="start" x="78.5" y="-15" font-family="Helvetica,sans-Serif" font-size="15.00">et la réponse</text>
+</g>
+<g class="edge">
+<path fill="none" stroke="black" stroke-width="1.8" d="M127.5,-111.93C127.5,-97.52 127.5,-79.39 127.5,-63.68"/>
+<polygon fill="black" stroke="black" stroke-width="1.8" points="130.65,-63.26 127.5,-54.26 124.35,-63.26 130.65,-63.26"/>
+</g>
+</g>
+</svg>
+</figure>
 
 Trois pièges : **ne pas vérifier l'identité** (on risque de livrer des données à un tiers), **oublier un système** (sauvegardes, messagerie, fichiers en vrac : d'où le registre de S06), **divulguer les données d'autres personnes** dans l'export.
 
