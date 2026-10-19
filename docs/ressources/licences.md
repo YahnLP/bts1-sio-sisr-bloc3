@@ -8,6 +8,12 @@ Vous pouvez **partager** et **adapter** ces documents à des fins **non commerci
 
 Chaque document exporté en PDF (icône dans l'en-tête de chaque page) rappelle cette licence en fin de document, avec la licence des outils qu'il cite.
 
+## Utilisation dans une formation payante ou financée
+
+La licence CC BY-NC-SA 4.0 ci-dessus autorise l'usage **non commercial**. L'auteur considère que l'utilisation de ces supports dans une **formation facturée à des apprenants ou à une entreprise, ou financée par un opérateur de compétences (OPCO) ou tout autre financeur**, par un organisme de formation, un CFA ou un établissement, relève d'un usage commercial. Elle suppose son **accord préalable écrit** (autorisation d'usage ou convention), à demander via le profil GitHub de l'auteur (`YahnLP`).
+
+Cette précision indique la portée de ce que l'auteur concède par la licence CC ; elle ne retire rien aux personnes qui ont déjà reçu ces documents sous cette licence et en respectent les conditions. Elle ne vise ni l'étude individuelle d'un apprenant ni l'usage personnel.
+
 ## Les outils tiers cités
 
 Ces licences sont données **à titre d'information** ; seuls les textes fournis par leurs éditeurs font foi. La mention **à vérifier** signale une licence que l'auteur n'a pas relue à la source.
