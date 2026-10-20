@@ -56,7 +56,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Cette séance traite la sauvegarde sous l'angle **sécurité** (rançongiciel, chiffrement, restauration prouvée). L'exploitation (planification, outils d'entreprise) est vue au bloc 2 (S16).
 - Le cas GitLab (31 janvier 2017) est documenté dans la publication d'analyse de l'éditeur ; les détails sont à vérifier sur ce document avant de les citer à la classe.
 - Les commandes `restic` et `cryptsetup` sont à tester sur la VM de la classe avant la séance (versions des paquets).

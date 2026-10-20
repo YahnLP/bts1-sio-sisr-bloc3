@@ -54,7 +54,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Tailles de clés et algorithmes : recommandations de l'ANSSI et du NIST **à vérifier** avant diffusion ; elles évoluent.
 - Toutes les commandes OpenSSL du TP ont été testées avec OpenSSL 3.0 (RSA 3072 bits, OAEP, signature SHA-256, X25519).
 - La partie D utilise le navigateur sur un site public (consultation du certificat) : aucune donnée personnelle saisie.

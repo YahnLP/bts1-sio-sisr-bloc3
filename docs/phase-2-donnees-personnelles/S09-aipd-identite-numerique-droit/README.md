@@ -55,7 +55,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Les articles du Code pénal et du Code civil cités, ainsi que les peines, sont **à relire sur Légifrance** avant diffusion : les textes sont modifiés régulièrement.
 - Les cas MediLink et Atelier Lumière sont **fictifs**. L'ancien cas « SmartCare » est remplacé.
 - La séance concentre trois thèmes (AIPD, identité numérique, droit) : si le temps manque, la partie C peut être reportée à S17.

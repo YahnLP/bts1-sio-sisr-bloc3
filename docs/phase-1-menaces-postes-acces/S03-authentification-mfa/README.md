@@ -56,9 +56,8 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Les seuils chiffrés viennent de la page de la CNIL « Mots de passe : recommandations pour maîtriser sa sécurité » (relue en octobre 2026). Les relire avant diffusion : la CNIL peut les faire évoluer.
-- Les empreintes du laboratoire sont calculées en MD5 **volontairement** (format faible, pour que l'attaque aboutisse vite) ; en production on utilise des fonctions lentes et salées. Les mots de passe correspondants sont dans `corriges/S03-corrige.md`.
+- Les empreintes du laboratoire sont calculées en MD5 **volontairement** (format faible, pour que l'attaque aboutisse vite) ; en production on utilise des fonctions lentes et salées.
 - Hypothèse de calcul du cours : 10 milliards d'essais par seconde pour une attaque hors ligne sur un format rapide ; c'est un ordre de grandeur, pas une mesure.
 
 </details>

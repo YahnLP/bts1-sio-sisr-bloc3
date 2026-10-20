@@ -55,7 +55,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - L'exercice est conçu en **injects** : l'enseignant (ou un élève) distribue les éléments de l'annexe un par un, pour simuler le temps réel. Ne pas distribuer l'annexe entière dès le début.
 - Les conseils de communication sont à confirmer avec les recommandations en vigueur de l'ANSSI, de Cybermalveillance.gouv.fr et de la CNIL.
 - Le script de collecte a été **testé** sur une VM Linux (sans la partie `journalctl` selon le système). Le cas Delmas est **fictif**. Le cas de violation MédiaGroup de la séance S08 sert de comparaison.

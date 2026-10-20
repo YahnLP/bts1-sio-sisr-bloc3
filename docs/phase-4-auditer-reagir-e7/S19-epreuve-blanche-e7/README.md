@@ -50,9 +50,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Sujet **original** et **fictif** (Clinique du Val-Vert). La structure suit le texte officiel (étude de cas à partir d'un dossier documentaire couvrant plusieurs missions) ; le barème est une **proposition** à comparer avec la grille nationale.
 - La séance dure 4 h : prévoir la salle, l'impression du dossier, l'interdiction des documents et des téléphones.
-- Le corrigé est dans `corriges/S19-corrige.md`. Ne **pas** le publier avant la fin de l'année.
 
 </details>
