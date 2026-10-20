@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Comment permettre à un utilisateur à distance d'accéder au réseau de l'entreprise sans exposer ses échanges ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** Les terminaux mobiles sont aussi vus en [bloc 1 (1re année), S16 – Travail collaboratif : wiki, Git et terminaux mobiles](https://yahnlp.github.io/bts1-sio-sisr-bloc1/phase-4-projet-epreuve/S16-travail-collaboratif/). Ici, garder le télétravail, le BYOD et la sécurité du VPN.
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :

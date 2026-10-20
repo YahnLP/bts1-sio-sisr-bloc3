@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Quand tout est chiffré ou détruit, que reste-t-il, et en combien de temps peut-on redémarrer ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** Les objectifs de reprise (RPO, RTO) et la sauvegarde côté exploitation sont aussi vus en [bloc 2 (1re année), S16 – Supervision, sauvegarde et haute disponibilité](https://yahnlp.github.io/bts1-sio-sisr-bloc2/phase-4-securiser-presenter/S16-supervision-sauvegarde-ha/). Ils sont repris en 2e année en [bloc 2 (2e année), S05 – Continuité et reprise d'activité](https://yahnlp.github.io/bts2-sio-sisr-bloc2/phase-1-reprendre-concevoir/S05-continuite-reprise-activite/) et [bloc 3 (2e année), S16 – Continuité d'activité face à une cyberattaque](https://yahnlp.github.io/bts2-sio-sisr-bloc3/phase-4-resilience-e7/S16-continuite-cyber-sauvegarde/). Selon l'ordre de vos séances, la première pose les bases et la seconde les reprend en rappel (15 à 20 minutes). Ici, garder l'angle sécurité : rançongiciel, supports amovibles, chiffrement.
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :
