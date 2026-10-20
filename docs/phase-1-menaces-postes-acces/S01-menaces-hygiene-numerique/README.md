@@ -21,6 +21,7 @@
 3. **Décrire** le déroulement d'une attaque par rançongiciel et d'une attaque par hameçonnage ;
 4. **Repérer** les indices d'un message frauduleux (expéditeur, lien, pièce jointe, urgence) et choisir la bonne réaction ;
 5. **Appliquer** les règles d'hygiène numérique et **rédiger** un support de sensibilisation pour des utilisateurs.
+6. **Distinguer** sûreté et sécurité et **vérifier** les éléments de sûreté d'un local technique.
 
 ## Contenu de la séance
 

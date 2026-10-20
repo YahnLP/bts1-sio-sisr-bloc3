@@ -38,6 +38,7 @@
 *[SAN]: Noms alternatifs du sujet : Champ du certificat qui liste les noms de domaine valables.
 *[RPO]: Objectif de point de reprise : Durée maximale de données que l'on accepte de perdre.
 *[RTO]: Objectif de temps de reprise : Durée maximale d'interruption que l'on accepte.
+*[UPS]: Onduleur : Batterie qui alimente les équipements quelques minutes lors d'une coupure de courant.
 *[PCA]: Plan de continuité d'activité : Comment continuer à travailler pendant un incident.
 *[PRA]: Plan de reprise d'activité : Comment redémarrer et restaurer après un incident.
 *[OCSP]: Protocole d'état des certificats en ligne : Interrogation en ligne de l'état de révocation d'un certificat.
