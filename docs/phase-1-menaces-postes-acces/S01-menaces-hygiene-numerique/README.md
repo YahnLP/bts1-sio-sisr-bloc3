@@ -55,7 +55,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - Les six messages de l'annexe sont **fictifs** ; les domaines sont volontairement inexistants ou réservés aux exemples (`example.com`).
 - Le cas WannaCry est réel ; les chiffres sont des ordres de grandeur couramment cités (voir le cours). **Les statistiques et coûts de l'ancienne version du site ont été retirés faute de source** : en citer d'autres suppose de donner la source (rapports de l'ANSSI, de Cybermalveillance.gouv.fr) et leur année.
 

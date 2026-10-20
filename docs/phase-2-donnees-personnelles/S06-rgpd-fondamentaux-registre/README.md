@@ -59,7 +59,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - Les articles cités (4, 5, 6, 9, 30, 37 à 39, 83) sont ceux du règlement (UE) 2016/679 ; vérifier les renvois sur le texte officiel avant diffusion.
 - Les cas InnoTech et MédicaPlus sont **fictifs**. Le MOOC « L'atelier RGPD » de la CNIL est proposé en complément facultatif : vérifier qu'il est toujours en ligne.
 - Le fichier de laboratoire est généré par un script : toutes les données sont **inventées** (noms, numéros).

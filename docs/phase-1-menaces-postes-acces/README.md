@@ -3,7 +3,7 @@
 **Séances S01 à S05.** Comprendre ce qui menace une organisation, protéger le poste de travail, contrôler qui accède à quoi, et pouvoir restaurer ce qui a été perdu.
 
 > [!NOTE]
-> Chaque séance de 4 h contient une **fiche séance**, un **cours**, un **TP** (avec un bilan de compétences en fin de séance) et, selon les cas, des annexes. Les séances marquées *à valider* ont été ajoutées ou réécrites lors de la refonte : elles attendent la relecture de l'enseignant.
+> Chaque séance de 4 h contient une **fiche séance**, un **cours**, un **TP** (avec un bilan de compétences en fin de séance) et, selon les cas, des annexes.
 
 ## Progression
 

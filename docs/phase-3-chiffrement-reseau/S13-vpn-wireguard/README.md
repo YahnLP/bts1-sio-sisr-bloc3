@@ -57,7 +57,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - La configuration WireGuard (clés, `wg-quick`, `AllowedIPs`, `PersistentKeepalive`) est standard mais **non exécutée** pendant la rédaction (paquet absent du bac à sable) : à tester sur les VM avant la séance.
 - Aucune clé privée ne doit figurer dans les rendus : le TP le rappelle.
 - Les clés et adresses du TP sont des valeurs de laboratoire.

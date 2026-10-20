@@ -54,7 +54,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - Les paramètres d'OpenSSL (`-pbkdf2 -iter 600000`) sont des valeurs de confort pour le laboratoire ; à ajuster à la version installée et aux recommandations ANSSI et OWASP en vigueur.
 - L'expérience de falsification (partie D) a été **testée** : un bit modifié dans un fichier CBC se déchiffre **sans erreur**, avec un bloc illisible et un bit changé dans le bloc suivant.
 - `openssl enc` ne gère pas les modes authentifiés (GCM) : on cite GCM dans le cours sans le manipuler ici.
