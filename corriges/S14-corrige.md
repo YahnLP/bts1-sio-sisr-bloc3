@@ -8,12 +8,12 @@ Matrice (exemple) :
 
 | De ↓ / Vers → | Internet | DMZ (web) | Serveurs | Administration | Imprimantes |
 |---|---|---|---|---|---|
-| **Internet** | — | 443 | ✗ | ✗ | ✗ |
-| **Postes (LAN)** | 80, 443 | 443 | 445 (fichiers) | ✗ | 9100, 631 |
-| **Wi-Fi invités** | 80, 443 | ✗ | ✗ | ✗ | ✗ |
-| **Télétravail (VPN)** | — | ✗ | 445 (fichiers) | ✗ | ✗ |
-| **DMZ (web)** | mises à jour | — | 3306 (base) | ✗ | ✗ |
-| **Administration** | ✔ | 22 | 22 | — | 443 |
+| **Internet** | — | 443 | Non | Non | Non |
+| **Postes (LAN)** | 80, 443 | 443 | 445 (fichiers) | Non | 9100, 631 |
+| **Wi-Fi invités** | 80, 443 | Non | Non | Non | Non |
+| **Télétravail (VPN)** | — | Non | 445 (fichiers) | Non | Non |
+| **DMZ (web)** | mises à jour | — | 3306 (base) | Non | Non |
+| **Administration** | Oui | 22 | 22 | — | 443 |
 
 3. Zone **Serveurs** internes ; seul le **serveur web** (port 3306 par exemple) et l'administration peuvent lui parler. Jamais Internet ni les postes.
 4. Zone isolée, avec uniquement ​Internet (DNS, web).
