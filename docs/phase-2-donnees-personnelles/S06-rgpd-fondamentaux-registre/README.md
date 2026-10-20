@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S06 (séance 6 sur 19) – Phase 2 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – RGPD et registre : B3.1 ; prérequis de S07 à S09. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S01 (confidentialité, intégrité) ; S04 (droits d'accès). |
 | **Matériel** | VM Debian de laboratoire ; tableur ou traitement de texte ; modèle de registre (fourni en annexe) |
 | **Compétences travaillées** | B3.1 (voir [le référentiel](../../ressources/referentiel.md)) |

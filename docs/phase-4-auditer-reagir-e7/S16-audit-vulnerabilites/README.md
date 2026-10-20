@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S16 (séance 16 sur 19) – Phase 4 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Audit de vulnérabilités : seule séance sur ce point (B3.4, B3.5A). Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S09 (infractions, autorisation), S14 (durcissement), S15 (journaux, détection). |
 | **Matériel** | VM Debian `adm` (`nmap`) et VM Debian cible `srv` (`nginx`, `vsftpd`) sur un réseau interne isolé |
 | **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

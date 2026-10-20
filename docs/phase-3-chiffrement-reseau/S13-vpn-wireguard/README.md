@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S13 (séance 13 sur 19) – Phase 3 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – VPN : seule séance sur ce point, et prérequis de S14. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S10 et S11 (chiffrement, clés publiques et privées) ; notions de routage IP. |
 | **Matériel** | Deux VM Debian de laboratoire sur un réseau interne (`wireguard`, `tcpdump`) ; droits `sudo` |
 | **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

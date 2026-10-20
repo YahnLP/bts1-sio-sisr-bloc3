@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S11 (séance 11 sur 19) – Phase 3 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Asymétrique, signature, certificats : prérequis de S13 et de S14 ; couvre la chaîne de confiance. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S10 (chiffrement symétrique, hachage, HMAC). |
 | **Matériel** | VM Debian de laboratoire (`openssl`, `gpg`) ; navigateur web |
 | **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

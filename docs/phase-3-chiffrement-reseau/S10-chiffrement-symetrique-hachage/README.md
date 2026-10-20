@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S10 (séance 10 sur 19) – Phase 3 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Chiffrement symétrique et hachage : prérequis de S11 et S13. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S03 (empreintes de mots de passe) et S05 (chiffrement d'un volume). |
 | **Matériel** | VM Debian de laboratoire (`openssl`, `gpg`, `coreutils`) |
 | **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

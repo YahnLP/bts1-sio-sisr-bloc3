@@ -7,12 +7,12 @@
 
 ## Progression
 
-| Séance | Semaine | Thème | Statut |
-|---|---|---|---|
-| S01 | 01 | [Menaces et hygiène numérique](S01-menaces-hygiene-numerique/README.md) | **disponible** |
-| S02 | 02 | [Logiciels malveillants et protection du poste](S02-malwares-protection-poste/README.md) | **disponible** |
-| S03 | 03 | [Authentification : mots de passe et MFA](S03-authentification-mfa/README.md) | **disponible** |
-| S04 | 04 | [Droits d'accès et moindre privilège](S04-droits-privileges/README.md) | **disponible** |
-| S05 | 05 | [Sauvegarde, supports amovibles et restauration](S05-sauvegarde-restauration/README.md) | **disponible** |
+| Séance | Semaine | Thème | Parcours | Statut |
+|---|---|---|---|---|
+| S01 | 01 | [Menaces et hygiène numérique](S01-menaces-hygiene-numerique/README.md) | **Cœur** | **disponible** |
+| S02 | 02 | [Logiciels malveillants et protection du poste](S02-malwares-protection-poste/README.md) | **Cœur** | **disponible** |
+| S03 | 03 | [Authentification : mots de passe et MFA](S03-authentification-mfa/README.md) | **Cœur** | **disponible** |
+| S04 | 04 | [Droits d'accès et moindre privilège](S04-droits-privileges/README.md) | **Cœur** | **disponible** |
+| S05 | 05 | [Sauvegarde, supports amovibles et restauration](S05-sauvegarde-restauration/README.md) | **Cœur** | **disponible** |
 
 Les numéros de semaine sont ceux de la séquence (semaine 01 à 19) : ils ne correspondent pas à des dates, les 19 semaines d'alternance étant réparties sur l'année.

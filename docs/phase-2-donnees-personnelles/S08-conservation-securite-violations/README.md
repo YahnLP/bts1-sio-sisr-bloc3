@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S08 (séance 8 sur 19) – Phase 2 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Conservation, sécurité et violations : prérequis de S09 et S17. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S06 (principes, registre) et S07 (droits, effacement). |
 | **Matériel** | VM Debian de laboratoire (paquets `sqlite3`, `cron`) ; éditeur de texte |
 | **Compétences travaillées** | B3.1 · B3.4 (voir [le référentiel](../../ressources/referentiel.md)) |
