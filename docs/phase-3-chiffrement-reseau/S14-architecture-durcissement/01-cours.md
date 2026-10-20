@@ -106,10 +106,10 @@ C'est un tableau qui dit **qui peut parler à qui, sur quel port**. Tout ce qui 
 
 | De ↓ / Vers → | Internet | DMZ | Serveurs | Administration |
 |---|---|---|---|---|
-| **Internet** | — | 443 (web) | ✗ | ✗ |
-| **LAN** | 80, 443 | 443 | 445 (partage), 53 (DNS) | ✗ |
-| **DMZ** | 53, mises à jour | — | 3306 (base, depuis le web seulement) | ✗ |
-| **Administration** | ✔ | 22 | 22, 3389 | — |
+| **Internet** | — | 443 (web) | Non | Non |
+| **LAN** | 80, 443 | 443 | 445 (partage), 53 (DNS) | Non |
+| **DMZ** | 53, mises à jour | — | 3306 (base, depuis le web seulement) | Non |
+| **Administration** | Oui | 22 | 22, 3389 | — |
 
 Une matrice **courte et justifiée** est plus sûre qu'une liste de règles accumulées sans explication. Chaque ligne doit avoir un **propriétaire** et une **raison**.
 
