@@ -2,7 +2,7 @@
 
 ## Partie A
 
-Éléments attendus du schéma : Internet → pare-feu → **DMZ** (serveur web) ; **LAN** postes ; **Serveurs** (fichiers, base) ; **Administration** (poste d'administrateur) ; **Wi-Fi invités** ​isolé ; **Imprimantes** dans une zone dédiée ; **VPN** qui aboutit au pare-feu avec des droits limités.
+Les équipements personnels vont dans une zone à part (ou le Wi-Fi invités) avec accès limité aux services publiés, jamais au réseau des serveurs. Éléments attendus du schéma : Internet → pare-feu → **DMZ** (serveur web) ; **LAN** postes ; **Serveurs** (fichiers, base) ; **Administration** (poste d'administrateur) ; **Wi-Fi invités** ​isolé ; **Imprimantes** dans une zone dédiée ; **VPN** qui aboutit au pare-feu avec des droits limités.
 
 Matrice (exemple) :
 

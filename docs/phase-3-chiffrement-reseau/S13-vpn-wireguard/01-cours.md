@@ -227,10 +227,26 @@ Un VPN est une **porte d'entrée vers le réseau interne** : il doit être exemp
 | **Maintenance** | Mises à jour du serveur VPN (des vulnérabilités critiques touchent régulièrement les équipements d'accès distant) |
 | **Exposition minimale** | Un seul port ouvert, protocoles et versions à jour |
 
+### Télétravail et équipements personnels (BYOD)
+
+Le télétravail déplace le poste hors du réseau de l'entreprise. Le **BYOD** (*bring your own device*) va plus loin : l'agent utilise son **équipement personnel**. Dans les deux cas, l'administrateur ne maîtrise ni le réseau (box personnelle, objets connectés), ni toujours l'appareil (partagé en famille, perdu, volé).
+
+| Risque | Mesure |
+|---|---|
+| Réseau domestique non maîtrisé | **VPN** vers l'entreprise, Wi-Fi domestique protégé (WPA2 ou WPA3, mot de passe changé) |
+| Appareil perdu ou volé | **Chiffrement** du disque ou du téléphone, verrouillage, **déclaration immédiate** |
+| Appareil partagé ou non à jour | Compte distinct, mises à jour, antivirus ; accès **refusé** si l'appareil n'est pas conforme |
+| Mélange données pro / perso | **Profil ou espace professionnel** séparé ; accès par **navigateur** ou bureau distant plutôt que copie locale |
+| Départ de l'agent | **Révocation** de la clé et effacement de la partie professionnelle seulement |
+
+> [!NOTE]
+> Le BYOD suppose une **charte** signée : usages autorisés, mesures exigées, ce que l'entreprise peut contrôler (la partie **professionnelle**, pas la vie privée de l'agent). Un poste **fourni** par l'entreprise reste plus simple à protéger : le BYOD est un arbitrage entre coût et maîtrise.
+
 ## À retenir
 
 - Un VPN crée un **tunnel chiffré et authentifié** : confidentialité, intégrité, authentification des extrémités.
 - **Nomade** (utilisateur) ou **site à site** (réseaux) ; protocoles **IPsec**, **OpenVPN**, **WireGuard**.
 - WireGuard : une paire de clés par machine, `AllowedIPs` = routage **et** filtrage.
 - **Tunnel complet** ou **partiel** : décision de sécurité.
+- **Télétravail et BYOD** : réseau et appareil non maîtrisés ; VPN, chiffrement, profil professionnel séparé, conformité, charte.
 - Un VPN est une **porte d'entrée** : MFA, moindre privilège, révocation, journaux, mises à jour.
