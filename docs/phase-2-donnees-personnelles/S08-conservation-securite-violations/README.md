@@ -55,7 +55,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Les durées de conservation du cours sont des **ordres de grandeur** tirés de textes et de recommandations ; **à faire relire avant diffusion** (elles évoluent). Les statistiques et montants de l'ancienne version ont été retirés faute de source.
 - Le cas MédiaGroup est **fictif**. La vidéosurveillance et le RGPD au travail (ancienne séance 8) sont déplacés vers le dépôt CEJMA, où ils s'insèrent dans le droit du travail.
 - Vérifier sur le site de la CNIL le formulaire de notification et le délai de 72 heures avant de s'entraîner.

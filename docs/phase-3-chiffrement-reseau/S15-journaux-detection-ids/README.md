@@ -54,7 +54,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - L'analyse de la partie A est **testée** (script de génération du journal et commandes `grep`/`awk`). Fail2ban et Suricata sont standard sous Debian mais **non exécutés** pendant la rédaction : à tester sur les VM (noms d'interface, chemins des règles à adapter à la version).
 - Les adresses du journal généré sont des adresses réservées à la documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`).
 - Faire attention à **ne jamais bannir l'adresse du poste d'administration** pendant les tests (ajouter `ignoreip`).

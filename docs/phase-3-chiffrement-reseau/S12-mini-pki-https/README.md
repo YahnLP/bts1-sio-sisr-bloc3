@@ -54,7 +54,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Les commandes OpenSSL (création d'AC, émission, expiration forcée, révocation, CRL, vérification) ont été **testées** avec OpenSSL 3.0. La configuration nginx est standard mais **non exécutée** pendant la rédaction : à tester sur la VM de laboratoire.
 - L'AC est à **un seul niveau** pour simplifier. Défi facultatif : ajouter une AC intermédiaire (voir le cours) et vérifier la chaîne à trois niveaux.
 - Insister sur le **retrait** de l'AC de laboratoire du magasin de confiance en fin de séance.

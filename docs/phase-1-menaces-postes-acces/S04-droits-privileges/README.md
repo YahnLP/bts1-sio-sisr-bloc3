@@ -56,8 +56,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
-- Le cas InnoTech est **fictif**. Le corrigé de la matrice (qui figurait dans le support de l'ancienne version du site) est dans `corriges/S04-corrige.md`.
+- Le cas InnoTech est **fictif**.
 - La matrice du corrigé est **une** solution défendable : plusieurs répartitions sont acceptables si elles sont justifiées par les besoins (par exemple l'accès en lecture de la direction aux dossiers RH est discutable et fait l'objet d'une question).
 
 </details>

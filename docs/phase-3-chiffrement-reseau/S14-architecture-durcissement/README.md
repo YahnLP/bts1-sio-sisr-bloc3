@@ -53,7 +53,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Les commandes (`ufw`, `sshd`, `lynis`, `unattended-upgrades`) sont standard sous Debian mais **non exécutées** pendant la rédaction : à tester sur la VM. Le score Lynis dépend de la version et de la VM : on compare avant/après, on n'attend pas une valeur précise.
 - Rappeler le risque de se **couper l'accès SSH** en configurant le pare-feu ; travailler avec une console de la VM ouverte.
 - La mise en œuvre Windows (stratégies de groupe) pourrait faire l'objet d'un atelier du dépôt dédié (à décider) ; la matrice de flux du TP s'applique aux deux familles de systèmes.

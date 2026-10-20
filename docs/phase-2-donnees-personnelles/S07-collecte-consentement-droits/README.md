@@ -55,7 +55,6 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <summary>Notes pour l'enseignant</summary>
 
 - **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
-- **Corrigé :** dans `corriges/` à la racine du dépôt (hors du site publié).
 - Pour les cookies et traceurs, vérifier les lignes directrices et recommandations de la CNIL en vigueur (durée de conservation du choix, exemptions de consentement) : elles évoluent.
 - Les cas CycloShop et les données sont **fictifs**. La partie C se fait sur des sites publics en **navigation privée**, sans saisir de donnée personnelle.
 - Un point de vigilance pour la correction : la réponse à une demande d'accès ne doit contenir que les données de la personne **et d'elle seule**.
