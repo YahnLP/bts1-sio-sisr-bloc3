@@ -34,4 +34,5 @@
 |---|---|---|---|
 | 1 | Nomade | OpenVPN, ​WireGuard avec une solution de gestion, ou IPsec/IKEv2 selon le pare-feu | MFA, accès limités à l'ERP, postes conformes, journaux |
 | 2 | Site à site | IPsec entre les deux pare-feu (ou WireGuard) | Clés/certificats protégés, filtrage entre ​sites, supervision du tunnel |
+| 4 | Nomade, BYOD | Application ou navigateur via le VPN, ou accès web publié derrière authentification forte | Charte BYOD, chiffrement et verrouillage, profil professionnel séparé, accès refusé si l'appareil n'est pas conforme, effacement de la partie ​professionnelle au départ |
 | 3 | Nomade restreint | VPN SSL à portail, ou accès VPN avec règle de pare-feu vers un seul serveur | Compte nominatif, accès limité dans le temps et à une destination, journalisation, ​désactivation après l'intervention |

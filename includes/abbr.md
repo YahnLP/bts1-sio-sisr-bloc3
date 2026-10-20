@@ -22,6 +22,7 @@
 *[DKIM]: DomainKeys Identified Mail : Signature cryptographique des courriels sortants d'un domaine.
 *[DH]: Échange de clés de Diffie-Hellman : Permet à deux interlocuteurs de fabriquer un secret commun sur un canal observable.
 *[ACME]: Environnement automatique de gestion de certificats : Protocole d'obtention et de renouvellement automatiques de certificats (Let's Encrypt).
+*[BYOD]: Équipement personnel utilisé au travail : Pratique où l'agent utilise son propre téléphone ou ordinateur pour son travail ; elle demande une charte et des mesures de séparation pro / perso.
 *[EOL]: Fin de support : Date à partir de laquelle l'éditeur ne publie plus de correctifs.
 *[PBKDF2]: Fonction de dérivation de clé : Calcule une clé de chiffrement à partir d'un mot de passe, de façon lente et salée.
 *[SIEM]: Gestion des informations et des événements de sécurité : Plateforme qui centralise et corrèle les journaux et déclenche des alertes.

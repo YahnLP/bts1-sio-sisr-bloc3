@@ -115,7 +115,7 @@ Une matrice **courte et justifiée** est plus sûre qu'une liste de règles accu
 
 ### Quelques bonnes pratiques de réseau
 
-- **Segmenter** l'accès Wi-Fi invités, les imprimantes et les objets connectés (zones à part).
+- **Segmenter** l'accès Wi-Fi invités, les imprimantes, les objets connectés et les **équipements personnels** (BYOD) dans des zones à part.
 - **Désactiver les ports inutilisés** des commutateurs et utiliser l'authentification 802.1X quand c'est possible.
 - Un **bastion** (poste d'administration unique, journalisé) pour l'accès aux serveurs.
 - **Superviser** le trafic entre zones (S15).

@@ -147,6 +147,7 @@ DATA = [
 ("Environnement automatique de gestion de certificats", "ACME", "automatic certificate management environment", "Protocole d'obtention et de renouvellement automatiques de certificats (Let's Encrypt).", "S12"),
 # --- S13 VPN
 ("Réseau privé virtuel", "VPN", "virtual private network", "Tunnel chiffré et authentifié à travers un réseau non sûr.", "S13"),
+("Équipement personnel utilisé au travail", "BYOD", "bring your own device", "Pratique où l'agent utilise son propre téléphone ou ordinateur pour son travail ; elle demande une charte et des mesures de séparation pro / perso.", "S13"),
 ("Tunnelisation", None, "tunneling", "Encapsulation de paquets dans d'autres paquets, après chiffrement.", "S13"),
 ("VPN nomade", None, "remote access VPN", "Un utilisateur se connecte au réseau de l'entreprise depuis l'extérieur.", "S13"),
 ("VPN site à site", None, "site-to-site VPN", "Deux réseaux sont reliés en permanence par un tunnel.", "S13"),

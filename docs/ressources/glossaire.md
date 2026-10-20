@@ -77,6 +77,7 @@ La colonne « Vu en » indique la séance où le mot apparaît pour la première
 | **Enregistreur de frappe** |  | *keylogger* | Logiciel espion qui enregistre ce que l'on tape au clavier. | S02 |
 | **Entropie** |  | *entropy* | Mesure en bits de la difficulté de deviner un secret : chaque bit double le nombre d'essais. | S03 |
 | **Environnement automatique de gestion de certificats** | ACME | *automatic certificate management environment* | Protocole d'obtention et de renouvellement automatiques de certificats (Let's Encrypt). | S12 |
+| **Équipement personnel utilisé au travail** | BYOD | *bring your own device* | Pratique où l'agent utilise son propre téléphone ou ordinateur pour son travail ; elle demande une charte et des mesures de séparation pro / perso. | S13 |
 | **Étude de cas** |  | *case study* | Épreuve écrite fondée sur un dossier documentaire. | S18 |
 | **Faux positif** |  | *false positive* | Alerte déclenchée par un comportement légitime. | S15 |
 | **Fin de support** | EOL | *end of life* | Date à partir de laquelle l'éditeur ne publie plus de correctifs. | S02 |
