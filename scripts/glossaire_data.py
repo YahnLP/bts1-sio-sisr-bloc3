@@ -10,6 +10,8 @@ DATA = [
 ("Actif", None, "asset", "Ce qu'il faut protéger : donnée, serveur, application, service.", "S01"),
 ("Menace", None, "threat", "Ce qui peut causer un dommage : attaquant, logiciel malveillant, erreur, sinistre.", "S01"),
 ("Vulnérabilité", None, "vulnerability", "Faiblesse qu'une menace peut exploiter.", "S01"),
+("Sûreté", None, "safety", "Protection contre les événements non intentionnels : panne, incendie, dégât des eaux, coupure électrique.", "S01"),
+("Onduleur", "UPS", "uninterruptible power supply", "Batterie qui alimente les équipements quelques minutes lors d'une coupure de courant.", "S01"),
 ("Risque", None, "risk", "Possibilité qu'une menace exploite une vulnérabilité, mesurée par sa gravité et sa vraisemblance.", "S01"),
 ("Rançongiciel", None, "ransomware", "Logiciel malveillant qui chiffre les fichiers et réclame une rançon.", "S01"),
 ("Double extorsion", None, "double extortion", "Les données sont volées avant d'être chiffrées, et l'attaquant menace de les publier.", "S01"),

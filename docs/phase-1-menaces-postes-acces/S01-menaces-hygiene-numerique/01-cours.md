@@ -12,6 +12,7 @@
 - [ ] **Distinguer** menace, vulnérabilité, risque et impact sur un cas concret ;
 - [ ] **Décrire** le déroulement d'une attaque par rançongiciel et d'une attaque par hameçonnage ;
 - [ ] **Repérer** les indices d'un message frauduleux (expéditeur, lien, pièce jointe, urgence) et choisir la bonne réaction ;
+- [ ] **Distinguer** sûreté et sécurité et **vérifier** les éléments de sûreté d'un local technique ;
 - [ ] **Appliquer** les règles d'hygiène numérique et **rédiger** un support de sensibilisation pour des utilisateurs.
 
 ## I. Pourquoi parler de cybersécurité ?
@@ -48,7 +49,38 @@ Ces mots ne sont pas synonymes.
 
 On réduit un risque de trois façons : diminuer la vraisemblance (**prévenir**), diminuer la gravité (**limiter**, par exemple avec une sauvegarde) ou l'accepter en connaissance de cause.
 
-### B. Le facteur humain
+### B. Sûreté et sécurité
+
+Deux mots proches, deux familles de causes :
+
+| | **Sûreté** | **Sécurité** |
+|---|---|---|
+| Contre quoi ? | Les événements **non intentionnels** : panne, incendie, dégât des eaux, coupure électrique, surchauffe, erreur | Les actes **malveillants** : intrusion, vol, rançongiciel |
+| Exemples de mesures | Onduleur, parafoudre, climatisation, détection d'incendie, redondance | Mots de passe, droits, pare-feu, antivirus |
+
+Un même actif a besoin des deux : un serveur chiffré et à jour (sécurité) reste perdu si le local est inondé (sûreté). Le référentiel demande de **vérifier les éléments de sûreté** d'une infrastructure. Pour un local technique, on contrôle :
+
+| Élément | À vérifier |
+|---|---|
+| Alimentation | Onduleur présent, autonomie suffisante, test périodique, parafoudre |
+| Climat | Température maîtrisée, ventilation dégagée |
+| Incendie | Détection, extinction adaptée, matériel éloigné des sources de chaleur |
+| Eau | Rien sous une canalisation, équipements surélevés |
+| Accès physique | Local fermé, accès limité et tracé |
+| Redondance | Alimentation et disques doublés, sauvegarde hors du local |
+
+**Exemple.** Un onduleur dont la batterie fournit 360 Wh utilisables alimente des équipements qui consomment 240 W : autonomie = 360 / 240 = **1,5 h**, soit 90 minutes. C'est le temps dont on dispose pour arrêter proprement les machines.
+
+**Je vérifie.** Un incendie dans le local détruit le serveur et la sauvegarde posée à côté. Est-ce un défaut de sûreté ou de sécurité ? Quelle mesure aurait limité les dégâts ? ______________________
+
+<details markdown="1">
+<summary>Éléments de réponse</summary>
+
+Défaut de **sûreté** (événement non intentionnel). Une copie de sauvegarde **hors du local** (ou hors site) et une détection d'incendie auraient limité les dégâts.
+
+</details>
+
+### C. Le facteur humain
 
 Les mesures techniques (pare-feu, antivirus, filtrage) arrêtent beaucoup d'attaques, mais pas celles qui **convainquent un utilisateur** d'ouvrir lui-même la porte. L'**ingénierie sociale** désigne l'ensemble des techniques qui manipulent la confiance, la peur, l'urgence ou la curiosité d'une personne. C'est pourquoi l'administrateur ne fait pas que de la technique : il **informe et sensibilise** les utilisateurs, ce qui est une compétence du bloc 3.
 
@@ -179,5 +211,6 @@ L'**hygiène numérique** réunit les gestes simples qui préviennent la plupart
 - La cybersécurité protège la **disponibilité**, l'**intégrité**, la **confidentialité** et la **preuve**.
 - **Risque = menace qui exploite une vulnérabilité**, avec une gravité et une vraisemblance.
 - Beaucoup d'attaques passent par l'**utilisateur** : former est une mesure de sécurité à part entière.
+- **Sûreté** : se protéger des accidents et pannes (onduleur, incendie, eau, redondance) ; **sécurité** : se protéger des actes malveillants. Les deux se vérifient.
 - Un rançongiciel se prévient par les **mises à jour**, des **droits limités** et une **sauvegarde testée hors ligne**.
 - Devant un message suspect : **ne pas cliquer, vérifier par un autre canal, signaler**.

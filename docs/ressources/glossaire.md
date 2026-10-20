@@ -122,6 +122,7 @@ La colonne « Vu en » indique la séance où le mot apparaît pour la première
 | **Notification à la CNIL** |  | *breach notification* | Déclaration d'une violation à la CNIL, sous 72 heures en cas de risque. | S08 |
 | **Objectif de point de reprise** | RPO | *recovery point objective* | Durée maximale de données que l'on accepte de perdre. | S05 |
 | **Objectif de temps de reprise** | RTO | *recovery time objective* | Durée maximale d'interruption que l'on accepte. | S05 |
+| **Onduleur** | UPS | *uninterruptible power supply* | Batterie qui alimente les équipements quelques minutes lors d'une coupure de courant. | S01 |
 | **Ordre de volatilité** |  | *order of volatility* | Ordre de collecte des preuves, du plus éphémère au plus durable. | S17 |
 | **Pare-feu** |  | *firewall* | Dispositif qui filtre les flux selon des règles. | S14 |
 | **Plan de continuité d'activité** | PCA | *business continuity plan* | Comment continuer à travailler pendant un incident. | S05 |
@@ -156,6 +157,7 @@ La colonne « Vu en » indique la séance où le mot apparaît pour la première
 | **Signature électronique** |  | *electronic signature* | Procédé qui identifie un signataire et manifeste son consentement. | S09 |
 | **Signature numérique** |  | *digital signature* | Empreinte signée avec la clé privée : garantit intégrité, authenticité et non-répudiation. | S11 |
 | **Sous-traitant** |  | *data processor* | Organisme qui traite des données pour le compte du responsable, sous contrat. | S06 |
+| **Sûreté** |  | *safety* | Protection contre les événements non intentionnels : panne, incendie, dégât des eaux, coupure électrique. | S01 |
 | **Surface d'attaque** |  | *attack surface* | Ensemble des points par lesquels un attaquant peut tenter d'entrer. | S14 |
 | **Système de détection d'intrusion** | IDS | *intrusion detection system* | Observe le trafic ou une machine et émet des alertes. | S15 |
 | **Système de notation des vulnérabilités** | CVSS | *common vulnerability scoring system* | Note de gravité d'une vulnérabilité de 0 à 10. | S02 |
