@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Sur quel fondement collecter des données, comment en informer les personnes, et que répondre quand elles exercent leurs droits ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** Le consentement, les droits et les cookies sont aussi vus en [CEJM 1re année, S14 – RGPD : droits des personnes, cookies et prospection](https://yahnlp.github.io/bts1-sio-sisr-cejma/phase-3-numerique-et-droit/S14-rgpd-droits/). Selon l'ordre de vos séances, la première pose les bases et la seconde les reprend en rappel (15 à 20 minutes). Ici, garder la mise en œuvre technique (collecte, demande d'accès).
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :

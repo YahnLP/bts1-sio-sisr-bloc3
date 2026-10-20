@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Comment évaluer un traitement à risque, protéger l'identité numérique de l'organisation et connaître les limites légales de l'administrateur ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** L'analyse d'impact est aussi vue en [CEJM 1re année, S15 – RGPD : sécurité, violations de données et CNIL](https://yahnlp.github.io/bts1-sio-sisr-cejma/phase-3-numerique-et-droit/S15-rgpd-securite-cnil/), la preuve électronique et l'identité numérique en [CEJM 1re année, S18 – Preuve électronique et identité numérique](https://yahnlp.github.io/bts1-sio-sisr-cejma/phase-4-immateriel-preuve-veille/S18-preuve-identite-numerique/). Selon l'ordre de vos séances, la première pose les bases et la seconde les reprend en rappel (15 à 20 minutes). Ici, garder la méthode d'analyse d'impact en quatre étapes.
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :

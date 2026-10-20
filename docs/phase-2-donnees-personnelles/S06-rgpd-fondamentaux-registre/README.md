@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Quelles données personnelles circulent dans l'entreprise, qui est responsable de quoi, et comment le prouver ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** Les notions de base du RGPD sont aussi vues côté droit en [CEJM 1re année, S13 – RGPD : principes, acteurs et bases légales](https://yahnlp.github.io/bts1-sio-sisr-cejma/phase-3-numerique-et-droit/S13-rgpd-fondamentaux/). Selon l'ordre de vos séances, la première pose les bases et la seconde les reprend en rappel (15 à 20 minutes). Ici, garder le registre des traitements et le TP.
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :

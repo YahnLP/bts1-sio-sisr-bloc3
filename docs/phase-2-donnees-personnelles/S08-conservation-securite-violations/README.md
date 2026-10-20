@@ -13,6 +13,9 @@
 > [!NOTE]
 > **Question qui guide la séance :** *« Combien de temps garder les données, comment les protéger, à qui les confier, et que faire quand elles fuient ? »*
 
+> [!NOTE]
+> **Recoupement avec d'autres séances.** La sécurité, la conservation et les violations sont aussi vues en [CEJM 1re année, S15 – RGPD : sécurité, violations de données et CNIL](https://yahnlp.github.io/bts1-sio-sisr-cejma/phase-3-numerique-et-droit/S15-rgpd-securite-cnil/). Selon l'ordre de vos séances, la première pose les bases et la seconde les reprend en rappel (15 à 20 minutes). Ici, garder la mise en œuvre technique et la procédure de violation.
+
 ## Objectifs
 
 À la fin de la séance, l'étudiant est capable de :
