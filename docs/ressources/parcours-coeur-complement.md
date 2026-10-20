@@ -3,7 +3,7 @@
 Les 19 séances de 4 h représentent **76 h** par an. Le volume prévu pour ce bloc en première année dans la grille sous statut scolaire est de **120 h** (2 × 60 h, annexe III.A du référentiel) : le parcours en apprentissage en offre environ les deux tiers. Quand le temps manque, ce parcours indique **quelles séances garder en priorité**.
 
 > [!NOTE]
-> Ce classement est une **proposition de l'auteur, à valider** par l'équipe pédagogique. Il ne retire rien du site : chaque séance reste disponible, et son statut est rappelé dans sa fiche.
+> Il ne retire rien du site : chaque séance reste disponible, et son statut est rappelé dans sa fiche.
 
 ## Pourquoi un seul complément
 

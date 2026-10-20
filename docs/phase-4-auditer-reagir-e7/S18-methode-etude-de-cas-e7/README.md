@@ -55,7 +55,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - L'étude de cas guidée est **originale** (Transports Lambert, fictif) ; elle remplace l'ancien sujet TechServices. Le barème donné est une **proposition** à comparer avec la grille nationale quand elle est connue.
 - La partie rédaction se fait **sans ordinateur** pour s'entraîner à l'écrit.
 

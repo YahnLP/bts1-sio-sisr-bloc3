@@ -50,7 +50,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - Sujet **original** et **fictif** (Clinique du Val-Vert). La structure suit le texte officiel (étude de cas à partir d'un dossier documentaire couvrant plusieurs missions) ; le barème est une **proposition** à comparer avec la grille nationale.
 - La séance dure 4 h : prévoir la salle, l'impression du dossier, l'interdiction des documents et des téléphones.
 

@@ -55,7 +55,7 @@ Si ta situation le permet : **observer** comment ton entreprise traite le sujet 
 <details markdown="1">
 <summary>Notes pour l'enseignant</summary>
 
-- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)) ; le choix des compétences pour cette séance est une proposition à valider.
+- **Compétences :** codes relus sur le référentiel (page [Référentiel](../../ressources/referentiel.md)).
 - Les scans ne se font **que** sur le réseau de laboratoire isolé, avec l'accord de l'enseignant. **Jamais** sur Internet ni sur le réseau de l'établissement.
 - Les commandes Nmap sont standard mais **non exécutées** pendant la rédaction (Nmap absent du bac à sable) ; à tester. Les scores CVSS cités (CVE-2017-0144, CVE-2011-2523, CVE-2021-44228) sont des valeurs courantes de la base NVD : **à vérifier** avant diffusion.
 - L'annexe est un résultat de scan **inventé**.
