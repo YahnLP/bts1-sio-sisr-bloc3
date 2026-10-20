@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S03 (séance 3 sur 19) – Phase 1 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Authentification et MFA : prérequis de S04, S10 (empreintes) et S15 (force brute). Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S01 (menaces), S02 (empreinte, défense en profondeur) ; notions de comptes Windows et Linux (bloc 2, S02). |
 | **Matériel** | VM Debian de laboratoire (paquets `john` et `oathtool`) ; VM Windows de laboratoire ; gestionnaire de mots de passe (KeePass ou équivalent libre) |
 | **Compétences travaillées** | B3.3 (voir [le référentiel](../../ressources/referentiel.md)) |

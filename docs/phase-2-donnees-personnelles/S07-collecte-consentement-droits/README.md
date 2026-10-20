@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S07 (séance 7 sur 19) – Phase 2 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Consentement et droits des personnes : seule séance sur ce point (B3.1) ; prérequis de S08. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S06 (notions, principes, registre). |
 | **Matériel** | VM Debian de laboratoire (paquet `sqlite3`) ; navigateur web avec outils de développement |
 | **Compétences travaillées** | B3.1 (voir [le référentiel](../../ressources/referentiel.md)) |

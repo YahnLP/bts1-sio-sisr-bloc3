@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S14 (séance 14 sur 19) – Phase 3 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Architecture et durcissement : prérequis de S15 et S16. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S04 (droits), S11 à S13 (TLS, VPN) ; notions d'adressage IP et de pare-feu. |
 | **Matériel** | Deux VM Debian de laboratoire (`openssh-server`, `ufw`, `lynis`) ; éditeur de schémas ou papier |
 | **Compétences travaillées** | B3.3 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

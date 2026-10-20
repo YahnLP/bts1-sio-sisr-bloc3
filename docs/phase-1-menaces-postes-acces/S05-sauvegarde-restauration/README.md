@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S05 (séance 5 sur 19) – Phase 1 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Sauvegarde et restauration : prérequis de S10 et S17 ; seule séance sur ce point. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S01 (rançongiciel), S04 (droits) ; sauvegarde vue côté exploitation au bloc 2 (S16). |
 | **Matériel** | VM Debian de laboratoire (paquets `restic` et `cryptsetup`) ; calculatrice ou tableur |
 | **Compétences travaillées** | B3.4 · B3.3 (voir [le référentiel](../../ressources/referentiel.md)) |

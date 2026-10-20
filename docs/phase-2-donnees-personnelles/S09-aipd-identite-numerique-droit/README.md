@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S09 (séance 9 sur 19) – Phase 2 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – AIPD, identité numérique et responsabilités juridiques : prérequis de S16 (autorisation, infractions) et S17 (preuve, plainte). Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S06 à S08 (RGPD : registre, droits, conservation, violations). |
 | **Matériel** | Fiches papier ou traitement de texte ; accès à Internet pour consulter cnil.fr et legifrance.gouv.fr |
 | **Compétences travaillées** | B3.1 · B3.2 (voir [le référentiel](../../ressources/referentiel.md)) |

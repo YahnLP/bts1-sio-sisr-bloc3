@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S04 (séance 4 sur 19) – Phase 1 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Droits et moindre privilège : prérequis de S05, S06 et S14. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S03 (authentification) ; comptes, groupes et permissions NTFS (bloc 2, S02 et S10) ; permissions Linux (bloc 2, S06). |
 | **Matériel** | VM Debian de laboratoire (paquet `acl`) ; VM Windows de laboratoire |
 | **Compétences travaillées** | B3.3 · B3.4 (voir [le référentiel](../../ressources/referentiel.md)) |

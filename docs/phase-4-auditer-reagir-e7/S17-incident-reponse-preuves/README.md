@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S17 (séance 17 sur 19) – Phase 4 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Incident et preuves : réutilise S05, S08, S09 et S15 ; prépare l'étude de cas. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S05 (sauvegardes), S08 (violations), S09 (preuve, plainte), S15 (journaux). |
 | **Matériel** | VM Debian de laboratoire ; fiches papier ou traitement de texte |
 | **Compétences travaillées** | B3.2 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

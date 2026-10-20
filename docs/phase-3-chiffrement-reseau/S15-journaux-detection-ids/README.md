@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S15 (séance 15 sur 19) – Phase 3 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Journaux et détection : prérequis de S16 et S17. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S03 (force brute), S14 (architecture, pare-feu) ; lecture de commandes shell (`grep`, `awk`). |
 | **Matériel** | Deux VM Debian de laboratoire (`fail2ban`, `suricata`, `nmap`, `rsyslog`) ; VM Windows de laboratoire pour l'observateur d'événements |
 | **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |

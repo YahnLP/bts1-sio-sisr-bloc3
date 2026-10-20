@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S01 (séance 1 sur 19) – Phase 1 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Menaces, risque et hygiène numérique : prérequis de S02, S03 et S05. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | Aucun (séance d'introduction au bloc 3). |
 | **Matériel** | Postes de la salle ; une VM Windows de laboratoire ; navigateur web |
 | **Compétences travaillées** | B3.3 · B3.4 (voir [le référentiel](../../ressources/referentiel.md)) |

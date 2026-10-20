@@ -5,6 +5,7 @@
 | **Niveau** | BTS SIO option SISR, 1re année – bloc 3 |
 | **Séance** | S19 (séance 19 sur 19) – Phase 4 |
 | **Durée** | 4 heures |
+| **Parcours** | **Cœur** – Épreuve blanche E7. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S01 à S18. |
 | **Matériel** | Sujet imprimé (dossier documentaire et annexes), copies, calculatrice autorisée selon la consigne |
 | **Compétences travaillées** | B3.1 · B3.2 · B3.3 · B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
