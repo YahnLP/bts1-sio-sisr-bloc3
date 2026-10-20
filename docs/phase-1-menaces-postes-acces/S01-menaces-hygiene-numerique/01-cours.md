@@ -49,6 +49,27 @@ Ces mots ne sont pas synonymes.
 
 On réduit un risque de trois façons : diminuer la vraisemblance (**prévenir**), diminuer la gravité (**limiter**, par exemple avec une sauvegarde) ou l'accepter en connaissance de cause.
 
+### Aperçu : de la liste de risques à l'analyse de risques
+
+Pour décider quoi protéger **en premier**, on classe chaque risque selon deux notes de 1 à 4 : la **gravité** (conséquence) et la **vraisemblance** (probabilité). Le niveau est le **produit** des deux.
+
+| Risque | Gravité | Vraisemblance | Niveau |
+|---|---:|---:|---:|
+| Rançongiciel chiffre le serveur de fichiers | 4 | 3 | 12 |
+| Un poste portable est volé | 2 | 3 | 6 |
+| Incendie du local technique | 4 | 1 | 4 |
+
+On traite d'abord les niveaux les plus élevés. Ces échelles sont **celles de l'exemple** ; chaque organisation fixe les siennes. En 2e année, la séance [Analyser les risques](https://yahnlp.github.io/bts2-sio-sisr-bloc3/phase-1-reprendre-cadrer/S02-analyse-de-risques/) reprend la démarche complète (méthode EBIOS Risk Manager simplifiée) et la relie aux normes. Ici, retiens simplement qu'**on ne protège pas tout de la même façon**.
+
+**Je vérifie.** Un risque a une gravité de 3 et une vraisemblance de 2. Quel est son niveau ? Est-il à traiter avant l'incendie du tableau ?
+
+<details markdown="1">
+<summary>Éléments de réponse</summary>
+
+3 × 2 = **6**. Oui : l'incendie est à 4, donc ce risque passe avant, avec ces échelles.
+
+</details>
+
 ### B. Sûreté et sécurité
 
 Deux mots proches, deux familles de causes :

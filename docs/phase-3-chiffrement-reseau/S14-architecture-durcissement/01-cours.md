@@ -165,6 +165,9 @@ On ne durcit pas « de mémoire » : on s'appuie sur des guides reconnus.
 > [!NOTE]
 > Un référentiel est un **point de départ**, pas une liste à appliquer sans réfléchir : chaque réglage est évalué selon le **contexte** (exposition du serveur, impact sur les utilisateurs). On documente les **écarts assumés**.
 
+> [!NOTE]
+> **Pour aller plus loin.** En 2e année, la page [Normes et référentiels de sécurité](https://yahnlp.github.io/bts2-sio-sisr-bloc3/ressources/normes-securite/) situe ces guides par rapport aux normes ISO 27001/27002, au cadre du NIST et à la loi. À lire si la conformité à un référentiel t'intéresse.
+
 ## V. Durcir sans se couper l'accès
 
 Quelques réflexes évitent les pannes de configuration :
