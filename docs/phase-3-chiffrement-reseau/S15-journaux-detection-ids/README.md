@@ -7,7 +7,7 @@
 | **Durée** | 4 heures |
 | **Parcours** | **Cœur** – Journaux et détection : prérequis de S16 et S17. Voir le [parcours cœur et complément](../../ressources/parcours-coeur-complement.md). |
 | **Prérequis** | S03 (force brute), S14 (architecture, pare-feu) ; lecture de commandes shell (`grep`, `awk`). |
-| **Matériel** | Deux VM Debian de laboratoire (`fail2ban`, `suricata`, `nmap`, `rsyslog`) ; VM Windows de laboratoire pour l'observateur d'événements |
+| **Matériel** | Deux VM Debian de laboratoire (`fail2ban`, `suricata`, `nmap`, `rsyslog`) ; VM Windows de laboratoire pour l'observateur d'événements ; simulateur InfraLab (navigateur, facultatif) |
 | **Compétences travaillées** | B3.4 · B3.5A (voir [le référentiel](../../ressources/referentiel.md)) |
 
 > [!NOTE]
