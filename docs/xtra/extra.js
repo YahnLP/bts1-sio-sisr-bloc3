@@ -256,3 +256,24 @@ if (window.document$) document$.subscribe(decorate); else document.addEventListe
   }
   if (window.document$) document$.subscribe(mount); else document.addEventListener("DOMContentLoaded", mount);
 })();
+
+/* Bouton « Accueil » : retour au portail (1re ou 2e année) depuis la barre du haut */
+(function () {
+  function mount() {
+    if (document.getElementById("home-general-btn")) return;
+    var m = location.pathname.match(/\/bts([12])-sio-sisr/) || location.href.match(/bts([12])-sio-sisr/);
+    var hash = m ? "#bts" + m[1] : "";
+    var label = m ? (m[1] === "1" ? "Accueil 1re année" : "Accueil 2e année") : "Accueil général";
+    var a = document.createElement("a");
+    a.id = "home-general-btn";
+    a.className = "md-header__button home-general";
+    a.href = "https://yahnlp.github.io/" + hash;
+    a.title = label + " : retour au portail de formation";
+    a.setAttribute("aria-label", label);
+    a.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg><span class="home-general__txt">Accueil</span>';
+    var ref = document.querySelector('[data-md-component="palette"]') || document.querySelector(".md-search");
+    if (ref && ref.parentNode) ref.parentNode.insertBefore(a, ref);
+    else { var h = document.querySelector(".md-header__inner"); if (h) h.appendChild(a); }
+  }
+  if (window.document$) document$.subscribe(mount); else document.addEventListener("DOMContentLoaded", mount);
+})();
