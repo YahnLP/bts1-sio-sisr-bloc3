@@ -18,7 +18,7 @@ theme:
   name: material
   language: fr
   font: false            # pas de police Google (RGPD)
-  logo: images/logo-b1.png
+  logo: images/logo-sisr.png
   favicon: images/favicon.png
   palette:
     - media: "(prefers-color-scheme: light)"
